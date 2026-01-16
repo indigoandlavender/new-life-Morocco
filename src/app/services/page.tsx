@@ -159,6 +159,83 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* US Document Services - Featured */}
+      <section className="section-padding bg-terracotta-50">
+        <div className="mx-auto max-w-7xl">
+          <div className="bg-white rounded-2xl border-2 border-terracotta-300 p-8 md:p-10 shadow-lg relative">
+            <div className="absolute -top-3 left-6">
+              <span className="bg-terracotta-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Major Pain Point Solved
+              </span>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="w-14 h-14 bg-terracotta-100 rounded-xl flex items-center justify-center mb-6">
+                  <svg className="w-7 h-7 text-terracotta-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                  </svg>
+                </div>
+                <h2 className="text-2xl font-bold text-atlas-900 mb-4">
+                  FBI Background Check & Apostille Service
+                </h2>
+                <p className="text-atlas-600 mb-4">
+                  Already in Morocco and need your FBI background check apostilled in Washington, DC?
+                  This is one of the biggest hurdles for Americans abroad. <strong>We handle the entire
+                  US side of your paperwork</strong> so you don&apos;t have to fly back or rely on distant
+                  family members.
+                </p>
+                <ul className="space-y-2 text-atlas-600 text-sm mb-6">
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-olive-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    FBI Identity History Summary request
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-olive-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Apostille through US Department of State in DC
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-olive-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Secure international shipping to Morocco
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-olive-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Status updates throughout the process
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-sand-50 rounded-xl p-6">
+                <p className="text-sm text-atlas-600 mb-2">FBI Check + Apostille Service</p>
+                <p className="text-3xl font-bold text-atlas-900 mb-4">Starting at $400</p>
+                <p className="text-atlas-600 text-sm mb-4">
+                  Plus government fees (FBI: ~$18, Apostille: ~$20)
+                </p>
+                <div className="bg-terracotta-100 rounded-lg p-4 mb-6">
+                  <p className="text-terracotta-800 text-sm font-medium">
+                    Why this matters: The FBI check must be federal (not state) and apostilled
+                    specifically at the US Department of State in Washington, DC—not at a state
+                    Secretary of State office.
+                  </p>
+                </div>
+                <Link
+                  href="/contact"
+                  className="block w-full btn-primary text-center"
+                >
+                  Get Started
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Additional Services */}
       <section className="section-padding bg-sand-50">
         <div className="mx-auto max-w-7xl">
