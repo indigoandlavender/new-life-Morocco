@@ -14,7 +14,7 @@ export default function Home() {
               <span className="block text-terracotta-400 mt-2">And You&apos;ve Never Considered It.</span>
             </h1>
             <p className="mt-8 text-xl text-sand-200 max-w-3xl mx-auto leading-relaxed">
-              Welcome to Morocco! 7 hours from New York. American schools. High-speed rail.
+              Morocco. 7 hours from New York. American schools. High-speed rail.
               And the peace of mind you&apos;ve been searching for.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
