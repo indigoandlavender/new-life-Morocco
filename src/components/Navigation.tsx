@@ -5,11 +5,11 @@ import { useState } from 'react';
 
 const navigation = [
   { name: 'Home', href: '/' },
+  { name: 'Global Pulse', href: '/pulse' },
   { name: 'Why Morocco', href: '/why-morocco' },
   { name: 'Tangier', href: '/tangier' },
   { name: 'Infrastructure', href: '/infrastructure' },
   { name: 'Families', href: '/families' },
-  { name: 'Visa', href: '/visa' },
   { name: 'Services', href: '/services' },
   { name: 'Contact', href: '/contact' },
 ];

@@ -42,6 +42,52 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Momentum Ticker */}
+      <section className="py-8 bg-atlas-900">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center gap-3">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-olive-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-olive-500"></span>
+              </span>
+              <h2 className="text-sm font-semibold text-sand-200 uppercase tracking-wide">
+                The Kingdom in Motion
+              </h2>
+            </div>
+            <Link href="/pulse" className="text-sm text-terracotta-400 hover:text-terracotta-300 font-medium">
+              View Full Intel →
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div className="bg-atlas-800/50 rounded-lg p-4 border border-atlas-700/50">
+              <span className="text-xs text-terracotta-400 font-medium">The Icon</span>
+              <p className="text-sm text-sand-100 mt-1">
+                &quot;I don&apos;t want to leave.&quot; — Madonna shares her Marrakech sanctuary.
+              </p>
+            </div>
+            <div className="bg-atlas-800/50 rounded-lg p-4 border border-atlas-700/50">
+              <span className="text-xs text-olive-400 font-medium">The Talent</span>
+              <p className="text-sm text-sand-100 mt-1">
+                The Choice of a Generation — NYT on why Brahim Diaz chose the Atlas Lions.
+              </p>
+            </div>
+            <div className="bg-atlas-800/50 rounded-lg p-4 border border-atlas-700/50">
+              <span className="text-xs text-terracotta-400 font-medium">2030 Vision</span>
+              <p className="text-sm text-sand-100 mt-1">
+                FIFA confirms Morocco as centerpiece for the most ambitious World Cup ever.
+              </p>
+            </div>
+            <div className="bg-atlas-800/50 rounded-lg p-4 border border-atlas-700/50">
+              <span className="text-xs text-olive-400 font-medium">The Growth</span>
+              <p className="text-sm text-sand-100 mt-1">
+                Oracle & Google Cloud announce new R&D centers in Casablanca Finance City.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Lifestyle Gallery */}
       <section className="py-12 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

@@ -3,25 +3,122 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Us | New Life Morocco',
-  description: 'Meet the team behind New Life Morocco. We are expats who made the move ourselves and now help Americans relocate to Morocco with confidence.',
+  title: 'About Us | The Bridge Between Two Worlds | New Life Morocco',
+  description: 'We don\'t just know the Kingdom. We understand your expectations. American expats and local experts providing strategic advocacy for your Moroccan transition.',
 };
 
 export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-b from-sand-50 to-white py-20">
+      <section className="bg-atlas-900 py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="text-terracotta-400 font-medium uppercase tracking-wide text-sm">
+              The Bridge Between Two Worlds
+            </span>
+            <h1 className="mt-4 text-4xl font-bold text-white sm:text-5xl leading-tight">
+              We Don&apos;t Just Know the Kingdom.
+              <span className="block text-terracotta-400">We Understand Your Expectations.</span>
+            </h1>
+            <p className="mt-6 text-xl text-sand-200">
+              Most relocation services are built on paperwork.
+              We are built on <strong>Advocacy</strong>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* The Gap */}
+      <section className="py-20 bg-white">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <p className="text-xl text-atlas-700 leading-relaxed mb-6">
+            We founded this partnership because we saw a gap between the rising, modern reality
+            of Morocco and the American family&apos;s need for certainty, safety, and speed.
+          </p>
+          <p className="text-xl text-atlas-700 leading-relaxed">
+            We know that for you, moving isn&apos;t just about a change of scenery—it&apos;s about
+            maintaining a <strong>high-vibration lifestyle</strong> without the friction of &quot;starting over.&quot;
+          </p>
+        </div>
+      </section>
+
+      {/* Straight Talk Philosophy */}
+      <section className="py-20 bg-sand-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-atlas-900">
+              Our &quot;Straight Talk&quot; Philosophy
+            </h2>
+            <p className="mt-4 text-lg text-atlas-600">
+              We are Americans and local experts who have navigated the &quot;Modern Kingdom&quot; at the highest levels.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-sand-200">
+              <div className="w-14 h-14 bg-terracotta-100 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-terracotta-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-atlas-900 mb-3">Radical Transparency</h3>
+              <p className="text-atlas-600">
+                We tell you what the forums won&apos;t. If a neighborhood isn&apos;t right for your kids or a
+                document isn&apos;t up to federal standards, you&apos;ll hear it from us first.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-sand-200">
+              <div className="w-14 h-14 bg-olive-100 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-olive-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-atlas-900 mb-3">The &quot;Skip the Line&quot; Mindset</h3>
+              <p className="text-atlas-600">
+                Your time is your most valuable asset. We treat the Moroccan administration like a
+                high-speed rail—moving you through the &quot;red tape&quot; with Tier-1 consulting efficiency.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-sand-200">
+              <div className="w-14 h-14 bg-atlas-100 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-atlas-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-atlas-900 mb-3">High-Vibration Integration</h3>
+              <p className="text-atlas-600">
+                We don&apos;t just get you a residency card. We connect you to the elite infrastructure—
+                the American Schools, the private clinics, and the professional hubs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Role We Play */}
+      <section className="py-20 bg-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl font-bold tracking-tight text-atlas-900 sm:text-5xl">
-                We Made the Move. Now We Help Others.
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-atlas-700">
-                New Life Morocco was born from our own journey. After relocating from the US
-                and navigating the process ourselves, we knew we could help others make the
-                transition with confidence and ease.
+              <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+                The Role We Play
+              </span>
+              <h2 className="mt-2 text-3xl font-bold text-atlas-900 mb-6">
+                Your Boots on the Ground
+              </h2>
+              <p className="text-lg text-atlas-700 mb-4">
+                While you focus on your career, your children&apos;s transition, and your vision for 2030,
+                we are at the Prefecture, the Bank, and the Ministry.
+              </p>
+              <p className="text-lg text-atlas-700 mb-4">
+                We speak the language of the administration so you don&apos;t have to.
+              </p>
+              <p className="text-lg text-atlas-700">
+                <strong>We are the bridge between the US mindset and the Moroccan reality.</strong>
               </p>
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
@@ -30,154 +127,46 @@ export default function AboutPage() {
                 alt="Beautiful traditional Moroccan blue door"
                 fill
                 className="object-cover"
-                priority
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Our Story */}
-      <section className="section-padding bg-white">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[350px] rounded-2xl overflow-hidden shadow-lg">
-              <Image
-                src="/images/about-riad.jpg"
-                alt="Beautiful Moroccan riad courtyard"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold text-atlas-900 mb-6">
-                Our Story
-              </h2>
-              <div className="space-y-4 text-atlas-700">
-                <p>
-                  In 2019, we were living the typical American dream—good jobs, nice house,
-                  busy schedules. But something was missing. We craved adventure, connection,
-                  and a slower pace of life. After months of research, we took the leap and
-                  moved to Morocco.
-                </p>
-                <p>
-                  The transition wasn&apos;t always easy. Navigating visa requirements, finding
-                  housing, understanding local customs—we learned it all the hard way. But
-                  we also discovered something beautiful: a country full of warmth, opportunity,
-                  and a quality of life we never knew existed.
-                </p>
-                <p>
-                  Today, Morocco is our home. And we&apos;ve made it our mission to help other
-                  Americans experience the same transformation.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Team - Without Photos */}
-      <section className="section-padding bg-sand-50">
-        <div className="mx-auto max-w-7xl">
+      {/* Why Us Sidebar */}
+      <section className="py-20 bg-atlas-900">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-atlas-900 mb-4">
-              Our Team
-            </h2>
-            <p className="text-lg text-atlas-600 max-w-2xl mx-auto">
-              A blend of American expats and local Moroccan experts, united by a passion
-              for helping others discover life in Morocco.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
-              <div className="w-16 h-16 bg-terracotta-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-terracotta-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-atlas-900 mb-2">Expat Experience</h3>
-              <p className="text-atlas-600">
-                Our American team members have lived the expat journey themselves—from
-                the excitement of arrival to the challenges of settling in.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
-              <div className="w-16 h-16 bg-atlas-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-atlas-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-atlas-900 mb-2">Local Expertise</h3>
-              <p className="text-atlas-600">
-                Our Moroccan team members bring years of experience navigating local
-                bureaucracy, real estate, and cultural nuances.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
-              <div className="w-16 h-16 bg-olive-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-olive-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-atlas-900 mb-2">Bilingual Support</h3>
-              <p className="text-atlas-600">
-                We communicate fluently in English, French, and Arabic—ensuring nothing
-                gets lost in translation during your relocation.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section className="section-padding bg-white">
-        <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-atlas-900 mb-4">
-              What We Believe
+            <span className="text-terracotta-400 font-medium uppercase tracking-wide text-sm">
+              The Skip-the-Line Proof
+            </span>
+            <h2 className="mt-2 text-3xl font-bold text-white">
+              Why Us
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-terracotta-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-terracotta-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-atlas-900 mb-2">Honest Guidance</h3>
-              <p className="text-atlas-600">
-                Morocco isn&apos;t for everyone, and we&apos;ll tell you that upfront. Our job is to
-                help you make the right decision, not just any decision.
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-atlas-800/50 rounded-xl p-8 border border-atlas-700">
+              <h3 className="text-terracotta-400 font-bold text-lg mb-3">200+ Year Heritage</h3>
+              <p className="text-sand-200">
+                We leverage the deep-rooted friendship between the US and Morocco to ensure you are
+                seen as a &quot;Guest of the Kingdom,&quot; not just another file.
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-atlas-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-atlas-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-atlas-900 mb-2">Personal Touch</h3>
-              <p className="text-atlas-600">
-                Every client is unique. We take time to understand your situation and
-                provide guidance tailored to your specific needs and goals.
+            <div className="bg-atlas-800/50 rounded-xl p-8 border border-atlas-700">
+              <h3 className="text-olive-400 font-bold text-lg mb-3">Infrastructure Obsessed</h3>
+              <p className="text-sand-200">
+                We only operate in the hubs connected by the Al-Boraq and anchored by
+                Akdital/American Hospital standards.
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-olive-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-olive-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-atlas-900 mb-2">Long-term Support</h3>
-              <p className="text-atlas-600">
-                Our relationship doesn&apos;t end when you arrive. We&apos;re here to help you
-                settle in and thrive in your new Moroccan life.
+            <div className="bg-atlas-800/50 rounded-xl p-8 border border-atlas-700">
+              <h3 className="text-terracotta-400 font-bold text-lg mb-3">Total Sovereignty</h3>
+              <p className="text-sand-200">
+                We specialize in the &quot;Convertible&quot; financial strategies and &quot;Federal-Level&quot;
+                document vetting that most services overlook.
               </p>
             </div>
           </div>
@@ -224,22 +213,25 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="section-padding bg-atlas-800">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Ready to Start Your Journey?
-          </h2>
-          <p className="mt-4 text-lg text-sand-200">
-            Let&apos;s talk about your dreams for life in Morocco. Schedule a free
-            consultation and see if we&apos;re the right fit.
+      {/* The Closing Invitation */}
+      <section className="py-20 bg-white">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
+          <p className="text-xl text-atlas-700 leading-relaxed mb-8">
+            You are moving to a country that is hosting the world in 2030.
+            You are moving to a place that Madonna calls a sanctuary and where Brahim Diaz calls home.
+          </p>
+          <p className="text-2xl font-bold text-atlas-900">
+            You deserve a partner who can match that energy.
+          </p>
+          <p className="mt-2 text-xl text-terracotta-600 font-medium">
+            Let&apos;s get you to the front of the line.
           </p>
           <div className="mt-10">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-terracotta-500 text-white font-semibold rounded-lg hover:bg-terracotta-600 transition-colors duration-200 text-lg"
             >
-              Schedule Free Consultation
+              Request a Strategy Session
             </Link>
           </div>
         </div>

@@ -41,17 +41,19 @@ const defaultFooterData: FooterData = {
       number: 1,
       title: "Explore",
       links: [
+        { label: "Global Pulse", href: "/pulse" },
         { label: "Why Morocco", href: "/why-morocco" },
-        { label: "Visa Requirements", href: "/visa" },
-        { label: "Carte de Sejour", href: "/carte-de-sejour" },
+        { label: "Tangier", href: "/tangier" },
+        { label: "Infrastructure", href: "/infrastructure" },
       ],
     },
     {
       number: 2,
-      title: "Services",
+      title: "Get Started",
       links: [
+        { label: "Readiness Checklist", href: "/checklist" },
+        { label: "Free Roadmap", href: "/roadmap" },
         { label: "Our Services", href: "/services" },
-        { label: "About Us", href: "/about" },
         { label: "Contact", href: "/contact" },
       ],
     },
@@ -189,10 +191,13 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Brand Column */}
             <div className="col-span-1 md:col-span-2">
-              <h3 className="text-xl font-semibold text-white mb-4">New Life Morocco</h3>
-              <p className="text-sand-300 max-w-md mb-6">
-                Helping Americans discover the beauty and opportunity of life in Morocco.
-                Expert guidance for your relocation journey.
+              <h3 className="text-xl font-semibold text-white mb-2">New Life Morocco</h3>
+              <p className="text-terracotta-400 font-medium mb-4">
+                Morocco is no longer a secret. It&apos;s a strategy.
+              </p>
+              <p className="text-sand-300 max-w-md mb-6 text-sm">
+                The World Cup is coming. The high-speed rail is running. The elite are arriving.
+                You can navigate the transition alone, or you can join the front of the line.
               </p>
               <div className="flex items-center gap-4">
                 <a
