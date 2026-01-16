@@ -9,20 +9,23 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 py-16 lg:py-24 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
+              <span className="inline-block text-terracotta-600 font-medium text-sm tracking-wide uppercase mb-4">
+                6.5 Hours from NYC. Closer than Hawaii.
+              </span>
               <h1 className="text-4xl font-bold tracking-tight text-atlas-900 sm:text-5xl lg:text-6xl text-balance">
-                Begin Your New Chapter in Morocco
+                Skip Costa Rica. Discover Morocco.
               </h1>
               <p className="mt-6 text-lg leading-8 text-atlas-700">
-                Discover a land of rich culture, warm hospitality, and endless possibilities.
-                We guide Americans through every step of relocating to Morocco—from visa applications
-                to finding your perfect home.
+                While everyone else is paying US prices in &quot;Americanized&quot; expat spots, smart Americans are
+                finding 10x their purchasing power in Morocco. US-friendly time zones. $50 flights to Europe.
+                1,000 years of culture. This isn&apos;t a vacation destination—it&apos;s the lifestyle upgrade you&apos;ve been looking for.
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
                 <Link href="/contact" className="btn-primary text-center">
                   Schedule Free Consultation
                 </Link>
-                <Link href="/benefits" className="btn-secondary text-center">
-                  Why Morocco?
+                <Link href="/why-morocco" className="btn-secondary text-center">
+                  See the Comparison
                 </Link>
               </div>
             </div>

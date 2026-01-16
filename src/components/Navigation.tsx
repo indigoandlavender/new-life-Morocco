@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Why Morocco', href: '/benefits' },
+  { name: 'Why Morocco', href: '/why-morocco' },
   { name: 'Visa Requirements', href: '/visa' },
   { name: 'Carte de Séjour', href: '/carte-de-sejour' },
   { name: 'Our Services', href: '/services' },

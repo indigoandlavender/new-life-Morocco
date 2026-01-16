@@ -32,16 +32,16 @@ interface FooterData {
 const defaultFooterData: FooterData = {
   newsletter: {
     show: true,
-    title: "Your Free Morocco Relocation Guide",
-    description: "Everything you need to know about moving to Morocco - visa requirements, cost of living, and insider tips from expats who've made the move.",
-    ctaText: "Get Your Free Guide",
+    title: "Why Smart Expats Are Skipping Costa Rica",
+    description: "6.5 hours from NYC. US-friendly time zones. 10x your purchasing power. Before you commit to the usual expat spots, discover why Morocco is the ultimate lifestyle upgrade.",
+    ctaText: "Get the Free Guide",
   },
   columns: [
     {
       number: 1,
       title: "Explore",
       links: [
-        { label: "Why Morocco", href: "/benefits" },
+        { label: "Why Morocco", href: "/why-morocco" },
         { label: "Visa Requirements", href: "/visa" },
         { label: "Carte de Sejour", href: "/carte-de-sejour" },
       ],
