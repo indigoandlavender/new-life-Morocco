@@ -1,12 +1,68 @@
-import Link from 'next/link';
-import { Metadata } from 'next';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Why Morocco? | The Smart Expat Choice | New Life Morocco',
-  description: 'Why smart Americans are choosing Morocco over Costa Rica, Portugal, and Thailand. Discover the hidden gem that beats the usual expat spots on value, access, and lifestyle.',
-};
+import Link from 'next/link';
+import { useState } from 'react';
+
+const faqItems = [
+  {
+    category: 'The Sanctuary & Lifestyle',
+    questions: [
+      {
+        q: 'Is Morocco really "safer" than the U.S.?',
+        a: 'Safety is our clients\' #1 priority. While no country is perfect, Morocco\'s culture is built on communal vigilance and a deep-rooted law of hospitality (Chabel). You will find a level of "background peace" here—especially at night and in public spaces—that has become a luxury in many American cities.',
+      },
+      {
+        q: 'Can I maintain my "California" wellness routine?',
+        a: 'Absolutely. From the world-class surf and yoga culture in Taghazout to elite Pilates studios and farm-to-table Western cafes in Casablanca and Marrakech, you aren\'t sacrificing your lifestyle. You are simply upgrading the quality of the food and the frequency of the environment.',
+      },
+      {
+        q: 'What about the food quality?',
+        a: 'This is one of the most immediate "Life Upgrades." Morocco\'s food supply is largely seasonal and sun-ripened, lacking the heavy industrial chemical load, PFAS, and bio-engineered additives prevalent in Western supermarkets. Most of our clients report a physical "system reset" within their first month.',
+      },
+    ],
+  },
+  {
+    category: 'Infrastructure & Logistics',
+    questions: [
+      {
+        q: 'How is the healthcare, really?',
+        a: 'We focus on the Infrastructure Corridor. This gives you access to the American Hospital of Casablanca and the Akdital "Concierge" networks. These are private, US-standard facilities with world-class specialists and, crucially, zero wait times compared to the strained systems in the US or Canada.',
+      },
+      {
+        q: 'Will I be able to work remotely?',
+        a: 'Morocco is a digital hub. With a 5G backbone and widespread fiber-optic connectivity, your "virtual office" will run faster here than in many parts of North America. Plus, the time zone is highly advantageous for Atlantic-coast business.',
+      },
+      {
+        q: 'Is the 200 MPH train (TGV) accessible?',
+        a: 'Yes. The Al-Boraq high-speed rail connects Tangier, Rabat, and Casablanca in under 2 hours. It is cleaner, faster, and more reliable than any rail project currently operating in the United States.',
+      },
+    ],
+  },
+  {
+    category: 'The "Skip the Line" Process',
+    questions: [
+      {
+        q: 'Can I handle the residency process myself?',
+        a: 'Yes, you could. However, you will likely spend your first 90 days navigating a "Flagged Room" of bureaucracy, document legalization, and mistranslations. We offer a "Skip the Line" service because our clients value their time more than the "learning curve" of administrative friction.',
+      },
+      {
+        q: 'What is the "10-Point Readiness Audit"?',
+        a: 'It is our proprietary vetting process to ensure you don\'t board a plane with a "deal-breaker" mistake. Most Americans don\'t realize they have the wrong type of FBI check or an un-legalized lease until it\'s too late. We catch those errors in Phase I.',
+      },
+      {
+        q: 'Why don\'t you show your founders\' faces on the site?',
+        a: 'We are a private advocacy firm, not social media influencers. We prioritize discretion and institutional results. Our "faceless" approach reflects the level of privacy and security we provide for our high-net-worth and professional clients.',
+      },
+    ],
+  },
+];
 
 export default function WhyMoroccoPage() {
+  const [openItem, setOpenItem] = useState<string | null>(null);
+
+  const toggleItem = (id: string) => {
+    setOpenItem(openItem === id ? null : id);
+  };
   return (
     <>
       {/* Hero - The Hook */}
@@ -426,6 +482,84 @@ export default function WhyMoroccoPage() {
         </div>
       </section>
 
+      {/* Strategic FAQ */}
+      <section className="py-20 bg-white">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+              The Strategic FAQ
+            </span>
+            <h2 className="mt-2 text-3xl font-bold text-atlas-900 sm:text-4xl">
+              Your Sovereign Transition
+            </h2>
+            <p className="mt-4 text-lg text-atlas-600">
+              The questions serious relocators ask before they commit.
+            </p>
+          </div>
+
+          <div className="space-y-8">
+            {faqItems.map((category) => (
+              <div key={category.category}>
+                <h3 className="text-lg font-semibold text-terracotta-600 mb-4">
+                  {category.category}
+                </h3>
+                <div className="space-y-3">
+                  {category.questions.map((item, index) => {
+                    const itemId = `${category.category}-${index}`;
+                    const isOpen = openItem === itemId;
+                    return (
+                      <div
+                        key={itemId}
+                        className="bg-sand-50 rounded-xl overflow-hidden border border-sand-200"
+                      >
+                        <button
+                          onClick={() => toggleItem(itemId)}
+                          className="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-sand-100 transition-colors"
+                        >
+                          <span className="font-medium text-atlas-900">{item.q}</span>
+                          <svg
+                            className={`w-5 h-5 text-atlas-500 flex-shrink-0 transition-transform duration-200 ${
+                              isOpen ? 'rotate-180' : ''
+                            }`}
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </button>
+                        {isOpen && (
+                          <div className="px-6 pb-4">
+                            <p className="text-atlas-700 leading-relaxed">{item.a}</p>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* FAQ Closure */}
+          <div className="mt-12 bg-atlas-900 rounded-2xl p-8 text-center">
+            <p className="text-xl text-white font-medium mb-2">
+              Still have a question we didn&apos;t cover?
+            </p>
+            <p className="text-sand-300 mb-6">
+              The most important questions are the ones unique to your family&apos;s journey.
+              We reserve those deep dives for our Private Strategy Sessions.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-4 bg-terracotta-500 text-white font-semibold rounded-lg hover:bg-terracotta-600 transition-colors"
+            >
+              Request Your Strategic Roadmap
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 bg-gradient-to-br from-terracotta-600 to-terracotta-700">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
@@ -444,10 +578,10 @@ export default function WhyMoroccoPage() {
               Schedule Free Consultation
             </Link>
             <Link
-              href="/benefits"
+              href="/checklist"
               className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors duration-200 text-lg"
             >
-              Explore the Benefits
+              Take the Readiness Audit
             </Link>
           </div>
         </div>
