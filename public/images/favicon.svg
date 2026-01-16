@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#c75f3a"/>
+  <!-- Moroccan arch/door shape -->
+  <path d="M20 50 L20 28 Q20 16 32 16 Q44 16 44 28 L44 50 Z" fill="#faf9f6" stroke="#25364d" stroke-width="2"/>
+  <!-- Inner arch detail -->
+  <path d="M25 50 L25 30 Q25 22 32 22 Q39 22 39 30 L39 50 Z" fill="#c75f3a"/>
+  <!-- Star detail at top -->
+  <circle cx="32" cy="28" r="3" fill="#faf9f6"/>
+</svg>

@@ -1,27 +1,79 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-sand-50 to-white">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:py-32 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-atlas-900 sm:text-6xl text-balance">
-              Begin Your New Chapter in Morocco
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-atlas-700">
-              Discover a land of rich culture, warm hospitality, and endless possibilities.
-              We guide Americans through every step of relocating to Morocco—from visa applications
-              to finding your perfect home.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link href="/contact" className="btn-primary">
-                Schedule Free Consultation
-              </Link>
-              <Link href="/benefits" className="btn-secondary">
-                Why Morocco?
-              </Link>
+      <section className="relative bg-gradient-to-b from-sand-50 to-white overflow-hidden">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:py-24 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl font-bold tracking-tight text-atlas-900 sm:text-5xl lg:text-6xl text-balance">
+                Begin Your New Chapter in Morocco
+              </h1>
+              <p className="mt-6 text-lg leading-8 text-atlas-700">
+                Discover a land of rich culture, warm hospitality, and endless possibilities.
+                We guide Americans through every step of relocating to Morocco—from visa applications
+                to finding your perfect home.
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                <Link href="/contact" className="btn-primary text-center">
+                  Schedule Free Consultation
+                </Link>
+                <Link href="/benefits" className="btn-secondary text-center">
+                  Why Morocco?
+                </Link>
+              </div>
+            </div>
+            <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src="/images/hero-morocco.jpg"
+                alt="Beautiful Moroccan architecture with blue doors and vibrant tiles"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Lifestyle Gallery */}
+      <section className="py-12 bg-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="relative h-48 rounded-xl overflow-hidden">
+              <Image
+                src="/images/gallery-medina.jpg"
+                alt="Colorful Moroccan medina street"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative h-48 rounded-xl overflow-hidden">
+              <Image
+                src="/images/gallery-food.jpg"
+                alt="Traditional Moroccan tagine dish"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative h-48 rounded-xl overflow-hidden">
+              <Image
+                src="/images/gallery-beach.jpg"
+                alt="Beautiful Moroccan coastline"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative h-48 rounded-xl overflow-hidden">
+              <Image
+                src="/images/gallery-mountains.jpg"
+                alt="Atlas Mountains landscape"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
             </div>
           </div>
         </div>
@@ -122,8 +174,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Process Overview */}
+      {/* Testimonial/Story Section */}
       <section className="section-padding bg-sand-50">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/expat-couple.jpg"
+                alt="Happy American couple enjoying life in Morocco"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold text-atlas-900 mb-6">
+                &ldquo;Morocco gave us the life we always dreamed of&rdquo;
+              </h2>
+              <p className="text-atlas-700 text-lg mb-6">
+                After 30 years in corporate America, we were ready for something different.
+                Morocco offered us adventure, community, and a pace of life we never knew
+                was possible. The team at New Life Morocco made our transition seamless.
+              </p>
+              <p className="text-atlas-600">
+                — Sarah & Michael, moved from California in 2024
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Overview */}
+      <section className="section-padding bg-white">
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-atlas-900 sm:text-4xl">
@@ -178,9 +259,76 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Featured Locations */}
+      <section className="section-padding bg-sand-50">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-atlas-900 sm:text-4xl">
+              Popular Destinations
+            </h2>
+            <p className="mt-4 text-lg text-atlas-600 max-w-2xl mx-auto">
+              From bustling cities to peaceful coastal towns, find your perfect Moroccan home.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="group relative h-80 rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/marrakech.jpg"
+                alt="Marrakech cityscape with Koutoubia Mosque"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Marrakech</h3>
+                <p className="text-sand-200 text-sm">Vibrant culture, historic medina, warm climate</p>
+              </div>
+            </div>
+
+            <div className="group relative h-80 rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/casablanca.jpg"
+                alt="Modern Casablanca skyline"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Casablanca</h3>
+                <p className="text-sand-200 text-sm">Economic hub, modern amenities, coastal living</p>
+              </div>
+            </div>
+
+            <div className="group relative h-80 rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/essaouira.jpg"
+                alt="Essaouira coastal town"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Essaouira</h3>
+                <p className="text-sand-200 text-sm">Laid-back beach town, artistic community</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section className="section-padding bg-atlas-800">
-        <div className="mx-auto max-w-4xl text-center">
+      <section className="relative section-padding overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/cta-background.jpg"
+            alt="Beautiful Moroccan sunset"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-atlas-900/80" />
+        </div>
+        <div className="relative mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
             Ready to Explore Your Options?
           </h2>

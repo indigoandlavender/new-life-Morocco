@@ -8,6 +8,7 @@ const footerNavigation = {
   ],
   services: [
     { name: 'Our Services', href: '/services' },
+    { name: 'About Us', href: '/about' },
     { name: 'Free Consultation', href: '/contact' },
   ],
 };

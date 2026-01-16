@@ -19,6 +19,11 @@ export const metadata: Metadata = {
   title: "New Life Morocco | Relocation Consulting for Americans",
   description: "Expert guidance for Americans looking to relocate to Morocco. Learn about visa requirements, carte de séjour, cost of living, and more. Start your new life today.",
   keywords: "Morocco relocation, move to Morocco, American expats Morocco, Morocco visa, carte de séjour, Morocco consulting",
+  icons: {
+    icon: '/images/favicon.svg',
+    shortcut: '/images/favicon.svg',
+    apple: '/images/favicon.svg',
+  },
 };
 
 export default function RootLayout({

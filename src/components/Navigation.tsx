@@ -9,6 +9,7 @@ const navigation = [
   { name: 'Visa Requirements', href: '/visa' },
   { name: 'Carte de Séjour', href: '/carte-de-sejour' },
   { name: 'Our Services', href: '/services' },
+  { name: 'About Us', href: '/about' },
   { name: 'Contact', href: '/contact' },
 ];
 
