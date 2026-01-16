@@ -252,18 +252,84 @@ const infrastructureMarkers = [
       'Connected to TGV network for southern Morocco',
     ],
   },
+  // SANCTUARY - Residential Neighborhoods
+  {
+    id: 13,
+    name: 'Anfa / California District',
+    category: 'Sanctuary',
+    subcategory: 'Legacy Enclave',
+    coordinates: [-7.6650, 33.5720],
+    city: 'Casablanca',
+    problemSolved: 'Finding a neighborhood that mirrors Bel Air or Pacific Palisades—without the California tax burden.',
+    specs: {
+      toTGV: '12 min to Casa-Voyageurs',
+      toSchool: '8 min to CAS / 15 min to GWA',
+      connectivity: 'Fiber Optic (1 Gbps)',
+      asset: 'Titre Foncier Available',
+    },
+    details: [
+      'Art Deco villas from 1930s French Protectorate era',
+      'Gated compounds with private gardens and pools',
+      'Walking distance to Anfa Place Mall and corniche',
+      'Legacy expatriate community with 70+ year history',
+    ],
+  },
+  {
+    id: 14,
+    name: 'Hivernage District',
+    category: 'Sanctuary',
+    subcategory: 'Aesthetic Corridor',
+    coordinates: [-8.0180, 31.6180],
+    city: 'Marrakech',
+    problemSolved: 'Accessing high-vibe urban living with walkable luxury and immediate clinic proximity.',
+    specs: {
+      toTGV: '35 min to Marrakech Station',
+      toSchool: '20 min to ASM',
+      connectivity: 'Fiber Optic (500 Mbps)',
+      asset: 'Titre Foncier Available',
+    },
+    details: [
+      'Five-star hotel corridor: Royal Mansour, Mamounia adjacent',
+      'Pedestrian-friendly boulevards with mature jacaranda trees',
+      'Immediate access to Guest Clinic and CIM',
+      'Contemporary apartments and renovated riads',
+    ],
+  },
+  {
+    id: 15,
+    name: 'California District',
+    category: 'Sanctuary',
+    subcategory: 'Gateway Enclave',
+    coordinates: [-5.8050, 35.7850],
+    city: 'Tangier',
+    problemSolved: 'Securing Atlantic/Mediterranean views with European proximity and clean air corridors.',
+    specs: {
+      toTGV: '15 min to Tangier-Ville TGV',
+      toSchool: '10 min to AST',
+      connectivity: 'Fiber Optic (1 Gbps)',
+      asset: 'Titre Foncier Available',
+    },
+    details: [
+      'Panoramic views of Strait of Gibraltar and Spanish coast',
+      'Mediterranean microclimate: 300+ days of sunshine',
+      'Modern villas built 2015-2024 with smart home integration',
+      'Spain visible on clear days—35 min ferry to Tarifa',
+    ],
+  },
 ];
 
 const categoryConfig: Record<string, { color: string; label: string; icon: string }> = {
   Healthcare: { color: 'bg-terracotta-500', label: 'Healthcare', icon: 'H' },
   Education: { color: 'bg-olive-500', label: 'Education', icon: 'E' },
   Mobility: { color: 'bg-atlas-600', label: 'Mobility', icon: 'M' },
+  Sanctuary: { color: 'bg-amber-500', label: 'Sanctuary', icon: 'S' },
 };
 
 const markerColors: Record<string, string> = {
   Healthcare: 'rgb(198, 93, 71)',
   Education: 'rgb(138, 154, 91)',
   Mobility: 'rgb(51, 65, 85)',
+  Sanctuary: 'rgb(217, 158, 58)',
 };
 
 export default function HealthcareMap() {
@@ -272,7 +338,8 @@ export default function HealthcareMap() {
   const markersRef = useRef<mapboxgl.Marker[]>([]);
   const [selectedFacility, setSelectedFacility] = useState<typeof infrastructureMarkers[0] | null>(null);
   const [mapLoaded, setMapLoaded] = useState(false);
-  const [activeCategories, setActiveCategories] = useState<Set<string>>(new Set(['Healthcare', 'Education', 'Mobility']));
+  const [activeCategories, setActiveCategories] = useState<Set<string>>(new Set(['Healthcare', 'Education', 'Mobility', 'Sanctuary']));
+  const [showAdvisory, setShowAdvisory] = useState(false);
 
   const toggleCategory = (category: string) => {
     setActiveCategories(prev => {
@@ -335,6 +402,7 @@ export default function HealthcareMap() {
 
         el.addEventListener('click', () => {
           setSelectedFacility(facility);
+          setShowAdvisory(false);
           map.current?.flyTo({
             center: facility.coordinates as [number, number],
             zoom: 12,
@@ -352,6 +420,7 @@ export default function HealthcareMap() {
 
   const handleFacilityClick = (facility: typeof infrastructureMarkers[0]) => {
     setSelectedFacility(facility);
+    setShowAdvisory(false);
     map.current?.flyTo({
       center: facility.coordinates as [number, number],
       zoom: 12,
@@ -361,6 +430,7 @@ export default function HealthcareMap() {
 
   const resetView = () => {
     setSelectedFacility(null);
+    setShowAdvisory(false);
     map.current?.flyTo({
       center: [-7.0, 33.0],
       zoom: 5.8,
@@ -404,7 +474,7 @@ export default function HealthcareMap() {
               <div className="text-sand-300">Loading infrastructure map...</div>
             </div>
           )}
-          {selectedFacility && (
+          {(selectedFacility || showAdvisory) && (
             <button
               onClick={resetView}
               className="absolute top-4 left-4 bg-white/90 text-atlas-900 px-3 py-1.5 rounded-lg text-sm font-medium hover:bg-white transition-colors"
@@ -427,7 +497,60 @@ export default function HealthcareMap() {
 
         {/* Sidebar */}
         <div className="p-6 lg:p-8 bg-atlas-800 max-h-[600px] overflow-y-auto">
-          {selectedFacility ? (
+          {showAdvisory ? (
+            // Legal Architecture Advisory
+            <div className="animate-fade-in">
+              <span className="inline-block px-2 py-1 bg-amber-500 text-white text-xs font-medium rounded mb-3">
+                Asset Security Advisory
+              </span>
+              <h3 className="text-xl font-bold text-white mb-4">The Legal Architecture of Asset Security</h3>
+
+              <div className="space-y-5">
+                <div>
+                  <h4 className="text-terracotta-400 font-semibold text-sm mb-2">Title Deeds (Titres Fonciers)</h4>
+                  <p className="text-sand-300 text-sm">
+                    Morocco operates a dual property system. <strong className="text-white">Titre Foncier</strong> provides
+                    French-style registered ownership with full legal protection. <strong className="text-amber-400">Melkia</strong>
+                    (traditional title) carries significant risk—disputed boundaries, inheritance claims, and no centralized registry.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-terracotta-400 font-semibold text-sm mb-2">Convertible Dirham Accounts</h4>
+                  <p className="text-sand-300 text-sm">
+                    Foreign residents can open <strong className="text-white">Comptes en Dirhams Convertibles</strong>—allowing
+                    repatriation of funds, rental income, and sale proceeds back to USD/EUR. Without this structure, your
+                    capital is effectively trapped in local currency.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-terracotta-400 font-semibold text-sm mb-2">The Melkia Risk</h4>
+                  <p className="text-sand-300 text-sm">
+                    Approximately 30% of Moroccan properties remain under Melkia. Buyers who skip due diligence
+                    discover—too late—that multiple family members claim ownership, or that the property sits on
+                    disputed agricultural land. <strong className="text-amber-400">This is the single largest source of
+                    expatriate real estate disputes.</strong>
+                  </p>
+                </div>
+
+                <div className="bg-atlas-700/50 rounded-lg p-4 border border-amber-500/30">
+                  <h4 className="text-white font-semibold text-sm mb-2">The Bottleneck</h4>
+                  <p className="text-sand-300 text-sm">
+                    The neighborhoods on this map represent the life you want. But without Human Advocacy—a partner
+                    who navigates notaires, the Conservation Foncière, and bank compliance—you are one signature
+                    away from a legal quagmire. The door is locked without a partner.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-atlas-700">
+                <p className="text-xs text-sand-500">
+                  We do not sell real estate. We provide the advocacy infrastructure to ensure your acquisition is bulletproof.
+                </p>
+              </div>
+            </div>
+          ) : selectedFacility ? (
             <div className="animate-fade-in">
               {/* Category Badge */}
               <span className={`inline-block px-2 py-1 ${categoryConfig[selectedFacility.category].color} text-white text-xs font-medium rounded mb-3`}>
@@ -457,7 +580,9 @@ export default function HealthcareMap() {
 
               {/* Details */}
               <div className="mb-5">
-                <span className="text-xs text-sand-500 uppercase tracking-wide font-medium block mb-2">Institutional Access</span>
+                <span className="text-xs text-sand-500 uppercase tracking-wide font-medium block mb-2">
+                  {selectedFacility.category === 'Sanctuary' ? 'Neighborhood Profile' : 'Institutional Access'}
+                </span>
                 <ul className="space-y-2">
                   {selectedFacility.details.map((detail, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm">
@@ -470,6 +595,22 @@ export default function HealthcareMap() {
                 </ul>
               </div>
 
+              {/* Sanctuary-specific advisory link */}
+              {selectedFacility.category === 'Sanctuary' && (
+                <button
+                  onClick={() => setShowAdvisory(true)}
+                  className="w-full text-left p-3 bg-amber-500/10 border border-amber-500/30 rounded-lg hover:bg-amber-500/20 transition-colors mb-4"
+                >
+                  <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    <span className="text-amber-400 text-sm font-medium">View Asset Security Advisory</span>
+                  </div>
+                  <p className="text-sand-400 text-xs mt-1">Title deeds, currency, and Melkia risks</p>
+                </button>
+              )}
+
               <div className="pt-4 border-t border-atlas-700">
                 <p className="text-xs text-sand-500">
                   Human Advocacy: We coordinate directly with administration.
@@ -480,7 +621,8 @@ export default function HealthcareMap() {
             <div>
               <h3 className="text-lg font-bold text-white mb-2">Sovereign Infrastructure Corridor</h3>
               <p className="text-sand-400 text-sm mb-4">
-                Tangier to Marrakech: The complete ecosystem for Americans. Healthcare, education, and mobility—all US-standard or better.
+                Tangier to Marrakech: The complete ecosystem for Americans. Healthcare, education, mobility,
+                and sanctuary neighborhoods—all mapped.
               </p>
 
               <div className="space-y-3 mb-6">
@@ -488,25 +630,45 @@ export default function HealthcareMap() {
                   <div className="w-5 h-5 bg-terracotta-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-white text-xs font-bold">H</span>
                   </div>
-                  <span className="text-sand-300 text-sm">Healthcare: Emergency, aesthetic, specialist care</span>
+                  <span className="text-sand-300 text-sm">Healthcare: Emergency, aesthetic, specialist</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-5 h-5 bg-olive-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-white text-xs font-bold">E</span>
                   </div>
-                  <span className="text-sand-300 text-sm">Education: NEASC/IB accredited American schools</span>
+                  <span className="text-sand-300 text-sm">Education: NEASC/IB American schools</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-5 h-5 bg-atlas-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-white text-xs font-bold">M</span>
                   </div>
-                  <span className="text-sand-300 text-sm">Mobility: TGV rail + 7h to NYC direct flights</span>
+                  <span className="text-sand-300 text-sm">Mobility: TGV rail + direct NYC flights</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-white text-xs font-bold">S</span>
+                  </div>
+                  <span className="text-sand-300 text-sm">Sanctuary: Prime residential enclaves</span>
                 </div>
               </div>
 
+              {/* Advisory Quick Link */}
+              <button
+                onClick={() => setShowAdvisory(true)}
+                className="w-full text-left p-3 bg-amber-500/10 border border-amber-500/30 rounded-lg hover:bg-amber-500/20 transition-colors mb-4"
+              >
+                <div className="flex items-center gap-2">
+                  <svg className="w-4 h-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
+                  <span className="text-amber-400 text-sm font-medium">Asset Security Advisory</span>
+                </div>
+                <p className="text-sand-400 text-xs mt-1">Title deeds, currency, and Melkia risks</p>
+              </button>
+
               <p className="text-xs text-sand-500 mb-4">Select a marker or click below:</p>
 
-              <div className="space-y-2 max-h-[280px] overflow-y-auto">
+              <div className="space-y-2 max-h-[200px] overflow-y-auto">
                 {filteredMarkers.map((facility) => (
                   <button
                     key={facility.id}
@@ -550,14 +712,14 @@ export default function HealthcareMap() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <p className="text-sand-300 text-sm">
-              Your healthcare, your children&apos;s education, your global connectivity—all proven infrastructure.
+              The neighborhoods are mapped. The infrastructure is proven. The legal architecture requires a partner.
             </p>
           </div>
           <Link
             href="/contact"
             className="inline-flex items-center justify-center px-6 py-3 bg-terracotta-500 text-white font-semibold rounded-lg hover:bg-terracotta-600 transition-colors whitespace-nowrap"
           >
-            Fast-Track Your Global Pivot
+            Request Your Asset Strategy Session
           </Link>
         </div>
       </div>
