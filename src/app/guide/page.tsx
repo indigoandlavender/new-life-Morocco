@@ -302,23 +302,23 @@ export default function GuidePage() {
           {/* CTA */}
           <section className="text-center">
             <h2 className="text-2xl font-bold text-atlas-900 mb-4">
-              Ready to Learn More?
+              Ready to Begin Your Assessment?
             </h2>
             <p className="text-atlas-600 mb-8">
-              This is just Chapter 1. Get the full guide and see if Morocco is right for you.
+              This is just Chapter 1. Take the Readiness Audit and see where you stand.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/contact"
+                href="/checklist"
                 className="btn-primary text-center"
               >
-                Schedule Free Consultation
+                Take the Readiness Audit
               </Link>
               <Link
-                href="/why-morocco"
+                href="/contact"
                 className="btn-secondary text-center"
               >
-                See the Full Comparison
+                Request Your Strategic Roadmap
               </Link>
             </div>
           </section>

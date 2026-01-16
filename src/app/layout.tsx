@@ -16,9 +16,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "New Life Morocco | Relocation Consulting for Americans",
-  description: "Expert guidance for Americans looking to relocate to Morocco. Learn about visa requirements, carte de séjour, cost of living, and more. Start your new life today.",
-  keywords: "Morocco relocation, move to Morocco, American expats Morocco, Morocco visa, carte de séjour, Morocco consulting",
+  title: "New Life Morocco | Strategic Relocation Advocacy for Americans",
+  description: "Private advocacy firm for high-achieving Americans relocating to Morocco. Skip-the-line residency services, infrastructure intelligence, and sovereign transition strategy.",
+  keywords: "Morocco relocation, American expats Morocco, Morocco residency, Morocco consulting, expat advocacy, sovereign transition",
   icons: {
     icon: '/images/favicon.svg',
     shortcut: '/images/favicon.svg',

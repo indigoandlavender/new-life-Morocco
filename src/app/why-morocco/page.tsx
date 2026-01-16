@@ -100,13 +100,13 @@ export default function WhyMoroccoPage() {
             </div>
             <div className="p-6">
               <div className="text-4xl font-bold text-terracotta-600 mb-2">10x</div>
-              <div className="text-atlas-600 text-sm">Purchasing power</div>
-              <div className="text-atlas-400 text-xs mt-1">vs. US cost of living</div>
+              <div className="text-atlas-600 text-sm">Lifestyle multiplier</div>
+              <div className="text-atlas-400 text-xs mt-1">Same income, sovereign life</div>
             </div>
             <div className="p-6">
               <div className="text-4xl font-bold text-terracotta-600 mb-2">2h</div>
               <div className="text-atlas-600 text-sm">To Paris or Madrid</div>
-              <div className="text-atlas-400 text-xs mt-1">$50 budget flights</div>
+              <div className="text-atlas-400 text-xs mt-1">Europe in your backyard</div>
             </div>
           </div>
         </div>
@@ -263,80 +263,72 @@ export default function WhyMoroccoPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-                Better Than Costa Rica
+                The Purchasing Power Upgrade
               </span>
               <h2 className="mt-2 text-3xl font-bold text-atlas-900 sm:text-4xl">
-                The Luxury Arbitrage
+                The Sovereign Lifestyle Unlock
               </h2>
               <div className="mt-6 space-y-4 text-atlas-700">
                 <p>
-                  Costa Rica has become &quot;Americanized&quot; and expensive. A nice villa in Nosara
-                  or Escazu costs nearly US prices. The &quot;Pura Vida&quot; lifestyle now comes with
-                  Silicon Valley rent.
+                  Costa Rica has become &quot;Americanized&quot; and overrun. A villa in Nosara now
+                  commands Silicon Valley prices. The &quot;Pura Vida&quot; promise has been priced
+                  out of reach for most families.
                 </p>
                 <p>
-                  Morocco offers something Costa Rica can&apos;t: <strong>true luxury arbitrage</strong>.
+                  Morocco offers something different: <strong>true lifestyle sovereignty</strong>.
                 </p>
                 <p className="text-lg font-medium text-atlas-900">
-                  For the price of a 1-bedroom apartment in San Jose (CR), you can live in a
-                  palatial Riad with a courtyard, fountain, and rooftop terrace.
+                  For what a cramped apartment costs in Austin or Denver, you live in a palatial
+                  Riad with a courtyard, fountain, and rooftop terrace overlooking the Atlas.
                 </p>
                 <p>
-                  Labor is affordable. Having a private chef or a housekeeper isn&apos;t a 1% luxury
-                  in Morocco—it&apos;s a standard middle-class reality. Your dollars stretch 10x further,
-                  and you live like royalty.
+                  Private household staff, organic farm-to-table meals, and concierge healthcare
+                  aren&apos;t 1% luxuries here—they&apos;re the standard for families who made the move.
+                  Your purchasing power multiplies. Your quality of life transforms.
                 </p>
               </div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-lg font-semibold text-atlas-900 mb-4">Monthly Cost Comparison</h3>
+              <h3 className="text-lg font-semibold text-atlas-900 mb-2">The Sovereign Lifestyle Standard</h3>
+              <p className="text-sm text-atlas-600 mb-6">What becomes accessible when your dollars work 10x harder</p>
               <div className="space-y-6">
-                <div>
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-atlas-700">Beautiful 2BR Home</span>
+                <div className="flex items-center gap-4 p-4 bg-olive-50 rounded-xl">
+                  <div className="w-12 h-12 bg-olive-100 rounded-full flex items-center justify-center">
+                    <svg className="w-6 h-6 text-olive-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="flex-1">
-                      <div className="text-sm text-atlas-500 mb-1">Morocco</div>
-                      <div className="text-xl font-bold text-olive-600">$500-800</div>
-                    </div>
-                    <div className="flex-1">
-                      <div className="text-sm text-atlas-500 mb-1">Costa Rica</div>
-                      <div className="text-xl font-bold text-atlas-400">$1,500-2,500</div>
-                    </div>
+                  <div>
+                    <div className="font-semibold text-atlas-900">Courtyard Riad or Modern Villa</div>
+                    <div className="text-sm text-atlas-600">With rooftop terrace and private garden</div>
                   </div>
                 </div>
-                <div className="border-t border-sand-200 pt-6">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-atlas-700">Private Chef (per month)</span>
+                <div className="flex items-center gap-4 p-4 bg-olive-50 rounded-xl">
+                  <div className="w-12 h-12 bg-olive-100 rounded-full flex items-center justify-center">
+                    <svg className="w-6 h-6 text-olive-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
+                    </svg>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="flex-1">
-                      <div className="text-sm text-atlas-500 mb-1">Morocco</div>
-                      <div className="text-xl font-bold text-olive-600">$300-500</div>
-                    </div>
-                    <div className="flex-1">
-                      <div className="text-sm text-atlas-500 mb-1">Costa Rica</div>
-                      <div className="text-xl font-bold text-atlas-400">$1,500+</div>
-                    </div>
+                  <div>
+                    <div className="font-semibold text-atlas-900">Private Household Chef</div>
+                    <div className="text-sm text-atlas-600">Organic, farm-to-table meals daily</div>
                   </div>
                 </div>
-                <div className="border-t border-sand-200 pt-6">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-atlas-700">Housekeeper (weekly)</span>
+                <div className="flex items-center gap-4 p-4 bg-olive-50 rounded-xl">
+                  <div className="w-12 h-12 bg-olive-100 rounded-full flex items-center justify-center">
+                    <svg className="w-6 h-6 text-olive-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="flex-1">
-                      <div className="text-sm text-atlas-500 mb-1">Morocco</div>
-                      <div className="text-xl font-bold text-olive-600">$100-150</div>
-                    </div>
-                    <div className="flex-1">
-                      <div className="text-sm text-atlas-500 mb-1">Costa Rica</div>
-                      <div className="text-xl font-bold text-atlas-400">$400-600</div>
-                    </div>
+                  <div>
+                    <div className="font-semibold text-atlas-900">Full-Time Household Staff</div>
+                    <div className="text-sm text-atlas-600">Not a luxury—the middle-class standard</div>
                   </div>
                 </div>
               </div>
+              <p className="mt-6 text-sm text-atlas-500 italic text-center">
+                This isn&apos;t &quot;cheap living.&quot; This is the lifestyle that $250K buys in the US—unlocked at a fraction.
+              </p>
             </div>
           </div>
         </div>
@@ -448,11 +440,11 @@ export default function WhyMoroccoPage() {
                     <td className="px-6 py-4 text-center text-atlas-600">Good</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 font-medium text-atlas-900">Cost of Living</td>
-                    <td className="px-6 py-4 text-center text-olive-600 font-semibold">Very Low</td>
-                    <td className="px-6 py-4 text-center text-atlas-400">High</td>
-                    <td className="px-6 py-4 text-center text-olive-600">Low</td>
-                    <td className="px-6 py-4 text-center text-atlas-600">Medium</td>
+                    <td className="px-6 py-4 font-medium text-atlas-900">Purchasing Power</td>
+                    <td className="px-6 py-4 text-center text-olive-600 font-semibold">10x Multiplier</td>
+                    <td className="px-6 py-4 text-center text-atlas-400">1.5x</td>
+                    <td className="px-6 py-4 text-center text-olive-600">5x</td>
+                    <td className="px-6 py-4 text-center text-atlas-600">2x</td>
                   </tr>
                   <tr className="bg-sand-50">
                     <td className="px-6 py-4 font-medium text-atlas-900">Europe Access</td>
@@ -575,7 +567,7 @@ export default function WhyMoroccoPage() {
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-terracotta-600 font-semibold rounded-lg hover:bg-sand-100 transition-colors duration-200 text-lg"
             >
-              Schedule Free Consultation
+              Request Your Strategic Roadmap
             </Link>
             <Link
               href="/checklist"

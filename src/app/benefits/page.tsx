@@ -2,366 +2,356 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Why Move to Morocco | Benefits of Living in Morocco',
-  description: 'Discover the benefits of living in Morocco: affordable cost of living, beautiful climate, rich culture, modern healthcare, and welcoming communities.',
+  title: 'The Return on Life | Why Morocco | New Life Morocco',
+  description: 'Beyond cost arbitrage: biological integrity, sanctuary frequency, and sovereign lifestyle. Why high-achieving Americans are choosing Morocco for the ultimate life upgrade.',
 };
 
 export default function BenefitsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-sand-50 to-white py-20">
+      <section className="bg-gradient-to-b from-atlas-900 to-atlas-800 py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-atlas-900 sm:text-5xl">
-              Why Morocco?
+            <span className="text-terracotta-400 font-medium tracking-wide uppercase text-sm">
+              Beyond the Numbers
+            </span>
+            <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+              The Return on Life
             </h1>
-            <p className="mt-6 text-lg leading-8 text-atlas-700">
-              From its stunning landscapes to its affordable lifestyle, Morocco offers
-              a unique combination of benefits that make it an ideal destination for
-              Americans seeking a fresh start.
+            <p className="mt-6 text-xl text-sand-200 leading-relaxed">
+              This isn&apos;t about &quot;cheap living.&quot; It&apos;s about reclaiming the lifestyle
+              that used to be the American Dream—and finding it preserved in the Kingdom.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Cost of Living */}
-      <section className="section-padding bg-white">
-        <div className="mx-auto max-w-7xl">
+      {/* The Sovereign Lifestyle */}
+      <section className="py-20 bg-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-atlas-900 mb-6">
-                Affordable Cost of Living
+              <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+                The Purchasing Power Upgrade
+              </span>
+              <h2 className="mt-2 text-3xl font-bold text-atlas-900 mb-6">
+                The Sovereign Lifestyle Standard
               </h2>
               <p className="text-atlas-700 mb-4">
-                Your money goes significantly further in Morocco. Many expats find they can
-                live comfortably on 30-50% of what they would spend in the United States.
+                In the US, private household staff, organic farm-to-table meals, and concierge
+                healthcare are 1% luxuries. In Morocco, they&apos;re the standard for families
+                who&apos;ve made the move.
               </p>
-              <div className="space-y-4 mt-8">
+              <p className="text-atlas-700 mb-6">
+                Your purchasing power doesn&apos;t just stretch here—it <strong>multiplies</strong>.
+                The lifestyle that costs $250K in Austin or Denver? Unlocked at a fraction.
+              </p>
+              <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-olive-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-4 h-4 text-olive-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  <div className="w-10 h-10 bg-olive-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-olive-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-atlas-900">Housing</h4>
-                    <p className="text-atlas-600">Modern apartments in major cities from $400-800/month; beautiful riads available for purchase</p>
+                    <h4 className="font-semibold text-atlas-900">Courtyard Riad or Modern Villa</h4>
+                    <p className="text-atlas-600 text-sm">With rooftop terrace and private garden—not a cramped apartment</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-olive-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-4 h-4 text-olive-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  <div className="w-10 h-10 bg-olive-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-olive-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-atlas-900">Dining</h4>
-                    <p className="text-atlas-600">Delicious local meals from $3-5; fresh produce from souks at a fraction of US prices</p>
+                    <h4 className="font-semibold text-atlas-900">Private Household Staff</h4>
+                    <p className="text-atlas-600 text-sm">Not a luxury—the middle-class standard for relocating families</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-olive-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-4 h-4 text-olive-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  <div className="w-10 h-10 bg-olive-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-olive-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-atlas-900">Healthcare</h4>
-                    <p className="text-atlas-600">Quality private healthcare at 70-80% less than US costs; excellent dental and medical care</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-olive-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-4 h-4 text-olive-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-atlas-900">Services</h4>
-                    <p className="text-atlas-600">Domestic help, transportation, and personal services at very accessible rates</p>
+                    <h4 className="font-semibold text-atlas-900">Concierge Healthcare</h4>
+                    <p className="text-atlas-600 text-sm">American Hospital networks, same-day appointments, zero wait times</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="bg-sand-100 rounded-2xl p-8">
-              <h3 className="text-xl font-semibold text-atlas-900 mb-6">Monthly Cost Comparison</h3>
+            <div className="bg-atlas-900 rounded-2xl p-8 text-white">
+              <h3 className="text-xl font-semibold mb-6">The 10x Lifestyle Multiplier</h3>
+              <p className="text-sand-300 mb-6">
+                The same income that keeps you &quot;comfortable&quot; in the US unlocks a
+                fundamentally different quality of life in Morocco.
+              </p>
               <div className="space-y-4">
-                <div className="flex justify-between items-center pb-3 border-b border-sand-300">
-                  <span className="text-atlas-700">Expense</span>
-                  <div className="flex gap-8">
-                    <span className="text-atlas-700 font-medium w-20 text-right">USA</span>
-                    <span className="text-atlas-700 font-medium w-20 text-right">Morocco</span>
-                  </div>
+                <div className="flex items-center justify-between py-3 border-b border-atlas-700">
+                  <span className="text-sand-200">Organic, chemical-free food</span>
+                  <span className="text-olive-400 font-semibold">Standard</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-atlas-600">Rent (2BR apartment)</span>
-                  <div className="flex gap-8">
-                    <span className="text-atlas-700 w-20 text-right">$2,000</span>
-                    <span className="text-terracotta-600 font-medium w-20 text-right">$600</span>
-                  </div>
+                <div className="flex items-center justify-between py-3 border-b border-atlas-700">
+                  <span className="text-sand-200">Private household chef</span>
+                  <span className="text-olive-400 font-semibold">Accessible</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-atlas-600">Groceries</span>
-                  <div className="flex gap-8">
-                    <span className="text-atlas-700 w-20 text-right">$600</span>
-                    <span className="text-terracotta-600 font-medium w-20 text-right">$200</span>
-                  </div>
+                <div className="flex items-center justify-between py-3 border-b border-atlas-700">
+                  <span className="text-sand-200">Same-day specialist appointments</span>
+                  <span className="text-olive-400 font-semibold">Normal</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-atlas-600">Dining out (8x)</span>
-                  <div className="flex gap-8">
-                    <span className="text-atlas-700 w-20 text-right">$400</span>
-                    <span className="text-terracotta-600 font-medium w-20 text-right">$80</span>
-                  </div>
+                <div className="flex items-center justify-between py-3 border-b border-atlas-700">
+                  <span className="text-sand-200">Villa with rooftop terrace</span>
+                  <span className="text-olive-400 font-semibold">Expected</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-atlas-600">Transportation</span>
-                  <div className="flex gap-8">
-                    <span className="text-atlas-700 w-20 text-right">$300</span>
-                    <span className="text-terracotta-600 font-medium w-20 text-right">$50</span>
-                  </div>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-atlas-600">Healthcare</span>
-                  <div className="flex gap-8">
-                    <span className="text-atlas-700 w-20 text-right">$500</span>
-                    <span className="text-terracotta-600 font-medium w-20 text-right">$100</span>
-                  </div>
-                </div>
-                <div className="flex justify-between items-center pt-3 border-t border-sand-300">
-                  <span className="text-atlas-900 font-semibold">Total</span>
-                  <div className="flex gap-8">
-                    <span className="text-atlas-900 font-semibold w-20 text-right">$3,800</span>
-                    <span className="text-terracotta-600 font-bold w-20 text-right">$1,030</span>
-                  </div>
+                <div className="flex items-center justify-between py-3">
+                  <span className="text-sand-200">Weekly housekeeping service</span>
+                  <span className="text-olive-400 font-semibold">Baseline</span>
                 </div>
               </div>
-              <p className="text-sm text-atlas-500 mt-4">*Estimates based on major city living. Actual costs vary by location.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Climate */}
-      <section className="section-padding bg-sand-50">
-        <div className="mx-auto max-w-7xl">
+      {/* Biological Integrity */}
+      <section className="py-20 bg-sand-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
+            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+              The System Reset
+            </span>
             <h2 className="text-3xl font-bold text-atlas-900 mb-4">
-              A Climate for Every Preference
+              Biological Integrity
             </h2>
             <p className="text-lg text-atlas-600 max-w-2xl mx-auto">
-              Morocco&apos;s diverse geography means you can choose your ideal climate,
-              from Mediterranean beaches to mountain retreats.
+              Most of our clients report a physical &quot;system reset&quot; within their first month.
+              The reason is simple: Morocco&apos;s food supply hasn&apos;t been industrialized.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="card text-center">
-              <div className="w-16 h-16 bg-atlas-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-atlas-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-sand-200">
+              <div className="w-14 h-14 bg-olive-100 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-olive-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-atlas-900 mb-2">Coastal Cities</h3>
-              <p className="text-atlas-600 mb-4">
-                Casablanca, Tangier, Essaouira
-              </p>
-              <p className="text-atlas-600 text-sm">
-                Mediterranean climate with mild winters (50-60°F) and warm summers (75-85°F).
-                Ocean breezes keep temperatures comfortable year-round.
+              <h3 className="text-xl font-semibold text-atlas-900 mb-3">Sun-Ripened & Seasonal</h3>
+              <p className="text-atlas-600">
+                Produce is grown in actual sunlight, harvested in season, and sold within days.
+                No 6-month cold storage. No artificial ripening chambers.
               </p>
             </div>
 
-            <div className="card text-center">
-              <div className="w-16 h-16 bg-terracotta-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-terracotta-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-sand-200">
+              <div className="w-14 h-14 bg-olive-100 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-olive-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-atlas-900 mb-2">Imperial Cities</h3>
-              <p className="text-atlas-600 mb-4">
-                Marrakech, Fez, Meknes
-              </p>
-              <p className="text-atlas-600 text-sm">
-                Semi-arid climate with hot summers (90-100°F) and mild winters (45-65°F).
-                Perfect for those who love warm, sunny days.
+              <h3 className="text-xl font-semibold text-atlas-900 mb-3">Chemical-Free Standard</h3>
+              <p className="text-atlas-600">
+                No PFAS. No bio-engineered additives. No industrial chemical load. The food
+                supply here hasn&apos;t been &quot;optimized&quot; for shelf life over nutrition.
               </p>
             </div>
 
-            <div className="card text-center">
-              <div className="w-16 h-16 bg-olive-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-olive-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-sand-200">
+              <div className="w-14 h-14 bg-olive-100 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-olive-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-atlas-900 mb-2">Mountain Regions</h3>
-              <p className="text-atlas-600 mb-4">
-                Ifrane, Chefchaouen, Atlas Mountains
-              </p>
-              <p className="text-atlas-600 text-sm">
-                Alpine climate with cool summers (65-80°F) and snowy winters.
-                Popular with those seeking a European-style climate.
+              <h3 className="text-xl font-semibold text-atlas-900 mb-3">The Physical Reset</h3>
+              <p className="text-atlas-600">
+                Clients report clearer skin, better sleep, improved digestion, and sustained
+                energy—simply from eating real food grown in real soil.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Culture & Safety */}
-      <section className="section-padding bg-white">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl font-bold text-atlas-900 mb-6">
-                Rich Culture & Heritage
-              </h2>
-              <p className="text-atlas-700 mb-6">
-                Morocco sits at the crossroads of Africa, Europe, and the Arab world,
-                creating a uniquely diverse cultural experience. From ancient medinas
-                to modern galleries, you&apos;ll never run out of things to explore.
-              </p>
-              <ul className="space-y-3 text-atlas-600">
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 bg-terracotta-500 rounded-full"></span>
-                  World-renowned cuisine blending Berber, Arab, and Mediterranean influences
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 bg-terracotta-500 rounded-full"></span>
-                  UNESCO World Heritage sites including ancient medinas
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 bg-terracotta-500 rounded-full"></span>
-                  Vibrant arts scene with traditional crafts and modern galleries
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 bg-terracotta-500 rounded-full"></span>
-                  Year-round festivals celebrating music, film, and culture
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 bg-terracotta-500 rounded-full"></span>
-                  French and English widely spoken alongside Arabic and Berber
-                </li>
-              </ul>
+      {/* Sanctuary Frequency */}
+      <section className="py-20 bg-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 bg-sand-50 rounded-2xl p-8">
+              <h3 className="text-lg font-semibold text-atlas-900 mb-6">The Sanctuary Contrast</h3>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-terracotta-600 font-medium mb-2">US Systemic Friction</h4>
+                  <ul className="space-y-2 text-sm text-atlas-600">
+                    <li className="flex items-start gap-2">
+                      <span className="text-terracotta-400 mt-1">•</span>
+                      <span>Zero-tolerance bureaucracy (the &quot;Flagged Room&quot; experience)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-terracotta-400 mt-1">•</span>
+                      <span>Social polarization and ambient hostility</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-terracotta-400 mt-1">•</span>
+                      <span>Rising costs with declining quality of life</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-terracotta-400 mt-1">•</span>
+                      <span>Healthcare gatekeeping and 6-week wait times</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-olive-600 font-medium mb-2">Morocco Sanctuary Frequency</h4>
+                  <ul className="space-y-2 text-sm text-atlas-600">
+                    <li className="flex items-start gap-2">
+                      <span className="text-olive-400 mt-1">•</span>
+                      <span>Deep-rooted hospitality culture (Chabel)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-olive-400 mt-1">•</span>
+                      <span>Communal vigilance and &quot;background peace&quot;</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-olive-400 mt-1">•</span>
+                      <span>200-year friendship with America honored</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-olive-400 mt-1">•</span>
+                      <span>Same-day healthcare, zero gatekeeping</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-
-            <div>
-              <h2 className="text-3xl font-bold text-atlas-900 mb-6">
-                Safety & Stability
+            <div className="order-1 lg:order-2">
+              <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+                The Ambient Reality
+              </span>
+              <h2 className="mt-2 text-3xl font-bold text-atlas-900 mb-6">
+                Sanctuary Frequency
               </h2>
-              <p className="text-atlas-700 mb-6">
-                Morocco has invested heavily in security and stability, making it one of
-                the safest destinations in Africa and the wider region. The country
-                welcomes millions of tourists and expats each year.
+              <p className="text-atlas-700 mb-4">
+                Safety isn&apos;t just about crime statistics. It&apos;s about the ambient energy
+                of a place—the feeling of walking at night, the way strangers interact,
+                the baseline trust in public spaces.
               </p>
-              <ul className="space-y-3 text-atlas-600">
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 bg-olive-500 rounded-full"></span>
-                  Constitutional monarchy with stable government since 1956
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 bg-olive-500 rounded-full"></span>
-                  Low crime rates, especially in expat-populated areas
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 bg-olive-500 rounded-full"></span>
-                  Strong tourism infrastructure with tourist police assistance
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 bg-olive-500 rounded-full"></span>
-                  Welcoming attitude toward foreigners and religious tolerance
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-2 h-2 bg-olive-500 rounded-full"></span>
-                  Growing modern economy with improving infrastructure
-                </li>
-              </ul>
+              <p className="text-atlas-700 mb-4">
+                Morocco&apos;s culture is built on communal vigilance and a deep-rooted law of
+                hospitality. You will find a level of &quot;background peace&quot; here—especially
+                at night and in public spaces—that has become a luxury in many American cities.
+              </p>
+              <p className="text-lg font-medium text-atlas-900">
+                This isn&apos;t escapism. It&apos;s a strategic upgrade to a higher-frequency environment.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Healthcare & Infrastructure */}
-      <section className="section-padding bg-atlas-800 text-white">
-        <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">
-              Modern Amenities & Healthcare
+      {/* California Soul Upgrade */}
+      <section className="py-20 bg-atlas-900 text-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center mb-12">
+            <span className="text-terracotta-400 font-semibold uppercase text-sm tracking-wide">
+              The Lifestyle Continuity
+            </span>
+            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">
+              California Soul, Preserved
             </h2>
-            <p className="text-lg text-sand-200 max-w-2xl mx-auto">
-              Morocco offers excellent healthcare and modern infrastructure,
-              especially in major cities.
+            <p className="mt-4 text-lg text-sand-200">
+              You&apos;re not sacrificing your wellness routine. You&apos;re upgrading the quality
+              of the inputs.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-12 h-12 bg-terracotta-500 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                </svg>
-              </div>
-              <h3 className="font-semibold mb-2">Quality Healthcare</h3>
-              <p className="text-sand-300 text-sm">
-                Private clinics with Western-trained doctors and modern equipment
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-atlas-800/50 rounded-xl p-8 border border-atlas-700">
+              <h3 className="text-terracotta-400 font-semibold text-lg mb-3">Surf & Yoga Culture</h3>
+              <p className="text-sand-200">
+                Taghazout is world-class surf with zero Venice Beach crowds. Essaouira has the
+                yoga retreats without the $300/night price tag.
               </p>
             </div>
-
-            <div className="text-center">
-              <div className="w-12 h-12 bg-terracotta-500 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z" />
-                </svg>
-              </div>
-              <h3 className="font-semibold mb-2">High-Speed Internet</h3>
-              <p className="text-sand-300 text-sm">
-                Fiber optic available in cities; 4G/5G mobile coverage nationwide
+            <div className="bg-atlas-800/50 rounded-xl p-8 border border-atlas-700">
+              <h3 className="text-olive-400 font-semibold text-lg mb-3">Elite Wellness Studios</h3>
+              <p className="text-sand-200">
+                Pilates, CrossFit, and boutique fitness in Casablanca and Marrakech. The
+                same high-vibration wellness, without the LA markup.
               </p>
             </div>
-
-            <div className="text-center">
-              <div className="w-12 h-12 bg-terracotta-500 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
-                </svg>
-              </div>
-              <h3 className="font-semibold mb-2">Easy Travel</h3>
-              <p className="text-sand-300 text-sm">
-                Direct flights to US and Europe; modern trains connecting cities
+            <div className="bg-atlas-800/50 rounded-xl p-8 border border-atlas-700">
+              <h3 className="text-terracotta-400 font-semibold text-lg mb-3">Farm-to-Table Standard</h3>
+              <p className="text-sand-200">
+                What costs $40/plate in Austin is the baseline here. Organic, seasonal,
+                locally sourced—because that&apos;s just how food works.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="text-center">
-              <div className="w-12 h-12 bg-terracotta-500 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" />
-                </svg>
-              </div>
-              <h3 className="font-semibold mb-2">International Brands</h3>
-              <p className="text-sand-300 text-sm">
-                Major supermarkets, international restaurants, and familiar stores
-              </p>
+      {/* Strategic Position */}
+      <section className="py-20 bg-sand-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+              The Strategic Position
+            </span>
+            <h2 className="text-3xl font-bold text-atlas-900 mb-4">
+              Your Global Base
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm">
+              <div className="text-3xl font-bold text-terracotta-600 mb-2">6.5h</div>
+              <div className="text-atlas-900 font-medium">To NYC</div>
+              <div className="text-atlas-500 text-sm">Closer than Hawaii</div>
+            </div>
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm">
+              <div className="text-3xl font-bold text-terracotta-600 mb-2">2h</div>
+              <div className="text-atlas-900 font-medium">To Paris</div>
+              <div className="text-atlas-500 text-sm">Europe is your backyard</div>
+            </div>
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm">
+              <div className="text-3xl font-bold text-terracotta-600 mb-2">GMT+1</div>
+              <div className="text-atlas-900 font-medium">Time Zone</div>
+              <div className="text-atlas-500 text-sm">Perfect for US remote work</div>
+            </div>
+            <div className="text-center p-6 bg-white rounded-xl shadow-sm">
+              <div className="text-3xl font-bold text-terracotta-600 mb-2">90</div>
+              <div className="text-atlas-900 font-medium">Days Visa-Free</div>
+              <div className="text-atlas-500 text-sm">Explore before committing</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-sand-50">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-atlas-900 sm:text-4xl">
-            Ready to Learn More?
+      <section className="py-20 bg-gradient-to-br from-terracotta-600 to-terracotta-700">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-white sm:text-4xl">
+            Ready to Calculate Your Return on Life?
           </h2>
-          <p className="mt-4 text-lg text-atlas-600">
-            Every situation is unique. Let&apos;s discuss your specific goals and how
-            Morocco might be the perfect fit for your next chapter.
+          <p className="mt-4 text-xl text-sand-100">
+            Every family&apos;s transition is unique. Let&apos;s discuss your specific situation
+            and map out what&apos;s possible.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-primary">
-              Schedule Free Consultation
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-terracotta-600 font-semibold rounded-lg hover:bg-sand-100 transition-colors duration-200 text-lg"
+            >
+              Request Your Strategic Roadmap
             </Link>
-            <Link href="/visa" className="btn-secondary">
-              Explore Visa Options
+            <Link
+              href="/checklist"
+              className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors duration-200 text-lg"
+            >
+              Take the Readiness Audit
             </Link>
           </div>
         </div>

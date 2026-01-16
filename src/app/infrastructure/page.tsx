@@ -378,7 +378,7 @@ export default function InfrastructurePage() {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="btn-primary">
-              Schedule Free Consultation
+              Request Your Strategic Roadmap
             </Link>
             <Link href="/families" className="btn-secondary">
               Education & Schools

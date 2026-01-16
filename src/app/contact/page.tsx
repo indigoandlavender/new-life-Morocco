@@ -35,11 +35,11 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-atlas-900 sm:text-5xl">
-              Let&apos;s Talk About Your Move
+              Begin Your Sovereign Transition
             </h1>
             <p className="mt-6 text-lg leading-8 text-atlas-700">
-              Schedule your free consultation and take the first step toward
-              your new life in Morocco. We&apos;re here to answer your questions.
+              Request your private strategy session and take the first step toward
+              your new life in Morocco. We provide advocacy, not just advice.
             </p>
           </div>
         </div>
@@ -52,7 +52,7 @@ export default function ContactPage() {
             {/* Form */}
             <div>
               <h2 className="text-2xl font-bold text-atlas-900 mb-6">
-                Request Your Free Consultation
+                Request Your Strategic Roadmap
               </h2>
 
               {submitted ? (
@@ -67,7 +67,7 @@ export default function ContactPage() {
                   </h3>
                   <p className="text-atlas-600">
                     We&apos;ve received your request and will be in touch within 24 hours
-                    to schedule your free consultation.
+                    to schedule your private strategy session.
                   </p>
                 </div>
               ) : (
@@ -159,7 +159,7 @@ export default function ContactPage() {
                     type="submit"
                     className="w-full btn-primary py-4 text-lg"
                   >
-                    Request Free Consultation
+                    Request Your Strategic Roadmap
                   </button>
 
                   <p className="text-sm text-atlas-500 text-center">

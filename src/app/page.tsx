@@ -132,8 +132,8 @@ export default function Home() {
               </p>
               <div className="bg-white rounded-lg p-3 border border-sand-200">
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-atlas-500">Cost vs. US</span>
-                  <span className="text-lg font-bold text-olive-600">15%</span>
+                  <span className="text-sm text-atlas-500">US-Standard Care</span>
+                  <span className="text-lg font-bold text-olive-600">Same Day</span>
                 </div>
               </div>
             </div>
