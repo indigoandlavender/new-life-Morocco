@@ -3,17 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-// 4 Strategic Pillars
 const navigation = [
-  {
-    name: 'The Momentum',
-    href: '/pulse',
-    description: 'Global intelligence on Morocco\'s rise',
-    children: [
-      { name: 'Global Pulse', href: '/pulse', description: 'News & signals' },
-      { name: 'Why Morocco', href: '/why-morocco', description: 'The 2030 thesis' },
-    ],
-  },
   {
     name: 'The Infrastructure',
     href: '/infrastructure',
