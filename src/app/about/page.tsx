@@ -26,8 +26,8 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/images/about-team.jpg"
-                alt="New Life Morocco team in Marrakech"
+                src="/images/about-morocco-door.jpg"
+                alt="Beautiful traditional Moroccan blue door"
                 fill
                 className="object-cover"
                 priority
@@ -40,40 +40,48 @@ export default function AboutPage() {
       {/* Our Story */}
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-7xl">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-atlas-900 mb-8 text-center">
-              Our Story
-            </h2>
-            <div className="prose prose-lg text-atlas-700 mx-auto">
-              <p>
-                In 2019, we were living the typical American dream—good jobs, nice house,
-                busy schedules. But something was missing. We craved adventure, connection,
-                and a slower pace of life. After months of research, we took the leap and
-                moved to Morocco.
-              </p>
-              <p>
-                The transition wasn&apos;t always easy. Navigating visa requirements, finding
-                housing, understanding local customs—we learned it all the hard way. But
-                we also discovered something beautiful: a country full of warmth, opportunity,
-                and a quality of life we never knew existed.
-              </p>
-              <p>
-                Today, Morocco is our home. And we&apos;ve made it our mission to help other
-                Americans experience the same transformation. New Life Morocco combines our
-                firsthand experience with deep local knowledge to make your relocation
-                journey smooth, stress-free, and exciting.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative h-[350px] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/about-riad.jpg"
+                alt="Beautiful Moroccan riad courtyard"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold text-atlas-900 mb-6">
+                Our Story
+              </h2>
+              <div className="space-y-4 text-atlas-700">
+                <p>
+                  In 2019, we were living the typical American dream—good jobs, nice house,
+                  busy schedules. But something was missing. We craved adventure, connection,
+                  and a slower pace of life. After months of research, we took the leap and
+                  moved to Morocco.
+                </p>
+                <p>
+                  The transition wasn&apos;t always easy. Navigating visa requirements, finding
+                  housing, understanding local customs—we learned it all the hard way. But
+                  we also discovered something beautiful: a country full of warmth, opportunity,
+                  and a quality of life we never knew existed.
+                </p>
+                <p>
+                  Today, Morocco is our home. And we&apos;ve made it our mission to help other
+                  Americans experience the same transformation.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Team */}
+      {/* Our Team - Without Photos */}
       <section className="section-padding bg-sand-50">
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-atlas-900 mb-4">
-              Meet Our Team
+              Our Team
             </h2>
             <p className="text-lg text-atlas-600 max-w-2xl mx-auto">
               A blend of American expats and local Moroccan experts, united by a passion
@@ -81,65 +89,44 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Team Member 1 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
-              <div className="relative h-72">
-                <Image
-                  src="/images/team-founder.jpg"
-                  alt="Founder and Lead Consultant"
-                  fill
-                  className="object-cover"
-                />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
+              <div className="w-16 h-16 bg-terracotta-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-terracotta-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+                </svg>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-atlas-900">Jessica Parker</h3>
-                <p className="text-terracotta-600 font-medium mb-3">Founder & Lead Consultant</p>
-                <p className="text-atlas-600 text-sm">
-                  Former tech executive from San Francisco. Moved to Marrakech in 2019.
-                  Specializes in helping remote workers and entrepreneurs make the transition.
-                </p>
-              </div>
+              <h3 className="text-xl font-semibold text-atlas-900 mb-2">Expat Experience</h3>
+              <p className="text-atlas-600">
+                Our American team members have lived the expat journey themselves—from
+                the excitement of arrival to the challenges of settling in.
+              </p>
             </div>
 
-            {/* Team Member 2 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
-              <div className="relative h-72">
-                <Image
-                  src="/images/team-operations.jpg"
-                  alt="Operations Director"
-                  fill
-                  className="object-cover"
-                />
+            <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
+              <div className="w-16 h-16 bg-atlas-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-atlas-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" />
+                </svg>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-atlas-900">Youssef Benali</h3>
-                <p className="text-terracotta-600 font-medium mb-3">Operations Director</p>
-                <p className="text-atlas-600 text-sm">
-                  Born and raised in Casablanca with 10 years helping expats navigate
-                  Moroccan bureaucracy. Your guide through visas and Carte de Séjour.
-                </p>
-              </div>
+              <h3 className="text-xl font-semibold text-atlas-900 mb-2">Local Expertise</h3>
+              <p className="text-atlas-600">
+                Our Moroccan team members bring years of experience navigating local
+                bureaucracy, real estate, and cultural nuances.
+              </p>
             </div>
 
-            {/* Team Member 3 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
-              <div className="relative h-72">
-                <Image
-                  src="/images/team-relocation.jpg"
-                  alt="Relocation Specialist"
-                  fill
-                  className="object-cover"
-                />
+            <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
+              <div className="w-16 h-16 bg-olive-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-olive-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                </svg>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-atlas-900">Maria Santos</h3>
-                <p className="text-terracotta-600 font-medium mb-3">Relocation Specialist</p>
-                <p className="text-atlas-600 text-sm">
-                  Moved from Austin, Texas in 2021. Focuses on housing, settling-in services,
-                  and helping families find their perfect Moroccan home.
-                </p>
-              </div>
+              <h3 className="text-xl font-semibold text-atlas-900 mb-2">Bilingual Support</h3>
+              <p className="text-atlas-600">
+                We communicate fluently in English, French, and Arabic—ensuring nothing
+                gets lost in translation during your relocation.
+              </p>
             </div>
           </div>
         </div>
@@ -203,32 +190,32 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative h-48 rounded-xl overflow-hidden">
               <Image
-                src="/images/about-office.jpg"
-                alt="Our office in Morocco"
+                src="/images/about-medina.jpg"
+                alt="Walking through a Moroccan medina"
                 fill
                 className="object-cover"
               />
             </div>
             <div className="relative h-48 rounded-xl overflow-hidden">
               <Image
-                src="/images/about-consultation.jpg"
-                alt="Consultation with clients"
+                src="/images/about-cafe.jpg"
+                alt="Moroccan cafe with mint tea"
                 fill
                 className="object-cover"
               />
             </div>
             <div className="relative h-48 rounded-xl overflow-hidden">
               <Image
-                src="/images/about-exploring.jpg"
-                alt="Exploring Morocco with clients"
+                src="/images/about-market.jpg"
+                alt="Colorful Moroccan spice market"
                 fill
                 className="object-cover"
               />
             </div>
             <div className="relative h-48 rounded-xl overflow-hidden">
               <Image
-                src="/images/about-welcome.jpg"
-                alt="Welcoming new arrivals"
+                src="/images/about-sunset.jpg"
+                alt="Moroccan rooftop sunset"
                 fill
                 className="object-cover"
               />
