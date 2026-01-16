@@ -1,5 +1,15 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
+import dynamic from 'next/dynamic';
+
+const HealthcareMap = dynamic(() => import('@/components/HealthcareMap'), {
+  ssr: false,
+  loading: () => (
+    <div className="bg-atlas-900 rounded-2xl h-[500px] flex items-center justify-center">
+      <div className="text-sand-300">Loading healthcare network map...</div>
+    </div>
+  ),
+});
 
 export const metadata: Metadata = {
   title: 'Infrastructure & Modernity | The Backbone of the Kingdom | New Life Morocco',
@@ -313,8 +323,27 @@ export default function InfrastructurePage() {
         </div>
       </section>
 
-      {/* Safety & Stability */}
+      {/* Healthcare Network Map */}
       <section className="py-20 bg-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mb-12">
+            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+              The Healthcare Network
+            </span>
+            <h2 className="mt-2 text-3xl font-bold text-atlas-900">
+              Tier-1 Facilities Across the Institutional Corridor
+            </h2>
+            <p className="mt-4 text-lg text-atlas-600 max-w-3xl">
+              From Tangier to Marrakech, a network of international-standard facilities ensures
+              your medical sovereignty. Click any location to see transit connections and specialties.
+            </p>
+          </div>
+          <HealthcareMap />
+        </div>
+      </section>
+
+      {/* Safety & Stability */}
+      <section className="py-20 bg-sand-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mb-12">
             <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
