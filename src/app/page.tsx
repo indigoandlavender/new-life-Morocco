@@ -9,16 +9,13 @@ export default function Home() {
       <section className="bg-atlas-900 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <span className="text-sand-400 font-medium uppercase tracking-wider text-sm">
-              7 Hours from New York · Closer than Hawaii
-            </span>
-            <h1 className="mt-6 text-4xl font-bold text-white sm:text-5xl lg:text-6xl leading-tight">
-              The Fresh Start
-              <span className="block text-terracotta-400">Your Family Has Been Looking For</span>
+            <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl leading-tight">
+              Better Infrastructure Than Portugal. Safer Than Mexico.
+              <span className="block text-terracotta-400 mt-2">And You&apos;ve Never Considered It.</span>
             </h1>
             <p className="mt-8 text-xl text-sand-200 max-w-3xl mx-auto leading-relaxed">
-              Peace of mind. Real safety. Schools that work. Healthcare you can afford.
-              A life where the background anxiety finally disappears.
+              Morocco. 7 hours from New York. American schools. High-speed rail.
+              And the peace of mind you&apos;ve been searching for.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="btn-primary text-center">
