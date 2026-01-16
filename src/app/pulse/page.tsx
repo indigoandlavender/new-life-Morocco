@@ -2,69 +2,69 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'The Global Pulse | Morocco 2030 Intelligence | New Life Morocco',
-  description: 'Curated intelligence on Morocco\'s rise. Track the global shift toward the Kingdom: World Cup 2030, infrastructure, high-profile residents, and geopolitical stability.',
+  title: 'What\'s Happening in Morocco | Morocco Advisors',
+  description: 'Updates on what matters for American families considering Morocco: healthcare, infrastructure, expat community, and quality of life.',
 };
 
 const pulseCards = [
   {
     id: 1,
-    category: 'The Identity Shift',
-    title: 'The "Brahim Diaz" Effect',
-    source: 'The New York Times',
-    story: 'The New York Times reports on the emotional "homecoming" of Real Madrid star Brahim Diaz. His choice to represent the Atlas Lions over Spain signals a massive shift in how the world\'s elite view the Kingdom\'s potential.',
-    vibe: ['High-Vibration', 'Heart', 'Patriotism'],
-    consultantNote: 'When the world\'s top 1% of talent chooses Morocco, they aren\'t just choosing a team—they are choosing a project. This surge of high-net-worth bi-nationals is driving a new era of luxury infrastructure and international standards.',
+    category: 'Healthcare',
+    title: 'New Private Hospitals Opening',
+    source: 'Akdital Group',
+    story: 'The Akdital hospital group continues expanding across Morocco, with new facilities in Tangier and other cities featuring modern oncology and cardiology units with internationally trained staff.',
+    tags: ['Medical', 'Quality', 'Access'],
+    note: 'Healthcare is the #1 concern for families we work with. These newer private hospitals offer care that meets the standards Americans expect, often at a fraction of US costs.',
     color: 'terracotta',
   },
   {
     id: 2,
-    category: 'The Iconic Endorsement',
-    title: 'Madonna\'s Sanctuary',
-    source: 'Instagram / Global Media',
-    story: 'Pop icon Madonna shares her Marrakech retreat with millions, stating she "does not want to leave." Her long-term affinity for the "Red City" highlights its status as a premier global sanctuary for the creative and financial elite.',
-    vibe: ['Luxury', 'Peace', 'Lifestyle'],
-    consultantNote: 'Madonna\'s experience is the typical expat experience: you come for the culture, you stay for the soul. We help you make that "I don\'t want to leave" feeling a permanent reality.',
+    category: 'Transportation',
+    title: 'High-Speed Rail Expansion',
+    source: 'ONCF / Morocco Rail',
+    story: 'Morocco\'s high-speed train network continues to expand, with the Marrakech extension in testing. The existing line already connects Tangier to Casablanca in about 2 hours.',
+    tags: ['Travel', 'Convenience', 'Modern'],
+    note: 'Getting around Morocco is easier than many people expect. The high-speed rail makes it practical to live in one city and easily visit others—no car required for most trips.',
     color: 'olive',
   },
   {
     id: 3,
-    category: 'The World Cup Catalyst',
-    title: '2030 Infrastructure Surge',
-    source: 'FIFA / Government of Morocco',
-    story: 'Final architectural renders released for the Grand Stade de Casablanca (Benslimane). Set to be the world\'s largest football stadium, it is the crown jewel of a multi-billion dollar national development plan.',
-    vibe: ['Modernity', 'Investment', 'Scale'],
-    consultantNote: '2030 is a hard deadline. Billions are being poured into airports, highways, and public spaces. Moving now means securing your place before the global spotlight fully descends.',
+    category: 'Expat Community',
+    title: 'Growing American Presence',
+    source: 'Expat Networks',
+    story: 'The American expat community in Morocco continues to grow, with established groups in Casablanca, Rabat, Marrakech, and Tangier. Online communities and in-person meetups make it easier to connect.',
+    tags: ['Community', 'Support', 'Connection'],
+    note: 'You won\'t be alone. There\'s a helpful community of American families who\'ve made this move and are happy to share their experience. We can help you connect with them.',
     color: 'atlas',
   },
   {
     id: 4,
-    category: 'The Healthcare Evolution',
-    title: 'Akdital & American Standards',
-    source: 'Akdital Group / Industry Reports',
-    story: 'Opening of the newest Akdital "Center of Excellence" in Tangier, featuring US-standard oncology and cardiology units. The expansion of private, high-tech healthcare is rapidly closing the gap with Western systems.',
-    vibe: ['Security', 'Reliability', 'Well-being'],
-    consultantNote: 'Our clients\' #1 concern is healthcare. We only recommend cities and neighborhoods anchored by these Tier-1 medical facilities. We treat your health as the foundation of your relocation.',
+    category: 'Education',
+    title: 'American Schools in Morocco',
+    source: 'US Embassy / School Networks',
+    story: 'American curriculum schools in Casablanca, Rabat, Tangier, and Marrakech continue to serve expat families. Most follow US standards and prepare students for American universities.',
+    tags: ['Schools', 'Kids', 'Education'],
+    note: 'Good schools are available, but the best ones fill up. If you have kids, this is one of the first things to research—we can help you understand your options.',
     color: 'terracotta',
   },
   {
     id: 5,
-    category: 'The Transit Revolution',
-    title: 'Al-Boraq Phase II',
-    source: 'ONCF / Infrastructure Ministry',
-    story: 'Morocco\'s High-Speed Rail (TGV) begins the testing phase for its Marrakech extension. The Kingdom continues to outpace North American rail infrastructure, offering 320 km/h connectivity between its major economic hubs.',
-    vibe: ['Efficiency', 'Technology', 'Connectivity'],
-    consultantNote: 'Connectivity is the backbone of the Modern Kingdom. We focus your search on the "HSR Corridor," ensuring you are never more than 90 minutes from the country\'s most important financial and cultural centers.',
+    category: 'US-Morocco Relations',
+    title: 'America\'s Oldest Ally',
+    source: 'US State Department',
+    story: 'Morocco was the first country to recognize the United States in 1777 and remains a Major Non-NATO Ally. The Tangier American Legation is the oldest US diplomatic property in the world.',
+    tags: ['History', 'Stability', 'Partnership'],
+    note: 'This isn\'t just trivia—it matters for your peace of mind. Morocco has been a stable, consistent friend to the US for nearly 250 years. Americans are genuinely welcomed here.',
     color: 'olive',
   },
   {
     id: 6,
-    category: 'The Geopolitical Anchor',
-    title: '200 Years of Friendship',
-    source: 'US State Department / Tangier American Legation',
-    story: 'The Tangier American Legation marks its bicentennial as a symbol of the unique bond between the US and Morocco. As a Major Non-NATO Ally, Morocco remains the most stable US partner in the Mediterranean.',
-    vibe: ['Stability', 'History', 'Safety'],
-    consultantNote: 'You aren\'t moving to a "foreign" land; you are moving to America\'s oldest friend. This geopolitical stability is why Morocco is the safest high-vibe destination for American families today.',
+    category: 'Cost of Living',
+    title: 'Your Money Goes Further',
+    source: 'Expat Reports',
+    story: 'American families consistently report their money stretches 3-5x further in Morocco. Quality housing, good food, and comfortable living are accessible at a fraction of US costs.',
+    tags: ['Savings', 'Lifestyle', 'Value'],
+    note: 'This is what gets most families interested. You can live well here—not just survive. The financial pressure many feel in the US simply doesn\'t exist in the same way.',
     color: 'atlas',
   },
 ];
@@ -104,25 +104,16 @@ export default function PulsePage() {
       {/* Hero */}
       <section className="bg-atlas-900 py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="relative flex h-3 w-3">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-olive-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-olive-500"></span>
-            </span>
-            <span className="text-olive-400 font-medium uppercase tracking-wider text-sm">
-              Live Intelligence Feed
-            </span>
-          </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-white sm:text-5xl">
-              The Global Pulse
+            <span className="text-sand-400 font-medium uppercase tracking-wider text-sm">
+              Updates That Matter
+            </span>
+            <h1 className="mt-4 text-4xl font-bold text-white sm:text-5xl">
+              What&apos;s Happening in Morocco
             </h1>
-            <p className="mt-2 text-xl text-terracotta-400 font-medium">
-              Morocco 2030
-            </p>
             <p className="mt-6 text-lg text-sand-300 max-w-2xl mx-auto">
-              Curated intelligence on the Kingdom&apos;s rise. This isn&apos;t news for the sake of news—it&apos;s
-              momentum tracking for those who see where the world is going.
+              Information that actually matters for families considering the move.
+              Healthcare, schools, infrastructure, community—the things you need to know.
             </p>
           </div>
         </div>
@@ -155,27 +146,27 @@ export default function PulsePage() {
                     </p>
                   </div>
 
-                  {/* Vibe Tags */}
+                  {/* Tags */}
                   <div className="px-6 pb-4">
                     <div className="flex flex-wrap gap-2">
-                      {card.vibe.map((v) => (
+                      {card.tags.map((tag) => (
                         <span
-                          key={v}
+                          key={tag}
                           className={`text-xs px-2 py-1 rounded-full ${colors.vibe}`}
                         >
-                          {v}
+                          {tag}
                         </span>
                       ))}
                     </div>
                   </div>
 
-                  {/* Consultant's Note */}
+                  {/* Why It Matters */}
                   <div className="mt-auto bg-atlas-900 p-5">
-                    <p className="text-xs text-terracotta-400 font-semibold uppercase tracking-wide mb-2">
-                      Consultant&apos;s Note
+                    <p className="text-xs text-sand-400 font-semibold uppercase tracking-wider mb-2">
+                      Why It Matters
                     </p>
-                    <p className="text-sm text-sand-200 leading-relaxed italic">
-                      &quot;{card.consultantNote}&quot;
+                    <p className="text-sm text-sand-200 leading-relaxed">
+                      {card.note}
                     </p>
                   </div>
                 </article>
@@ -185,30 +176,23 @@ export default function PulsePage() {
         </div>
       </section>
 
-      {/* Status Ticker */}
+      {/* Contact Banner */}
       <section className="py-8 bg-atlas-900 border-t-4 border-terracotta-500">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <span className="relative flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-olive-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-olive-500"></span>
-                </span>
-                <span className="text-olive-400 font-bold uppercase text-sm tracking-wide">
-                  Status: High Momentum
-                </span>
-              </div>
+              <span className="text-sand-200 font-medium">
+                Have questions about any of this?
+              </span>
             </div>
             <p className="text-sand-300 text-sm text-center md:text-left">
-              Residency inquiries for Tangier and Marrakech are at record highs.
-              Avoid the administrative bottleneck.
+              We&apos;re happy to share what we&apos;ve learned from helping families make this move.
             </p>
             <Link
               href="/contact"
               className="px-6 py-3 bg-terracotta-500 text-white font-semibold rounded-lg hover:bg-terracotta-600 transition-colors text-sm whitespace-nowrap"
             >
-              Secure Your Strategy Session
+              Get in Touch
             </Link>
           </div>
         </div>
@@ -218,34 +202,34 @@ export default function PulsePage() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold text-atlas-900 mb-6">
-            The Bottom Line
+            What Families Tell Us
           </h2>
           <div className="grid md:grid-cols-3 gap-6 mb-8">
-            <div className="p-4">
-              <p className="text-3xl mb-2">🎭</p>
+            <div className="bg-sand-50 rounded-xl p-6">
+              <p className="text-atlas-900 font-semibold mb-2">Healthcare</p>
               <p className="text-sm text-atlas-600">
-                <strong>Madonna</strong> = It&apos;s glamorous and safe.
+                &quot;The private hospitals here are better than I expected—and so much more affordable.&quot;
               </p>
             </div>
-            <div className="p-4">
-              <p className="text-3xl mb-2">📰</p>
+            <div className="bg-sand-50 rounded-xl p-6">
+              <p className="text-atlas-900 font-semibold mb-2">Community</p>
               <p className="text-sm text-atlas-600">
-                <strong>NYT / Brahim Diaz</strong> = It&apos;s serious and respected.
+                &quot;We were surprised how many American families are already here. It&apos;s been easy to make friends.&quot;
               </p>
             </div>
-            <div className="p-4">
-              <p className="text-3xl mb-2">🚄</p>
+            <div className="bg-sand-50 rounded-xl p-6">
+              <p className="text-atlas-900 font-semibold mb-2">Quality of Life</p>
               <p className="text-sm text-atlas-600">
-                <strong>Infrastructure</strong> = It&apos;s functional and modern.
+                &quot;We live better here than we did in the US—and we&apos;re actually saving money.&quot;
               </p>
             </div>
           </div>
-          <div className="bg-terracotta-50 border-2 border-terracotta-200 rounded-xl p-6">
+          <div className="bg-olive-50 border-2 border-olive-200 rounded-xl p-6">
             <p className="text-lg text-atlas-900 font-medium">
-              <strong>You</strong> = The person who makes it happen.
+              These aren&apos;t exceptional stories—this is what families consistently experience.
             </p>
             <p className="mt-2 text-atlas-600">
-              We are your &quot;Skip the Line&quot; partner for the Moroccan transition.
+              We can help you figure out if Morocco might be right for your family too.
             </p>
           </div>
         </div>
@@ -255,24 +239,24 @@ export default function PulsePage() {
       <section className="py-16 bg-atlas-900">
         <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            The Window Is Open. For Now.
+            Curious About Morocco?
           </h2>
           <p className="text-lg text-sand-200 mb-8">
-            As global attention shifts to Morocco for 2030, the &quot;early mover&quot; advantage
-            is narrowing. Secure your position in the Modern Kingdom before the world arrives.
+            We&apos;re happy to answer questions and help you figure out if this might be
+            the right move for your family. No pressure, just honest conversation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
               className="px-8 py-4 bg-terracotta-500 text-white font-semibold rounded-lg hover:bg-terracotta-600 transition-colors"
             >
-              Request Your Strategy Session
+              Start the Conversation
             </Link>
             <Link
-              href="/roadmap"
+              href="/checklist"
               className="px-8 py-4 bg-transparent border-2 border-sand-300 text-sand-100 font-semibold rounded-lg hover:bg-sand-300/10 transition-colors"
             >
-              Download the Free Roadmap
+              See the Checklist
             </Link>
           </div>
         </div>

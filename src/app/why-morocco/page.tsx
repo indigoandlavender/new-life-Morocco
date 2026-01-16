@@ -5,53 +5,53 @@ import { useState } from 'react';
 
 const faqItems = [
   {
-    category: 'The Sanctuary & Lifestyle',
+    category: 'Safety & Daily Life',
     questions: [
       {
-        q: 'Is Morocco really "safer" than the U.S.?',
-        a: 'Safety is our clients\' #1 priority. While no country is perfect, Morocco\'s culture is built on communal vigilance and a deep-rooted law of hospitality (Chabel). You will find a level of "background peace" here—especially at night and in public spaces—that has become a luxury in many American cities.',
+        q: 'Is it really safer than the U.S.?',
+        a: 'This is the #1 question families ask. While no place is perfect, the difference is immediate and tangible. Strict gun control means near-zero gun violence. No mass shooting drills at schools. You can walk anywhere at night—medinas, beaches, city streets. The background anxiety that many Americans carry simply dissolves here.',
       },
       {
-        q: 'Can I maintain my "California" wellness routine?',
-        a: 'Absolutely. From the world-class surf and yoga culture in Taghazout to elite Pilates studios and farm-to-table Western cafes in Casablanca and Marrakech, you aren\'t sacrificing your lifestyle. You are simply upgrading the quality of the food and the frequency of the environment.',
+        q: 'What\'s the quality of life like day-to-day?',
+        a: 'Imagine waking up without the morning news cycle stress. Your kids walk to school safely. You have time for a real lunch, not something eaten at your desk. The food is fresh and seasonal. The air is clean. The pace allows you to actually live, not just survive.',
       },
       {
-        q: 'What about the food quality?',
-        a: 'This is one of the most immediate "Life Upgrades." Morocco\'s food supply is largely seasonal and sun-ripened, lacking the heavy industrial chemical load, PFAS, and bio-engineered additives prevalent in Western supermarkets. Most of our clients report a physical "system reset" within their first month.',
+        q: 'What about the food?',
+        a: 'This surprises most families. The food here is largely seasonal, locally grown, and free of the industrial additives common in American supermarkets. Fresh produce, real bread, olive oil from local groves. Many families report feeling physically better within weeks.',
       },
     ],
   },
   {
-    category: 'Infrastructure & Logistics',
+    category: 'Practical Life',
     questions: [
       {
-        q: 'How is the healthcare, really?',
-        a: 'We focus on the Infrastructure Corridor. This gives you access to the American Hospital of Casablanca and the Akdital "Concierge" networks. These are private, US-standard facilities with world-class specialists and, crucially, zero wait times compared to the strained systems in the US or Canada.',
+        q: 'How is the healthcare?',
+        a: 'American-trained doctors. Mayo Clinic Care Network facilities. Same-day specialist appointments—no 6-month waitlists. An MRI costs $150-300, not $3,000. You get better care, faster, for less. Healthcare stops being something you dread and starts being something that actually works.',
       },
       {
-        q: 'Will I be able to work remotely?',
-        a: 'Morocco is a digital hub. With a 5G backbone and widespread fiber-optic connectivity, your "virtual office" will run faster here than in many parts of North America. Plus, the time zone is highly advantageous for Atlantic-coast business.',
+        q: 'Can I work remotely?',
+        a: '5G nationwide. Gigabit fiber in major cities. Your Zoom calls work perfectly. The time zone actually helps—you overlap with the US East Coast from 9am-2pm, so you get your mornings free and work a comfortable afternoon schedule.',
       },
       {
-        q: 'Is the 200 MPH train (TGV) accessible?',
-        a: 'Yes. The Al-Boraq high-speed rail connects Tangier, Rabat, and Casablanca in under 2 hours. It is cleaner, faster, and more reliable than any rail project currently operating in the United States.',
+        q: 'What about my kids\' education?',
+        a: 'Five American-accredited schools with US diplomas and IB programs. Your kids apply to the same universities—Harvard, Stanford, MIT. The American School of Tangier has been operating since 1950. Your children\'s education doesn\'t skip a beat.',
       },
     ],
   },
   {
-    category: 'The "Skip the Line" Process',
+    category: 'Making It Happen',
     questions: [
       {
-        q: 'Can I handle the residency process myself?',
-        a: 'Yes, you could. However, you will likely spend your first 90 days navigating a "Flagged Room" of bureaucracy, document legalization, and mistranslations. We offer a "Skip the Line" service because our clients value their time more than the "learning curve" of administrative friction.',
+        q: 'Can I handle the move myself?',
+        a: 'You could. But you\'d likely spend your first months in government offices instead of enjoying your new life. The paperwork has specific requirements that aren\'t obvious until you\'re already there. We help you get it right the first time so you can focus on settling in.',
       },
       {
-        q: 'What is the "10-Point Readiness Audit"?',
-        a: 'It is our proprietary vetting process to ensure you don\'t board a plane with a "deal-breaker" mistake. Most Americans don\'t realize they have the wrong type of FBI check or an un-legalized lease until it\'s too late. We catch those errors in Phase I.',
+        q: 'What do I need to prepare before moving?',
+        a: 'Background checks with the right apostille. Income documentation formatted correctly. Housing that meets legal requirements. Banking structure that protects your money. We audit all of this before you leave—so nothing surprises you after arrival.',
       },
       {
-        q: 'Why don\'t you show your founders\' faces on the site?',
-        a: 'We are a private advocacy firm, not social media influencers. We prioritize discretion and institutional results. Our "faceless" approach reflects the level of privacy and security we provide for our high-net-worth and professional clients.',
+        q: 'How long does the process take?',
+        a: 'With proper preparation, you can be settled with residency in 90 days. Without it, people often spend 6+ months sorting out paperwork issues. The difference is having someone who knows the system in your corner.',
       },
     ],
   },
@@ -70,15 +70,15 @@ export default function WhyMoroccoPage() {
         <div className="absolute inset-0 bg-[url('/images/morocco-pattern.svg')] opacity-5" />
         <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="text-terracotta-400 font-medium tracking-wide uppercase text-sm">
-              The Insider&apos;s Choice
+            <span className="text-sand-400 font-medium tracking-wider uppercase text-sm">
+              Why Here
             </span>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Why Smart Expats Are Skipping Costa Rica for the &quot;Other Side of the Pond&quot;
+              The Fresh Start You&apos;ve Been Looking For—Closer Than You Think
             </h1>
             <p className="mt-6 text-xl text-sand-200 leading-relaxed">
-              Most Americans looking for a new life look South. They find high prices,
-              tourist crowds, and a rising cost of living. The smart set is looking East—to Morocco.
+              Real safety. Healthcare that works. Schools your kids thrive in.
+              Seven hours from New York, with Europe in your backyard. This is where American families are building new lives.
             </p>
           </div>
         </div>
@@ -89,22 +89,22 @@ export default function WhyMoroccoPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="p-6">
-              <div className="text-4xl font-bold text-terracotta-600 mb-2">6.5h</div>
+              <div className="text-4xl font-bold text-atlas-900 mb-2">7h</div>
               <div className="text-atlas-600 text-sm">Direct flight from NYC</div>
               <div className="text-atlas-400 text-xs mt-1">Closer than Hawaii</div>
             </div>
             <div className="p-6">
-              <div className="text-4xl font-bold text-terracotta-600 mb-2">GMT+1</div>
-              <div className="text-atlas-600 text-sm">Perfect US time zone</div>
-              <div className="text-atlas-400 text-xs mt-1">Work 2-10pm local</div>
+              <div className="text-4xl font-bold text-atlas-900 mb-2">5h</div>
+              <div className="text-atlas-600 text-sm">Time zone overlap</div>
+              <div className="text-atlas-400 text-xs mt-1">Stay connected to home</div>
             </div>
             <div className="p-6">
-              <div className="text-4xl font-bold text-terracotta-600 mb-2">10x</div>
-              <div className="text-atlas-600 text-sm">Lifestyle multiplier</div>
-              <div className="text-atlas-400 text-xs mt-1">Same income, sovereign life</div>
+              <div className="text-4xl font-bold text-atlas-900 mb-2">3-5x</div>
+              <div className="text-atlas-600 text-sm">Your money goes further</div>
+              <div className="text-atlas-400 text-xs mt-1">Same income, better life</div>
             </div>
             <div className="p-6">
-              <div className="text-4xl font-bold text-terracotta-600 mb-2">2h</div>
+              <div className="text-4xl font-bold text-atlas-900 mb-2">2h</div>
               <div className="text-atlas-600 text-sm">To Paris or Madrid</div>
               <div className="text-atlas-400 text-xs mt-1">Europe in your backyard</div>
             </div>
@@ -112,43 +112,42 @@ export default function WhyMoroccoPage() {
         </div>
       </section>
 
-      {/* The Atlantic Advantage */}
+      {/* Close Enough to Come Home */}
       <section className="py-20 bg-sand-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-                Better Than Thailand
+              <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
+                A New Beginning, Not a Goodbye
               </span>
               <h2 className="mt-2 text-3xl font-bold text-atlas-900 sm:text-4xl">
-                The Atlantic Advantage
+                Close Enough to Come Home
               </h2>
               <div className="mt-6 space-y-4 text-atlas-700">
                 <p>
-                  Thailand is beautiful. But it&apos;s also <strong>20+ hours away</strong>. If there&apos;s
-                  a family emergency in the US, you&apos;re two days of travel away. The jet lag alone
-                  takes a week to recover from.
+                  A fresh start shouldn&apos;t mean cutting ties. If there&apos;s a family emergency,
+                  you need to be able to get home. If grandma has a birthday, you want to be there.
                 </p>
                 <p>
-                  Morocco changes the equation entirely.
+                  That&apos;s why location matters so much.
                 </p>
                 <p className="text-lg font-medium text-atlas-900">
-                  Casablanca to JFK is a direct 7-hour flight. You can have breakfast in Marrakech
-                  and dinner in Manhattan. Your parents are a same-day flight away, not a
-                  transcontinental odyssey.
+                  A direct 7-hour flight from New York. You can have breakfast here
+                  and dinner in Manhattan. Your family is a same-day flight away, not a
+                  two-day odyssey.
                 </p>
                 <p>
-                  For Americans, this isn&apos;t just convenience—it&apos;s peace of mind. You&apos;re close
-                  enough to come home when it matters, far enough to build the life you want.
+                  This isn&apos;t just convenience—it&apos;s peace of mind. You&apos;re close
+                  enough to come home when it matters, far enough to breathe.
                 </p>
               </div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-lg font-semibold text-atlas-900 mb-4">Flight Times from NYC</h3>
+              <h3 className="text-lg font-semibold text-atlas-900 mb-4">Flight Times from New York</h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-3 border-b border-sand-200">
-                  <span className="text-atlas-700">Morocco (Casablanca)</span>
-                  <span className="font-semibold text-olive-600">6.5 hours</span>
+                  <span className="text-atlas-700">Here (Casablanca)</span>
+                  <span className="font-semibold text-olive-600">7 hours</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-sand-200">
                   <span className="text-atlas-700">Hawaii (Honolulu)</span>
@@ -168,15 +167,15 @@ export default function WhyMoroccoPage() {
         </div>
       </section>
 
-      {/* Time Zone Bridge */}
+      {/* Work-Life Balance */}
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 bg-atlas-900 rounded-2xl p-8 text-white">
-              <h3 className="text-lg font-semibold mb-6">A Day in the Life: Morocco vs. Bali</h3>
+              <h3 className="text-lg font-semibold mb-6">What Your Day Actually Looks Like</h3>
               <div className="grid grid-cols-2 gap-6">
                 <div>
-                  <h4 className="text-terracotta-400 font-medium mb-3">Working from Morocco</h4>
+                  <h4 className="text-sand-400 font-medium mb-3">Here</h4>
                   <ul className="space-y-2 text-sm text-sand-200">
                     <li className="flex items-start gap-2">
                       <span className="text-olive-400 mt-1">7am</span>
@@ -184,24 +183,24 @@ export default function WhyMoroccoPage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-olive-400 mt-1">8am</span>
-                      <span>Surf, gym, or medina walk</span>
+                      <span>Beach walk, gym, or café</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-olive-400 mt-1">12pm</span>
-                      <span>Long lunch at a rooftop cafe</span>
+                      <span>Long lunch with the family</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-olive-400 mt-1">2pm</span>
                       <span>Start work (9am EST)</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-olive-400 mt-1">10pm</span>
-                      <span>End work, evening free</span>
+                      <span className="text-olive-400 mt-1">7pm</span>
+                      <span>Done. Evening with family.</span>
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-sand-400 font-medium mb-3">Working from Bali</h4>
+                  <h4 className="text-sand-400 font-medium mb-3">Bali / Thailand</h4>
                   <ul className="space-y-2 text-sm text-sand-400">
                     <li className="flex items-start gap-2">
                       <span className="text-sand-500 mt-1">8pm</span>
@@ -228,27 +227,26 @@ export default function WhyMoroccoPage() {
               </div>
             </div>
             <div className="order-1 lg:order-2">
-              <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-                Better Than Bali or Portugal
+              <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
+                Work-Life Balance That Actually Works
               </span>
               <h2 className="mt-2 text-3xl font-bold text-atlas-900 sm:text-4xl">
-                The Time Zone Bridge
+                Your Remote Job + Mornings Free
               </h2>
               <div className="mt-6 space-y-4 text-atlas-700">
                 <p>
-                  If you work for US clients or keep US hours, Bali is a nightmare. You&apos;re working
-                  from 8pm to 4am. Your social life is non-existent. Your sleep schedule is destroyed.
+                  If you work remotely for US clients, location matters. Bali means working 8pm to 4am.
+                  Your sleep is destroyed. Your family time disappears.
                 </p>
                 <p>
-                  Portugal is better, but Morocco&apos;s alignment with the East Coast is <em>perfect</em>.
+                  Here, the time zone works <em>for</em> you, not against you.
                 </p>
                 <p className="text-lg font-medium text-atlas-900">
-                  You get your entire morning to enjoy the sun, the surf, or the medina. You start
-                  your &quot;9-to-5&quot; workday at 2pm local time. You never sacrifice your sleep for
-                  your paycheck.
+                  Your entire morning is free—beach, gym, time with kids before school.
+                  You start your workday at 2pm local time. You&apos;re done by dinner.
                 </p>
                 <p>
-                  This isn&apos;t just about convenience—it&apos;s about building a life where work fits
+                  This isn&apos;t just convenience—it&apos;s finally having the life where work fits
                   around <em>living</em>, not the other way around.
                 </p>
               </div>
@@ -257,40 +255,40 @@ export default function WhyMoroccoPage() {
         </div>
       </section>
 
-      {/* Luxury Arbitrage */}
+      {/* Your Money Goes Further */}
       <section className="py-20 bg-sand-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-                The Purchasing Power Upgrade
+              <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
+                A Better Life for Less
               </span>
               <h2 className="mt-2 text-3xl font-bold text-atlas-900 sm:text-4xl">
-                The Sovereign Lifestyle Unlock
+                Your Money Goes 3-5x Further
               </h2>
               <div className="mt-6 space-y-4 text-atlas-700">
                 <p>
-                  Costa Rica has become &quot;Americanized&quot; and overrun. A villa in Nosara now
-                  commands Silicon Valley prices. The &quot;Pura Vida&quot; promise has been priced
-                  out of reach for most families.
+                  Costa Rica used to be affordable. Now a villa in Nosara costs
+                  Silicon Valley prices. Portugal is overcrowded and expensive.
+                  The &quot;escape&quot; options have been priced out for most families.
                 </p>
                 <p>
-                  Morocco offers something different: <strong>true lifestyle sovereignty</strong>.
+                  Here, your money actually works for you.
                 </p>
                 <p className="text-lg font-medium text-atlas-900">
-                  For what a cramped apartment costs in Austin or Denver, you live in a palatial
-                  Riad with a courtyard, fountain, and rooftop terrace overlooking the Atlas.
+                  For what a cramped apartment costs in Austin or Denver, you get a spacious
+                  home with a garden, rooftop terrace, and room for your family to breathe.
                 </p>
                 <p>
-                  Private household staff, organic farm-to-table meals, and concierge healthcare
-                  aren&apos;t 1% luxuries here—they&apos;re the standard for families who made the move.
-                  Your purchasing power multiplies. Your quality of life transforms.
+                  Healthcare that doesn&apos;t bankrupt you. Fresh, organic food that&apos;s affordable.
+                  Household help if you want it. This isn&apos;t about &quot;cheap living&quot;—it&apos;s about
+                  a genuinely better quality of life that your current income can actually support.
                 </p>
               </div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-lg font-semibold text-atlas-900 mb-2">The Sovereign Lifestyle Standard</h3>
-              <p className="text-sm text-atlas-600 mb-6">What becomes accessible when your dollars work 10x harder</p>
+              <h3 className="text-lg font-semibold text-atlas-900 mb-2">What Your Budget Unlocks Here</h3>
+              <p className="text-sm text-atlas-600 mb-6">The same income, a completely different life</p>
               <div className="space-y-6">
                 <div className="flex items-center gap-4 p-4 bg-olive-50 rounded-xl">
                   <div className="w-12 h-12 bg-olive-100 rounded-full flex items-center justify-center">
@@ -299,35 +297,35 @@ export default function WhyMoroccoPage() {
                     </svg>
                   </div>
                   <div>
-                    <div className="font-semibold text-atlas-900">Courtyard Riad or Modern Villa</div>
-                    <div className="text-sm text-atlas-600">With rooftop terrace and private garden</div>
+                    <div className="font-semibold text-atlas-900">Spacious Home with a Garden</div>
+                    <div className="text-sm text-atlas-600">Room for your family to actually live</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 p-4 bg-olive-50 rounded-xl">
                   <div className="w-12 h-12 bg-olive-100 rounded-full flex items-center justify-center">
                     <svg className="w-6 h-6 text-olive-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
                   </div>
                   <div>
-                    <div className="font-semibold text-atlas-900">Private Household Chef</div>
-                    <div className="text-sm text-atlas-600">Organic, farm-to-table meals daily</div>
+                    <div className="font-semibold text-atlas-900">Healthcare That Works</div>
+                    <div className="text-sm text-atlas-600">Quality care without the financial stress</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 p-4 bg-olive-50 rounded-xl">
                   <div className="w-12 h-12 bg-olive-100 rounded-full flex items-center justify-center">
                     <svg className="w-6 h-6 text-olive-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div>
-                    <div className="font-semibold text-atlas-900">Full-Time Household Staff</div>
-                    <div className="text-sm text-atlas-600">Not a luxury—the middle-class standard</div>
+                    <div className="font-semibold text-atlas-900">Time to Actually Live</div>
+                    <div className="text-sm text-atlas-600">Less financial pressure means more freedom</div>
                   </div>
                 </div>
               </div>
               <p className="mt-6 text-sm text-atlas-500 italic text-center">
-                This isn&apos;t &quot;cheap living.&quot; This is the lifestyle that $250K buys in the US—unlocked at a fraction.
+                This isn&apos;t about sacrifice. It&apos;s about finally getting the life your hard work deserves.
               </p>
             </div>
           </div>
@@ -338,87 +336,87 @@ export default function WhyMoroccoPage() {
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-12">
-            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-              The Hidden Advantage
+            <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
+              Europe in Your Backyard
             </span>
             <h2 className="mt-2 text-3xl font-bold text-atlas-900 sm:text-4xl">
-              Your Gateway to Europe
+              Weekend Trips to Paris, Madrid, Barcelona
             </h2>
             <p className="mt-4 text-lg text-atlas-700">
-              From Morocco, you&apos;re a $50, 2-hour budget flight away from Paris, Madrid, Barcelona,
-              or Lisbon. Costa Rica and Thailand can&apos;t offer this.
+              Budget flights to European capitals in 1-3 hours. Your kids grow up
+              experiencing the world, not just reading about it.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center p-6 bg-sand-50 rounded-xl">
               <div className="text-2xl font-bold text-atlas-900">Paris</div>
-              <div className="text-terracotta-600 font-medium">3h flight</div>
+              <div className="text-atlas-600 font-medium">3h flight</div>
               <div className="text-atlas-500 text-sm">from $40</div>
             </div>
             <div className="text-center p-6 bg-sand-50 rounded-xl">
               <div className="text-2xl font-bold text-atlas-900">Madrid</div>
-              <div className="text-terracotta-600 font-medium">1.5h flight</div>
+              <div className="text-atlas-600 font-medium">1.5h flight</div>
               <div className="text-atlas-500 text-sm">from $30</div>
             </div>
             <div className="text-center p-6 bg-sand-50 rounded-xl">
               <div className="text-2xl font-bold text-atlas-900">Lisbon</div>
-              <div className="text-terracotta-600 font-medium">1h flight</div>
+              <div className="text-atlas-600 font-medium">1h flight</div>
               <div className="text-atlas-500 text-sm">from $25</div>
             </div>
             <div className="text-center p-6 bg-sand-50 rounded-xl">
               <div className="text-2xl font-bold text-atlas-900">Barcelona</div>
-              <div className="text-terracotta-600 font-medium">2h flight</div>
+              <div className="text-atlas-600 font-medium">2h flight</div>
               <div className="text-atlas-500 text-sm">from $35</div>
             </div>
           </div>
           <p className="mt-8 text-center text-atlas-600">
-            Weekend in Paris? Tuesday meetings in Madrid? A long weekend on the Algarve?
-            From Morocco, all of Europe is your backyard.
+            Weekend in Paris for your anniversary. Family trip to Barcelona.
+            Summer break exploring Portugal. Europe becomes part of your life.
           </p>
         </div>
       </section>
 
-      {/* Cultural Depth */}
+      {/* A Real Place, Not a Resort */}
       <section className="py-20 bg-atlas-900 text-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="text-terracotta-400 font-semibold uppercase text-sm tracking-wide">
-              Beyond the Beach
+            <span className="text-sand-400 font-semibold uppercase text-sm tracking-wider">
+              A Real Community
             </span>
             <h2 className="mt-2 text-3xl font-bold sm:text-4xl">
-              1,000 Years of History vs. Resort Towns
+              Not a Tourist Destination. A Real Home.
             </h2>
             <div className="mt-8 space-y-4 text-sand-200 text-lg">
               <p>
-                Many popular expat destinations feel manufactured—resort towns built for tourists,
-                lacking depth or history. After a few months, the novelty wears thin.
+                Many expat destinations feel hollow—resort towns built for tourists,
+                where you never quite belong. After a few months, the novelty wears thin.
               </p>
               <p>
-                Morocco is different. You&apos;re living in cities that have been continuously inhabited
-                for a millennium. The medinas of Fes and Marrakech are UNESCO World Heritage sites.
-                The architecture, the food, the craftsmanship—it&apos;s all authentically, deeply real.
+                Here, you&apos;re joining a real community with deep roots. Ancient cities with
+                living history. Neighbors who know your name. A culture of hospitality
+                that welcomes families, not just vacationers.
               </p>
               <p className="text-white font-medium">
-                This isn&apos;t a place you visit. It&apos;s a place you become part of.
+                This isn&apos;t a place you escape to. It&apos;s a place you build a life in.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* The Verdict */}
+      {/* Comparison */}
       <section className="py-20 bg-sand-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <h2 className="text-3xl font-bold text-atlas-900 text-center mb-12">
-              The Verdict: Morocco vs. The World
+              How It Compares
             </h2>
             <div className="overflow-x-auto">
               <table className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
                 <thead className="bg-atlas-900 text-white">
                   <tr>
                     <th className="px-6 py-4 text-left">Factor</th>
-                    <th className="px-6 py-4 text-center">Morocco</th>
+                    <th className="px-6 py-4 text-center">Here</th>
                     <th className="px-6 py-4 text-center">Costa Rica</th>
                     <th className="px-6 py-4 text-center">Thailand</th>
                     <th className="px-6 py-4 text-center">Portugal</th>
@@ -427,7 +425,7 @@ export default function WhyMoroccoPage() {
                 <tbody className="divide-y divide-sand-200">
                   <tr>
                     <td className="px-6 py-4 font-medium text-atlas-900">Flight from NYC</td>
-                    <td className="px-6 py-4 text-center text-olive-600 font-semibold">6.5h</td>
+                    <td className="px-6 py-4 text-center text-olive-600 font-semibold">7h</td>
                     <td className="px-6 py-4 text-center text-atlas-600">5h</td>
                     <td className="px-6 py-4 text-center text-atlas-400">20h+</td>
                     <td className="px-6 py-4 text-center text-atlas-600">7h</td>
@@ -440,11 +438,11 @@ export default function WhyMoroccoPage() {
                     <td className="px-6 py-4 text-center text-atlas-600">Good</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 font-medium text-atlas-900">Purchasing Power</td>
-                    <td className="px-6 py-4 text-center text-olive-600 font-semibold">10x Multiplier</td>
-                    <td className="px-6 py-4 text-center text-atlas-400">1.5x</td>
-                    <td className="px-6 py-4 text-center text-olive-600">5x</td>
-                    <td className="px-6 py-4 text-center text-atlas-600">2x</td>
+                    <td className="px-6 py-4 font-medium text-atlas-900">Cost of Living</td>
+                    <td className="px-6 py-4 text-center text-olive-600 font-semibold">3-5x cheaper</td>
+                    <td className="px-6 py-4 text-center text-atlas-400">Expensive</td>
+                    <td className="px-6 py-4 text-center text-olive-600">Cheap</td>
+                    <td className="px-6 py-4 text-center text-atlas-400">Expensive</td>
                   </tr>
                   <tr className="bg-sand-50">
                     <td className="px-6 py-4 font-medium text-atlas-900">Europe Access</td>
@@ -454,18 +452,18 @@ export default function WhyMoroccoPage() {
                     <td className="px-6 py-4 text-center text-olive-600">In Europe</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 font-medium text-atlas-900">Visa for Americans</td>
-                    <td className="px-6 py-4 text-center text-olive-600 font-semibold">90 days free</td>
-                    <td className="px-6 py-4 text-center text-olive-600">90 days free</td>
-                    <td className="px-6 py-4 text-center text-atlas-600">60 days free</td>
-                    <td className="px-6 py-4 text-center text-olive-600">90 days free</td>
+                    <td className="px-6 py-4 font-medium text-atlas-900">Safety</td>
+                    <td className="px-6 py-4 text-center text-olive-600 font-semibold">Very High</td>
+                    <td className="px-6 py-4 text-center text-atlas-600">Moderate</td>
+                    <td className="px-6 py-4 text-center text-atlas-600">Moderate</td>
+                    <td className="px-6 py-4 text-center text-olive-600">High</td>
                   </tr>
                   <tr className="bg-sand-50">
-                    <td className="px-6 py-4 font-medium text-atlas-900">Cultural Depth</td>
-                    <td className="px-6 py-4 text-center text-olive-600 font-semibold">1000+ years</td>
-                    <td className="px-6 py-4 text-center text-atlas-400">Limited</td>
-                    <td className="px-6 py-4 text-center text-olive-600">Rich</td>
-                    <td className="px-6 py-4 text-center text-olive-600">Rich</td>
+                    <td className="px-6 py-4 font-medium text-atlas-900">American Schools</td>
+                    <td className="px-6 py-4 text-center text-olive-600 font-semibold">5 accredited</td>
+                    <td className="px-6 py-4 text-center text-atlas-600">Limited</td>
+                    <td className="px-6 py-4 text-center text-atlas-600">Limited</td>
+                    <td className="px-6 py-4 text-center text-atlas-600">Limited</td>
                   </tr>
                 </tbody>
               </table>
@@ -474,25 +472,25 @@ export default function WhyMoroccoPage() {
         </div>
       </section>
 
-      {/* Strategic FAQ */}
+      {/* FAQ */}
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-              The Strategic FAQ
+            <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
+              Common Questions
             </span>
             <h2 className="mt-2 text-3xl font-bold text-atlas-900 sm:text-4xl">
-              Your Sovereign Transition
+              What Families Ask Before Making the Move
             </h2>
             <p className="mt-4 text-lg text-atlas-600">
-              The questions serious relocators ask before they commit.
+              Honest answers to the questions that matter most.
             </p>
           </div>
 
           <div className="space-y-8">
             {faqItems.map((category) => (
               <div key={category.category}>
-                <h3 className="text-lg font-semibold text-terracotta-600 mb-4">
+                <h3 className="text-lg font-semibold text-atlas-700 mb-4">
                   {category.category}
                 </h3>
                 <div className="space-y-3">
@@ -536,17 +534,17 @@ export default function WhyMoroccoPage() {
           {/* FAQ Closure */}
           <div className="mt-12 bg-atlas-900 rounded-2xl p-8 text-center">
             <p className="text-xl text-white font-medium mb-2">
-              Still have a question we didn&apos;t cover?
+              Have a question we didn&apos;t answer?
             </p>
             <p className="text-sand-300 mb-6">
-              The most important questions are the ones unique to your family&apos;s journey.
-              We reserve those deep dives for our Private Strategy Sessions.
+              Every family&apos;s situation is different. We&apos;re happy to talk through
+              what your transition would actually look like.
             </p>
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-terracotta-500 text-white font-semibold rounded-lg hover:bg-terracotta-600 transition-colors"
             >
-              Open the Door to Your Transition
+              Start the Conversation
             </Link>
           </div>
         </div>
@@ -556,24 +554,24 @@ export default function WhyMoroccoPage() {
       <section className="py-20 bg-gradient-to-br from-terracotta-600 to-terracotta-700">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            The Window Is Open. The Infrastructure Is Ready.
+            Your Fresh Start Is Closer Than You Think
           </h2>
           <p className="mt-4 text-xl text-sand-100">
-            Portugal is crowded. Mexico is compromised. Thailand is 20 hours away.
-            Morocco is the strategic choice for those who think in decades.
+            Real safety. Healthcare that works. Schools your kids thrive in.
+            Seven hours from New York, with Europe in your backyard.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-terracotta-600 font-semibold rounded-lg hover:bg-sand-100 transition-colors duration-200 text-lg"
             >
-              Begin Your Exit Strategy
+              Start the Conversation
             </Link>
             <Link
               href="/infrastructure"
               className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors duration-200 text-lg"
             >
-              View the Infrastructure
+              See What&apos;s Possible
             </Link>
           </div>
         </div>

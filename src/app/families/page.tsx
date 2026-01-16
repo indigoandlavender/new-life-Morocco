@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'American Families & Education | Accredited US Schools | New Life Morocco',
+  title: 'American Families & Education | Accredited US Schools | Morocco Advisors',
   description: 'Accredited American schools in Morocco. US curriculum, IB programs, Ivy League preparation. Your children don\'t skip a beat.',
 };
 
@@ -13,7 +13,7 @@ export default function FamiliesPage() {
       <section className="bg-atlas-900 py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="text-terracotta-400 font-medium uppercase tracking-wide text-sm">
+            <span className="text-sand-400 font-medium uppercase tracking-wider text-sm">
               For American Families
             </span>
             <h1 className="mt-4 text-4xl font-bold text-white sm:text-5xl leading-tight">
@@ -45,7 +45,7 @@ export default function FamiliesPage() {
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mb-12">
-            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+            <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
               Accredited American Schools
             </span>
             <h2 className="mt-2 text-3xl font-bold text-atlas-900">
@@ -136,7 +136,7 @@ export default function FamiliesPage() {
             {/* Tangier */}
             <div className="bg-sand-50 rounded-2xl p-8">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-terracotta-600 rounded-lg flex items-center justify-center">
+                <div className="w-10 h-10 bg-atlas-900 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-sm">TNG</span>
                 </div>
                 <h3 className="text-xl font-bold text-atlas-900">Tangier</h3>
@@ -148,7 +148,7 @@ export default function FamiliesPage() {
                     <span className="bg-terracotta-100 text-terracotta-700 text-xs px-2 py-0.5 rounded">Historic</span>
                   </div>
                   <p className="text-atlas-600 text-sm mb-2">Pre-K through Grade 12</p>
-                  <p className="text-terracotta-700 text-sm font-medium mb-2">
+                  <p className="text-atlas-700 text-sm font-medium mb-2">
                     The oldest American school in the Arab world. Founded 1950.
                   </p>
                   <ul className="text-atlas-600 text-sm space-y-1">
@@ -186,10 +186,10 @@ export default function FamiliesPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Ivy League Ready</h3>
+              <h3 className="text-xl font-semibold mb-2">College Ready</h3>
               <p className="text-sand-200 text-sm">
                 AP courses, IB programs, and college counseling designed to get American students
-                into top US universities. Harvard, Yale, Stanford—all within reach.
+                into US universities. The path to college stays on track.
               </p>
             </div>
             <div>
@@ -212,7 +212,7 @@ export default function FamiliesPage() {
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mb-12">
-            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+            <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
               Family Life
             </span>
             <h2 className="mt-2 text-3xl font-bold text-atlas-900">
@@ -272,7 +272,7 @@ export default function FamiliesPage() {
       <section className="py-16 bg-sand-50">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-            <svg className="w-12 h-12 text-terracotta-300 mb-6" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-12 h-12 text-atlas-300 mb-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
             </svg>
             <p className="text-xl text-atlas-700 mb-6 leading-relaxed">
@@ -291,11 +291,11 @@ export default function FamiliesPage() {
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-              The Hard Specs
+            <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
+              The Basics
             </span>
             <h2 className="mt-2 text-3xl font-bold text-atlas-900">
-              The Essentials for American Families
+              What Families Need to Know
             </h2>
           </div>
 
@@ -303,8 +303,8 @@ export default function FamiliesPage() {
             <table className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
               <thead className="bg-atlas-900 text-white">
                 <tr>
-                  <th className="px-6 py-4 text-left">Feature</th>
-                  <th className="px-6 py-4 text-left">The Modern Reality</th>
+                  <th className="px-6 py-4 text-left">Area</th>
+                  <th className="px-6 py-4 text-left">What It&apos;s Like</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-sand-200">
@@ -339,7 +339,7 @@ export default function FamiliesPage() {
                 <tr>
                   <td className="px-6 py-4 font-semibold text-atlas-900">Cost of Living</td>
                   <td className="px-6 py-4 text-atlas-700">
-                    <strong>10x Purchasing Power.</strong> Private school tuition, healthcare, housing, and
+                    <strong>Your money goes 3-5x further.</strong> Private school tuition, healthcare, housing, and
                     daily expenses are a fraction of US costs with equal or better quality.
                   </td>
                 </tr>
@@ -353,24 +353,24 @@ export default function FamiliesPage() {
       <section className="py-20 bg-gradient-to-br from-terracotta-600 to-terracotta-700">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Ready to Give Your Family a Better Life?
+            Have Questions About Schools or Family Life?
           </h2>
           <p className="mt-4 text-xl text-sand-100">
-            Let&apos;s talk about what Morocco looks like for your specific situation.
-            We&apos;ll answer every question—schools, neighborhoods, costs, everything.
+            We&apos;re happy to talk through what this looks like for your specific situation—schools,
+            neighborhoods, costs, whatever&apos;s on your mind.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-terracotta-600 font-semibold rounded-lg hover:bg-sand-100 transition-colors duration-200 text-lg"
             >
-              Schedule Family Consultation
+              Start the Conversation
             </Link>
             <Link
               href="/infrastructure"
               className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors duration-200 text-lg"
             >
-              See the Infrastructure
+              See What&apos;s There
             </Link>
           </div>
         </div>

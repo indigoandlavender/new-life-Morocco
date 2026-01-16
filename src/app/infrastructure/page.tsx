@@ -2,525 +2,519 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 
-const HealthcareMap = dynamic(() => import('@/components/HealthcareMap'), {
+const InfrastructureMap = dynamic(() => import('@/components/HealthcareMap'), {
   ssr: false,
   loading: () => (
     <div className="bg-atlas-900 rounded-2xl h-[500px] flex items-center justify-center">
-      <div className="text-sand-300">Loading healthcare network map...</div>
+      <div className="text-sand-300">Loading infrastructure map...</div>
     </div>
   ),
 });
 
 export const metadata: Metadata = {
-  title: 'Infrastructure & Modernity | The Backbone of the Kingdom | New Life Morocco',
-  description: 'High-speed rail, 5G fiber, world-class healthcare. Morocco\'s infrastructure rivals Europe. See the hard data.',
+  title: 'A Fresh Start Within Reach | Morocco Advisors',
+  description: 'For American families seeking peace of mind and new beginnings. A clear path to a life that works—just 7 hours from New York.',
 };
 
 export default function InfrastructurePage() {
   return (
     <>
-      {/* Hero */}
+      {/* Hero - Aspirational Framing */}
       <section className="bg-atlas-900 py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="text-terracotta-400 font-medium uppercase tracking-wide text-sm">
-              The Hard Data
+            <span className="text-sand-400 font-medium uppercase tracking-wider text-sm">
+              Your Fresh Start
             </span>
             <h1 className="mt-4 text-4xl font-bold text-white sm:text-5xl leading-tight">
-              The Backbone of the Kingdom
+              A New Beginning Within Reach
             </h1>
             <p className="mt-6 text-xl text-sand-200">
-              Morocco isn&apos;t what you think. High-speed rail. 5G fiber. European-standard healthcare.
-              This is the infrastructure reality that destroys the &quot;third-world&quot; myth.
+              The peace of mind you&apos;ve been looking for. Seven hours from New York.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Quick Stats */}
-      <section className="py-12 bg-white border-b border-sand-200">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div className="p-4">
-              <div className="text-4xl font-bold text-terracotta-600">320</div>
-              <div className="text-atlas-600 text-sm">km/h High-Speed Rail</div>
-            </div>
-            <div className="p-4">
-              <div className="text-4xl font-bold text-terracotta-600">5G</div>
-              <div className="text-atlas-600 text-sm">Coverage in Major Cities</div>
-            </div>
-            <div className="p-4">
-              <div className="text-4xl font-bold text-terracotta-600">4</div>
-              <div className="text-atlas-600 text-sm">Modern Tramway Lines</div>
-            </div>
-            <div className="p-4">
-              <div className="text-4xl font-bold text-terracotta-600">2030</div>
-              <div className="text-atlas-600 text-sm">World Cup Co-Host</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* The Mobility Stack */}
-      <section className="py-20 bg-white">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mb-12">
-            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-              The Mobility Stack
-            </span>
-            <h2 className="mt-2 text-3xl font-bold text-atlas-900">
-              Integrated Transit That US Cities Can Only Dream Of
-            </h2>
-            <p className="mt-4 text-lg text-atlas-600 max-w-3xl">
-              While American cities struggle with crumbling subways and decades-delayed rail projects,
-              Morocco has built an integrated mobility network that rivals Western Europe.
+            <p className="mt-4 text-sand-400">
+              You&apos;re not running away. You&apos;re running toward something better.
             </p>
           </div>
 
-          {/* Three-tier mobility */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {/* High-Speed Rail */}
-            <div className="bg-atlas-900 rounded-2xl p-8 text-white">
-              <div className="w-14 h-14 bg-terracotta-500 rounded-xl flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <div className="text-sm text-terracotta-400 font-medium mb-2">TIER 1: INTERCITY</div>
-              <h3 className="text-2xl font-bold mb-3">Al-Boraq TGV</h3>
-              <p className="text-sand-300 mb-4">
-                Africa&apos;s only high-speed rail. Tangier to Casablanca in 80 minutes.
-              </p>
-              <div className="bg-atlas-800 rounded-lg p-4">
-                <div className="flex justify-between items-center">
-                  <span className="text-sand-400">Top Speed</span>
-                  <span className="text-2xl font-bold text-white">320 km/h</span>
+          {/* The Five Questions */}
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
+            {[
+              { num: '1', q: 'Will we be safe?' },
+              { num: '2', q: 'Will our life work?' },
+              { num: '3', q: 'Can we still get home?' },
+              { num: '4', q: 'Where would we live?' },
+              { num: '5', q: 'How do we make it real?' },
+            ].map((item) => (
+              <div key={item.num} className="text-center">
+                <div className="w-10 h-10 bg-terracotta-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <span className="text-white font-bold">{item.num}</span>
                 </div>
+                <p className="text-sand-300 text-sm">{item.q}</p>
               </div>
-              <p className="text-sand-400 text-sm mt-4">
-                Amtrak Acela: 109 km/h average. California HSR: 0 passengers since 2008.
-              </p>
-            </div>
-
-            {/* Tramway */}
-            <div className="bg-olive-900 rounded-2xl p-8 text-white">
-              <div className="w-14 h-14 bg-olive-500 rounded-xl flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
-                </svg>
-              </div>
-              <div className="text-sm text-olive-400 font-medium mb-2">TIER 2: URBAN RAIL</div>
-              <h3 className="text-2xl font-bold mb-3">Modern Tramways</h3>
-              <p className="text-sand-300 mb-4">
-                Sleek, air-conditioned light rail networks in Rabat and Casablanca.
-              </p>
-              <div className="bg-olive-800 rounded-lg p-4">
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-sand-400">Casablanca</span>
-                  <span className="font-bold text-white">2 Lines, 48 Stations</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sand-400">Rabat-Salé</span>
-                  <span className="font-bold text-white">2 Lines, 31 Stations</span>
-                </div>
-              </div>
-              <p className="text-sand-400 text-sm mt-4">
-                Clean. Reliable. Under $1 per ride. Most US cities have nothing comparable.
-              </p>
-            </div>
-
-            {/* Electric Buses */}
-            <div className="bg-sand-50 rounded-2xl p-8 border border-sand-200">
-              <div className="w-14 h-14 bg-atlas-900 rounded-xl flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
-                </svg>
-              </div>
-              <div className="text-sm text-terracotta-600 font-medium mb-2">TIER 3: LAST MILE</div>
-              <h3 className="text-2xl font-bold text-atlas-900 mb-3">Electric Bus Networks</h3>
-              <p className="text-atlas-600 mb-4">
-                Growing fleet of zero-emission buses connecting neighborhoods to transit hubs.
-              </p>
-              <div className="bg-white rounded-lg p-4 border border-sand-200">
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-atlas-500">Marrakech Fleet</span>
-                  <span className="font-bold text-olive-600">100% Electric</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-atlas-500">Casablanca Expansion</span>
-                  <span className="font-bold text-olive-600">In Progress</span>
-                </div>
-              </div>
-              <p className="text-atlas-500 text-sm mt-4">
-                No diesel fumes. No aging, unreliable buses. The fleet is new.
-              </p>
-            </div>
-          </div>
-
-          {/* The US Transit Reality */}
-          <div className="bg-terracotta-50 border border-terracotta-200 rounded-2xl p-8">
-            <h4 className="text-lg font-bold text-atlas-900 mb-4">Meanwhile, in America...</h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-atlas-700">
-              <div>
-                <p className="font-semibold text-terracotta-600">Los Angeles</p>
-                <p className="text-sm">No rail from LAX to downtown. 90-minute bus ride. $28B subway delayed again.</p>
-              </div>
-              <div>
-                <p className="font-semibold text-terracotta-600">Houston</p>
-                <p className="text-sm">4th largest US city. One light rail line. 7 miles. Opens in segments over 20 years.</p>
-              </div>
-              <div>
-                <p className="font-semibold text-terracotta-600">California HSR</p>
-                <p className="text-sm">Started 2008. Zero passengers. Budget: $100B+. Completion: &quot;Sometime.&quot;</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Digital Backbone */}
-      <section className="py-20 bg-sand-50">
+      {/* ═══════════════════════════════════════════════════════════════════
+          QUESTION 1: WILL WE BE SAFE?
+          ═══════════════════════════════════════════════════════════════════ */}
+      <section className="py-20 bg-white" id="safety">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-                The Digital Backbone
-              </span>
-              <h2 className="mt-2 text-3xl font-bold text-atlas-900 mb-6">
-                5G and Fiber-to-the-Home
-              </h2>
-              <p className="text-atlas-700 mb-4">
-                Morocco is a digital-first economy. Whether you&apos;re trading on Wall Street
-                or hosting Zoom calls with London, the fiber-optic network offers 99.9%
-                uptime at a fraction of US prices.
-              </p>
-              <p className="text-atlas-700 mb-6">
-                21 million Americans still lack broadband access. In Morocco, fiber reaches
-                cities most Americans have never heard of.
-              </p>
-              <div className="bg-white rounded-xl p-6 border border-sand-200">
-                <h4 className="font-semibold text-atlas-900 mb-4">Monthly Internet Comparison</h4>
-                <div className="flex justify-between items-center mb-3 pb-3 border-b border-sand-200">
-                  <span className="text-atlas-600">Morocco Fiber (100Mbps)</span>
-                  <span className="text-xl font-bold text-olive-600">$30-50</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-atlas-600">US Fiber (Comcast/Cox)</span>
-                  <span className="text-xl font-bold text-atlas-400">$80-120</span>
-                </div>
-              </div>
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-12 h-12 bg-terracotta-500 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-xl">1</span>
             </div>
-            <div className="bg-atlas-900 rounded-2xl p-8 text-white">
-              <h4 className="text-lg font-semibold mb-6">Why Remote Workers Choose Morocco</h4>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-olive-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-sand-200"><strong className="text-white">5G Coverage</strong> — Nationwide in major cities</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-olive-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-sand-200"><strong className="text-white">GMT+1 Time Zone</strong> — Perfect overlap with NYC (work 2-10pm local)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-olive-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-sand-200"><strong className="text-white">Co-Working Spaces</strong> — Modern hubs in Casablanca, Rabat, Marrakech</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-olive-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-sand-200"><strong className="text-white">Tech Hub Growth</strong> — Oracle, Google Cloud, and African startups HQ&apos;d here</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Healthcare */}
-      <section className="py-20 bg-sand-50">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mb-12">
-            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-              Healthcare
-            </span>
-            <h2 className="mt-2 text-3xl font-bold text-atlas-900">
-              European Standards. African Prices.
-            </h2>
+            <h2 className="text-3xl font-bold text-atlas-900">Will we be safe?</h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-2xl font-bold text-atlas-900 mb-6">
-                The Private Clinic Network
-              </h3>
-              <p className="text-atlas-700 mb-6">
-                Access state-of-the-art private clinics in every major city. Specialized oncology,
-                cardiology, and maternity care with US/European-trained specialists.
-              </p>
-              <p className="text-atlas-700 mb-4">
-                The <strong>AKDITAL Group</strong> operates 20+ clinics and hospitals across Morocco,
-                offering MRI, CT scans, advanced surgery, and 24/7 emergency care at standards that
-                rival any European facility.
-              </p>
-              <p className="text-atlas-700 mb-4">
-                <strong>Hôpital Américain de Casablanca (HAC)</strong> — The gold standard. A multidisciplinary
-                facility built to North American technical and medical specifications, replicating the
-                American patient experience.
-              </p>
-              <p className="text-atlas-700 mb-6">
-                <strong>Mayo Clinic Care Network:</strong> Several elite Moroccan medical groups are members
-                of the Mayo Clinic Care Network, allowing local doctors to consult directly with Mayo Clinic
-                experts on complex cases.
-              </p>
-              <div className="bg-terracotta-50 border-l-4 border-terracotta-500 p-6 rounded-r-lg">
-                <p className="text-atlas-900 font-medium">
-                  Cost? Roughly <strong>15% of what you pay in the US</strong> for the same outcome.
-                  No 6-month wait times. No $5,000 deductibles. No medical bankruptcy.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h4 className="text-lg font-semibold text-atlas-900 mb-6">Healthcare Cost Comparison</h4>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center py-3 border-b border-sand-200">
-                  <span className="text-atlas-700">MRI Scan</span>
-                  <div className="text-right">
-                    <div className="text-sm text-atlas-500">US: $1,200-3,000</div>
-                    <div className="font-bold text-olive-600">Morocco: $150-300</div>
-                  </div>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-sand-200">
-                  <span className="text-atlas-700">Hip Replacement</span>
-                  <div className="text-right">
-                    <div className="text-sm text-atlas-500">US: $32,000-44,000</div>
-                    <div className="font-bold text-olive-600">Morocco: $6,000-10,000</div>
-                  </div>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-sand-200">
-                  <span className="text-atlas-700">Dental Implant</span>
-                  <div className="text-right">
-                    <div className="text-sm text-atlas-500">US: $3,000-4,500</div>
-                    <div className="font-bold text-olive-600">Morocco: $600-1,000</div>
-                  </div>
-                </div>
-                <div className="flex justify-between items-center py-3">
-                  <span className="text-atlas-700">Childbirth (C-Section)</span>
-                  <div className="text-right">
-                    <div className="text-sm text-atlas-500">US: $22,000-32,000</div>
-                    <div className="font-bold text-olive-600">Morocco: $2,000-4,000</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Healthcare Network Map */}
-      <section className="py-20 bg-white">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mb-12">
-            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-              The Healthcare Network
-            </span>
-            <h2 className="mt-2 text-3xl font-bold text-atlas-900">
-              Tier-1 Facilities Across the Institutional Corridor
-            </h2>
-            <p className="mt-4 text-lg text-atlas-600 max-w-3xl">
-              From Tangier to Marrakech, a network of international-standard facilities ensures
-              your medical sovereignty. Click any location to see transit connections and specialties.
-            </p>
-          </div>
-          <HealthcareMap />
-        </div>
-      </section>
-
-      {/* Safety & Stability */}
-      <section className="py-20 bg-sand-50">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mb-12">
-            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-              Safety & Stability
-            </span>
-            <h2 className="mt-2 text-3xl font-bold text-atlas-900">
-              The Sanctuary of Stability
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12">
             <div>
               <p className="text-xl text-atlas-700 mb-6">
-                A <strong>Major Non-NATO Ally</strong>. While global tensions rise, Morocco remains
-                the anchor of stability in the Mediterranean.
+                The peace of mind you&apos;ve been missing. No more school shooting drills.
+                No more checking crime reports before choosing a restaurant.
+                <strong> Your family walks freely.</strong>
               </p>
+
               <p className="text-atlas-700 mb-6">
-                With a pro-Western, moderate monarchy and a highly sophisticated national security
-                apparatus, our clients often tell us they feel safer walking in Casablanca at midnight
-                than they ever did in San Francisco, Chicago, or Atlanta.
+                Morocco is a <strong>Major Non-NATO Ally</strong>—the same designation as Japan, Australia, and Israel.
+                Strict gun control. Near-zero violent crime. A culture of communal safety
+                that Americans find startling—and deeply reassuring.
               </p>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
+
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-olive-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-atlas-700"><strong>No mass shootings.</strong> Morocco has strict gun control and virtually zero gun violence.</span>
-                </li>
-                <li className="flex items-start gap-3">
+                  <span className="text-atlas-700"><strong>No mass shootings.</strong> Strict gun control. Near-zero gun violence.</span>
+                </div>
+                <div className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-olive-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-atlas-700"><strong>Low violent crime.</strong> Significantly lower rates than any major US city.</span>
-                </li>
-                <li className="flex items-start gap-3">
+                  <span className="text-atlas-700"><strong>No &quot;no-go&quot; zones.</strong> Walk anywhere, anytime—medinas at midnight.</span>
+                </div>
+                <div className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-olive-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-atlas-700"><strong>No &quot;no-go&quot; zones.</strong> Walk anywhere, anytime.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-olive-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-atlas-700"><strong>Political stability.</strong> 25+ years of steady modernization. No coups, no civil unrest.</span>
-                </li>
-              </ul>
+                  <span className="text-atlas-700"><strong>25+ years of stability.</strong> No coups. No civil unrest. Steady modernization.</span>
+                </div>
+              </div>
+
+              <div className="bg-terracotta-50 border-l-4 border-terracotta-500 p-6 rounded-r-lg">
+                <p className="text-atlas-900 font-medium">
+                  &quot;For the first time in years, I don&apos;t think about safety. I just live.&quot;
+                </p>
+                <p className="text-atlas-600 text-sm mt-2">— American mother, relocated from Austin</p>
+              </div>
             </div>
-            <div className="bg-atlas-900 rounded-2xl p-8 text-white">
-              <h4 className="text-lg font-semibold mb-6">Morocco&apos;s Strategic Position</h4>
-              <ul className="space-y-4 text-sand-200">
-                <li className="flex items-start gap-3">
-                  <span className="text-terracotta-400 font-bold">•</span>
-                  <span><strong className="text-white">Major Non-NATO Ally</strong> — Same status as Japan, South Korea, Australia, Israel</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-terracotta-400 font-bold">•</span>
-                  <span><strong className="text-white">Deep US ties</strong> — Military cooperation, intelligence sharing, counterterrorism partnership</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-terracotta-400 font-bold">•</span>
-                  <span><strong className="text-white">World Cup 2030 co-host</strong> — FIFA doesn&apos;t choose unstable countries</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-terracotta-400 font-bold">•</span>
-                  <span><strong className="text-white">Gateway to Africa & Europe</strong> — Strategic position between three continents</span>
-                </li>
-              </ul>
+
+            {/* Morocco vs Mexico Comparison */}
+            <div>
+              <h3 className="text-lg font-bold text-atlas-900 mb-4">How Morocco Compares</h3>
+              <p className="text-atlas-600 mb-6 text-sm">
+                Mexico is a popular choice for Americans. But many expats there live in gated communities
+                and stay aware of security concerns. Morocco offers a different experience.
+              </p>
+
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-sand-200">
+                <div className="bg-atlas-900 text-white px-6 py-3">
+                  <h4 className="font-bold text-sm">Safety Comparison</h4>
+                </div>
+                <div className="divide-y divide-sand-200">
+                  <div className="grid grid-cols-3 px-4 py-3 bg-sand-50 text-xs font-semibold">
+                    <div className="text-atlas-700">Factor</div>
+                    <div className="text-center text-atlas-700">Mexico</div>
+                    <div className="text-center text-atlas-700">Morocco</div>
+                  </div>
+                  {[
+                    { factor: 'Cartel Activity', mexico: 'High', morocco: 'None' },
+                    { factor: 'Kidnapping Risk', mexico: 'Elevated', morocco: 'Negligible' },
+                    { factor: 'Gun Violence', mexico: 'High', morocco: 'Near Zero' },
+                    { factor: 'Walking at Night', mexico: 'Area-Dependent', morocco: 'Everywhere' },
+                    { factor: 'Security Model', mexico: 'Gated Bubble', morocco: 'Communal Safety' },
+                  ].map((row, i) => (
+                    <div key={i} className={`grid grid-cols-3 px-4 py-3 text-sm ${i % 2 === 0 ? '' : 'bg-sand-50'}`}>
+                      <div className="text-atlas-700">{row.factor}</div>
+                      <div className="text-center text-terracotta-600">{row.mexico}</div>
+                      <div className="text-center text-olive-600 font-semibold">{row.morocco}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Answer */}
+          <div className="mt-12 bg-olive-50 border border-olive-200 rounded-xl p-6">
+            <div className="flex items-center gap-3">
+              <svg className="w-8 h-8 text-olive-600" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div>
+                <p className="font-bold text-atlas-900">Yes. Real peace of mind—not just a gated illusion.</p>
+                <p className="text-atlas-600 text-sm">Your kids walk to school. You walk anywhere, anytime. The background anxiety disappears.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* The Compare Module */}
-      <section className="py-20 bg-sand-50">
+      {/* ═══════════════════════════════════════════════════════════════════
+          QUESTION 2: WILL OUR LIFE WORK?
+          ═══════════════════════════════════════════════════════════════════ */}
+      <section className="py-20 bg-sand-50" id="infrastructure">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-              Side by Side
-            </span>
-            <h2 className="mt-2 text-3xl font-bold text-atlas-900">
-              The US (Status Quo) vs. Morocco (Your Future)
-            </h2>
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-12 h-12 bg-terracotta-500 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-xl">2</span>
+            </div>
+            <h2 className="text-3xl font-bold text-atlas-900">Will our life actually work there?</h2>
           </div>
 
-          <div className="overflow-x-auto">
-            <table className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
-              <thead className="bg-atlas-900 text-white">
-                <tr>
-                  <th className="px-6 py-4 text-left">Feature</th>
-                  <th className="px-6 py-4 text-center">The US (Status Quo)</th>
-                  <th className="px-6 py-4 text-center">Morocco (Your Future)</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-sand-200">
-                <tr>
-                  <td className="px-6 py-4 font-medium text-atlas-900">High-Speed Rail</td>
-                  <td className="px-6 py-4 text-center text-atlas-500">0 Miles (Nationwide)</td>
-                  <td className="px-6 py-4 text-center text-olive-600 font-semibold">200+ Miles (Expanding)</td>
-                </tr>
-                <tr className="bg-sand-50">
-                  <td className="px-6 py-4 font-medium text-atlas-900">Fiber Internet</td>
-                  <td className="px-6 py-4 text-center text-atlas-500">$80-120/month</td>
-                  <td className="px-6 py-4 text-center text-olive-600 font-semibold">$30-50/month</td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 font-medium text-atlas-900">Healthcare (MRI)</td>
-                  <td className="px-6 py-4 text-center text-atlas-500">$1,200-3,000</td>
-                  <td className="px-6 py-4 text-center text-olive-600 font-semibold">$150-300</td>
-                </tr>
-                <tr className="bg-sand-50">
-                  <td className="px-6 py-4 font-medium text-atlas-900">Violent Crime</td>
-                  <td className="px-6 py-4 text-center text-atlas-500">High (Major Cities)</td>
-                  <td className="px-6 py-4 text-center text-olive-600 font-semibold">Low (One of Safest in MENA)</td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 font-medium text-atlas-900">Property Tax</td>
-                  <td className="px-6 py-4 text-center text-atlas-500">1.1% Average (Annually)</td>
-                  <td className="px-6 py-4 text-center text-olive-600 font-semibold">Negligible / Near Zero</td>
-                </tr>
-                <tr className="bg-sand-50">
-                  <td className="px-6 py-4 font-medium text-atlas-900">Political Stability</td>
-                  <td className="px-6 py-4 text-center text-atlas-500">Polarized / Uncertain</td>
-                  <td className="px-6 py-4 text-center text-olive-600 font-semibold">Stable Monarchy (25+ years)</td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 font-medium text-atlas-900">World Cup 2030</td>
-                  <td className="px-6 py-4 text-center text-atlas-500">2026 (Joint with Canada/Mexico)</td>
-                  <td className="px-6 py-4 text-center text-olive-600 font-semibold">Co-Host with Spain & Portugal</td>
-                </tr>
-              </tbody>
-            </table>
+          <p className="text-xl text-atlas-700 mb-12 max-w-3xl">
+            A fresh start shouldn&apos;t mean starting over. Your career continues. Your kids&apos; education stays on track.
+            Your health is covered. <strong>Life actually works here.</strong>
+          </p>
+
+          {/* Three Proof Points */}
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Healthcare */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-sand-200">
+              <div className="w-12 h-12 bg-atlas-100 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-6 h-6 text-atlas-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-atlas-900 mb-3">Your Health, Covered</h3>
+              <p className="text-atlas-600 mb-4">
+                American-trained doctors. Mayo Clinic Care Network members.
+                Same-day specialist appointments—no 6-month waitlists, no $5,000 deductibles.
+              </p>
+              <div className="bg-sand-50 rounded-lg p-4">
+                <div className="flex justify-between text-sm mb-2">
+                  <span className="text-atlas-500">MRI Scan (US)</span>
+                  <span className="text-atlas-400">$1,200-3,000</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-atlas-700 font-medium">MRI Scan here</span>
+                  <span className="text-olive-600 font-bold">$150-300</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Education */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-sand-200">
+              <div className="w-12 h-12 bg-olive-100 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-6 h-6 text-olive-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-atlas-900 mb-3">Your Kids, On Track</h3>
+              <p className="text-atlas-600 mb-4">
+                5 NEASC-accredited American schools. IB programs. AP courses.
+                Your kids apply to the same colleges—Harvard, Stanford, MIT. No gap year required.
+              </p>
+              <div className="bg-sand-50 rounded-lg p-4">
+                <div className="text-sm text-atlas-700 mb-2">
+                  <strong>American School of Tangier</strong> — Founded 1950
+                </div>
+                <div className="text-sm text-atlas-700">
+                  <strong>Casablanca American School</strong> — IB World School
+                </div>
+              </div>
+            </div>
+
+            {/* Connectivity */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-sand-200">
+              <div className="w-12 h-12 bg-atlas-100 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-6 h-6 text-atlas-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-atlas-900 mb-3">Your Work, Uninterrupted</h3>
+              <p className="text-atlas-600 mb-4">
+                5G nationwide. Fiber in all major cities. 1 Gbps speeds.
+                Your Zoom calls don&apos;t drop. Your trades execute. Your remote job stays remote.
+              </p>
+              <div className="bg-sand-50 rounded-lg p-4">
+                <div className="flex justify-between text-sm mb-2">
+                  <span className="text-atlas-500">US Fiber (100 Mbps)</span>
+                  <span className="text-atlas-400">$80-120/mo</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-atlas-700 font-medium">Fiber here</span>
+                  <span className="text-olive-600 font-bold">$30-50/mo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Mobility Bonus */}
+          <div className="bg-atlas-900 rounded-2xl p-8 text-white">
+            <h4 className="text-lg font-bold mb-4">Bonus: You Can Actually Get Around</h4>
+            <p className="text-sand-300 mb-6">
+              High-speed rail connects the major cities. Urban tramways serve Casablanca and Rabat. You don&apos;t need a car—but the roads are excellent if you want one.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-atlas-800 rounded-lg p-4">
+                <div className="text-sand-400 text-sm font-medium mb-1">High-Speed Rail</div>
+                <div className="text-2xl font-bold">200 mph</div>
+                <div className="text-sand-400 text-sm">Tangier to Casa: 80 min</div>
+              </div>
+              <div className="bg-atlas-800 rounded-lg p-4">
+                <div className="text-olive-400 text-sm font-medium mb-1">Urban Tramways</div>
+                <div className="text-2xl font-bold">4 Lines</div>
+                <div className="text-sand-400 text-sm">Casablanca + Rabat</div>
+              </div>
+              <div className="bg-atlas-800 rounded-lg p-4">
+                <div className="text-sand-400 text-sm font-medium mb-1">Modern Highways</div>
+                <div className="text-2xl font-bold">1,100+ mi</div>
+                <div className="text-sand-400 text-sm">Coast-to-coast network</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Answer */}
+          <div className="mt-12 bg-olive-50 border border-olive-200 rounded-xl p-6">
+            <div className="flex items-center gap-3">
+              <svg className="w-8 h-8 text-olive-600" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div>
+                <p className="font-bold text-atlas-900">Yes. Your life continues—no compromises.</p>
+                <p className="text-atlas-600 text-sm">Healthcare, education, connectivity, mobility. Everything your family needs is here.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 2030 Vision */}
-      <section className="py-20 bg-atlas-900 text-white">
+      {/* ═══════════════════════════════════════════════════════════════════
+          QUESTION 3: CAN WE STILL GET HOME?
+          ═══════════════════════════════════════════════════════════════════ */}
+      <section className="py-20 bg-white" id="proximity">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <span className="text-terracotta-400 font-semibold uppercase text-sm tracking-wide">
-              The 2030 Vision
-            </span>
-            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">
-              Investing in a Global Hub
-            </h2>
-            <p className="mt-6 text-xl text-sand-200">
-              As the co-host of the 2030 FIFA World Cup, Morocco is undergoing a <strong>$5+ billion
-              infrastructure surge</strong>. New airports, expanded highways, and the world&apos;s largest
-              grand stadium in Benslimane.
-            </p>
-            <p className="mt-6 text-xl text-sand-200">
-              Moving here now is like buying into Dubai in 2005 or Portugal in 2015.
-            </p>
-            <p className="mt-8 text-2xl font-semibold text-white">
-              The smart money is already here. Where will you be?
-            </p>
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-12 h-12 bg-terracotta-500 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-xl">3</span>
+            </div>
+            <h2 className="text-3xl font-bold text-atlas-900">Can we still get home?</h2>
+          </div>
+
+          <p className="text-xl text-atlas-700 mb-12 max-w-3xl">
+            A new beginning doesn&apos;t mean cutting ties. You&apos;re closer to New York than Hawaii.
+            <strong> Grandma&apos;s birthday. Your sister&apos;s wedding. You&apos;re there.</strong>
+          </p>
+
+          {/* The 7/2 Proximity */}
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="text-center bg-sand-50 rounded-2xl p-8">
+              <div className="text-6xl font-bold text-atlas-900 mb-2">7h</div>
+              <div className="text-xl font-medium text-atlas-900 mb-2">To New York</div>
+              <p className="text-atlas-600 text-sm">
+                Direct flights daily. Family emergency? You&apos;re there by morning.
+              </p>
+            </div>
+            <div className="text-center bg-sand-50 rounded-2xl p-8">
+              <div className="text-6xl font-bold text-olive-600 mb-2">2h</div>
+              <div className="text-xl font-medium text-atlas-900 mb-2">To London / Paris</div>
+              <p className="text-atlas-600 text-sm">
+                Europe becomes your weekend getaway. Paris for dinner. London for theater.
+              </p>
+            </div>
+            <div className="text-center bg-sand-50 rounded-2xl p-8">
+              <div className="text-6xl font-bold text-atlas-700 mb-2">5h</div>
+              <div className="text-xl font-medium text-atlas-900 mb-2">Time Zone Overlap</div>
+              <p className="text-atlas-600 text-sm">
+                Overlap with US East Coast: 9am-2pm. No 3am calls. You stay connected.
+              </p>
+            </div>
+          </div>
+
+          {/* The Comparison */}
+          <div className="bg-terracotta-50 border border-terracotta-200 rounded-2xl p-8">
+            <h4 className="text-lg font-bold text-atlas-900 mb-4">What Real Distance Looks Like</h4>
+            <div className="grid md:grid-cols-3 gap-6 text-atlas-700">
+              <div>
+                <p className="font-semibold text-terracotta-600">Thailand / Bali</p>
+                <p className="text-sm">20+ hours. 12-hour time difference. You miss holidays. Your relationships strain.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-terracotta-600">Portugal</p>
+                <p className="text-sm">Same time zone—but increasingly crowded and expensive. Golden visa now requires €500K+.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-olive-600">Here</p>
+                <p className="text-sm">7 hours to New York. 2 hours to Europe. You&apos;re not disappearing. You&apos;re repositioning.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Answer */}
+          <div className="mt-12 bg-olive-50 border border-olive-200 rounded-xl p-6">
+            <div className="flex items-center gap-3">
+              <svg className="w-8 h-8 text-olive-600" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div>
+                <p className="font-bold text-atlas-900">Yes. You can always get home.</p>
+                <p className="text-atlas-600 text-sm">Closer than Hawaii. Perfect time zone. Your American life doesn&apos;t end—it expands.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* ═══════════════════════════════════════════════════════════════════
+          QUESTION 4: WHERE WOULD WE LIVE?
+          ═══════════════════════════════════════════════════════════════════ */}
+      <section className="py-20 bg-sand-50" id="neighborhoods">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-12 h-12 bg-terracotta-500 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-xl">4</span>
+            </div>
+            <h2 className="text-3xl font-bold text-atlas-900">Where would we actually live?</h2>
+          </div>
+
+          <p className="text-xl text-atlas-700 mb-8 max-w-3xl">
+            Picture your new morning: ocean breeze, kids walking to an American school,
+            a café where the owner knows your name. <strong>This is where it happens.</strong>
+          </p>
+
+          <p className="text-atlas-600 mb-12 max-w-3xl">
+            Explore the neighborhoods where American families have built their new lives.
+            Healthcare, schools, transit—everything your family needs, mapped.
+          </p>
+
+          <InfrastructureMap />
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════
+          QUESTION 5: HOW DO WE MAKE IT REAL?
+          ═══════════════════════════════════════════════════════════════════ */}
+      <section className="py-20 bg-atlas-900 text-white" id="process">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-12 h-12 bg-terracotta-500 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-xl">5</span>
+            </div>
+            <h2 className="text-3xl font-bold text-white">How do we make it real?</h2>
+          </div>
+
+          <p className="text-xl text-sand-200 mb-12 max-w-3xl">
+            You&apos;ve seen what&apos;s possible. Now comes the question: <strong className="text-white">how do you actually get there?</strong>
+            The life is straightforward. The paperwork requires navigation.
+          </p>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* The Hurdles */}
+            <div>
+              <h3 className="text-xl font-bold mb-6">Three Hurdles Between You and Your New Life</h3>
+              <div className="space-y-6">
+                <div className="bg-atlas-800 rounded-xl p-6">
+                  <h4 className="text-sand-400 font-semibold mb-2">1. Paperwork That Has to Be Perfect</h4>
+                  <p className="text-sand-300 text-sm">
+                    FBI background checks must be federal (not state) and apostilled at the US Department of State
+                    in Washington, DC. One wrong step and you&apos;re starting over from scratch.
+                  </p>
+                </div>
+                <div className="bg-atlas-800 rounded-xl p-6">
+                  <h4 className="text-sand-400 font-semibold mb-2">2. Protecting Your Investment</h4>
+                  <p className="text-sand-300 text-sm">
+                    Two property title systems exist. <strong className="text-white">Titre Foncier</strong> is secure.
+                    <strong className="text-amber-400"> Melkia</strong> can have disputed boundaries and hidden claims.
+                    Knowing the difference protects your family&apos;s future.
+                  </p>
+                </div>
+                <div className="bg-atlas-800 rounded-xl p-6">
+                  <h4 className="text-sand-400 font-semibold mb-2">3. Keeping Your Money Accessible</h4>
+                  <p className="text-sand-300 text-sm">
+                    Without the right account structure, your capital can get trapped in local currency.
+                    The solution exists—it just requires knowing which doors to knock on.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* The Path Forward */}
+            <div>
+              <h3 className="text-xl font-bold mb-6">You Don&apos;t Have to Figure This Out Alone</h3>
+              <p className="text-sand-300 mb-6">
+                The new beginning is real. The peace of mind is waiting.
+                You just need someone who&apos;s done this before to clear the path.
+              </p>
+
+              <div className="bg-olive-500/10 border border-olive-500/30 rounded-xl p-6 mb-6">
+                <h4 className="text-olive-400 font-semibold mb-2">We Handle The Complexity</h4>
+                <ul className="text-sand-300 text-sm space-y-2">
+                  <li>• Document audit before you leave (so nothing surprises you)</li>
+                  <li>• Residency processing with English-speaking advocacy</li>
+                  <li>• Bank account setup with the right structure</li>
+                  <li>• Property verification (protect your investment)</li>
+                  <li>• Someone in your corner at every step</li>
+                </ul>
+              </div>
+
+              <p className="text-sand-400 text-sm">
+                We don&apos;t sell real estate. We don&apos;t take commissions.
+                We help American families navigate the transition—so you can focus on your new life.
+              </p>
+            </div>
+          </div>
+
+          {/* Answer */}
+          <div className="mt-12 bg-atlas-800 border border-atlas-700 rounded-xl p-6">
+            <div className="flex items-center gap-3">
+              <svg className="w-8 h-8 text-olive-400" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div>
+                <p className="font-bold text-white">You make it real with a partner who knows the way.</p>
+                <p className="text-sand-400 text-sm">The life is waiting. We help you get there.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════
+          FINAL CTA
+          ═══════════════════════════════════════════════════════════════════ */}
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-atlas-900">
-            7 Hours from New York. 2 Hours from London.
+            Your Fresh Start Is Closer Than You Think
           </h2>
-          <p className="mt-4 text-lg text-atlas-600">
-            Position yourself in the geographic sweet spot. Direct flights, zero jet-lag lifestyle,
-            and a time zone that keeps you connected to both continents.
+          <div className="mt-6 grid grid-cols-5 gap-2 max-w-xl mx-auto text-sm">
+            <div className="text-olive-600">✓ Safe</div>
+            <div className="text-olive-600">✓ Works</div>
+            <div className="text-olive-600">✓ Close</div>
+            <div className="text-olive-600">✓ Beautiful</div>
+            <div className="text-olive-600">✓ Possible</div>
+          </div>
+          <p className="mt-8 text-lg text-atlas-600 max-w-2xl mx-auto">
+            The peace of mind you&apos;ve been looking for exists. The new beginning is real.
+            The next step is a conversation about what your transition looks like.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-primary">
-              Claim Your Geographic Leverage
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-4 bg-terracotta-500 text-white font-semibold rounded-lg hover:bg-terracotta-600 transition-colors text-lg"
+            >
+              Start the Conversation
             </Link>
-            <Link href="/families" className="btn-secondary">
-              Education & Schools
+            <Link
+              href="/checklist"
+              className="inline-flex items-center justify-center px-8 py-4 bg-sand-100 text-atlas-900 font-semibold rounded-lg hover:bg-sand-200 transition-colors text-lg"
+            >
+              See If You&apos;re Ready
             </Link>
           </div>
         </div>

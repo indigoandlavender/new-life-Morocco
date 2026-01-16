@@ -64,7 +64,7 @@ export async function GET() {
       legal: finalLegal,
       copyright: {
         year: new Date().getFullYear(),
-        name: "New Life Morocco",
+        name: "Morocco Advisors",
       },
     };
 
@@ -119,7 +119,7 @@ export async function GET() {
         ],
         copyright: {
           year: new Date().getFullYear(),
-          name: "New Life Morocco",
+          name: "Morocco Advisors",
         },
       },
     });

@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Carte de Séjour Morocco | Residence Permit Guide for Americans',
-  description: 'Complete guide to obtaining your Carte de Séjour (residence permit) in Morocco. FBI background check, document requirements, 15-day rule, and step-by-step process.',
+  title: 'Carte de Séjour | Residence Permit Guide | Morocco Advisors',
+  description: 'Everything Americans need to know about getting a residence permit in Morocco. FBI background check, documents, timeline, and the process explained simply.',
 };
 
 export default function CarteDeSejourPage() {
@@ -17,8 +17,8 @@ export default function CarteDeSejourPage() {
               Carte de Séjour
             </h1>
             <p className="mt-6 text-lg leading-8 text-atlas-700">
-              Your comprehensive guide to obtaining Morocco&apos;s residence permit—with the
-              specific details Americans need to know.
+              Your guide to getting a residence permit in Morocco—the specific details
+              Americans need to know, explained simply.
             </p>
           </div>
         </div>
@@ -153,17 +153,17 @@ export default function CarteDeSejourPage() {
               <h4 className="font-medium text-atlas-800 mb-2">Key requirements:</h4>
               <ul className="space-y-2 text-atlas-600 text-sm">
                 <li className="flex items-start gap-2">
-                  <span className="text-terracotta-500 mt-1">•</span>
+                  <span className="text-atlas-400 mt-1">•</span>
                   <span><strong>Attestation de Non-Travail:</strong> A legalized declaration stating you are not employed
                   in Morocco. This proves you won&apos;t be taking local jobs.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-terracotta-500 mt-1">•</span>
+                  <span className="text-atlas-400 mt-1">•</span>
                   <span><strong>Proof of foreign income:</strong> Bank statements showing regular deposits from your
                   US employer or clients, pension, investments, etc.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-terracotta-500 mt-1">•</span>
+                  <span className="text-atlas-400 mt-1">•</span>
                   <span><strong>Sufficient funds:</strong> Generally, authorities want to see you can support yourself
                   without working locally (roughly $1,000–1,500/month minimum).</span>
                 </li>
@@ -246,7 +246,7 @@ export default function CarteDeSejourPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="card">
               <h3 className="text-xl font-semibold text-atlas-900 mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-terracotta-100 text-terracotta-700 rounded-full flex items-center justify-center text-sm font-bold">1</span>
+                <span className="w-8 h-8 bg-atlas-100 text-atlas-700 rounded-full flex items-center justify-center text-sm font-bold">1</span>
                 Identity Documents
               </h3>
               <ul className="space-y-2 text-atlas-600">
@@ -259,7 +259,7 @@ export default function CarteDeSejourPage() {
 
             <div className="card">
               <h3 className="text-xl font-semibold text-atlas-900 mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-terracotta-100 text-terracotta-700 rounded-full flex items-center justify-center text-sm font-bold">2</span>
+                <span className="w-8 h-8 bg-atlas-100 text-atlas-700 rounded-full flex items-center justify-center text-sm font-bold">2</span>
                 Proof of Address
               </h3>
               <ul className="space-y-2 text-atlas-600">
@@ -294,7 +294,7 @@ export default function CarteDeSejourPage() {
 
             <div className="card">
               <h3 className="text-xl font-semibold text-atlas-900 mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-terracotta-100 text-terracotta-700 rounded-full flex items-center justify-center text-sm font-bold">4</span>
+                <span className="w-8 h-8 bg-atlas-100 text-atlas-700 rounded-full flex items-center justify-center text-sm font-bold">4</span>
                 Financial & Professional
               </h3>
               <ul className="space-y-2 text-atlas-600">
@@ -307,7 +307,7 @@ export default function CarteDeSejourPage() {
 
             <div className="card">
               <h3 className="text-xl font-semibold text-atlas-900 mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-terracotta-100 text-terracotta-700 rounded-full flex items-center justify-center text-sm font-bold">5</span>
+                <span className="w-8 h-8 bg-atlas-100 text-atlas-700 rounded-full flex items-center justify-center text-sm font-bold">5</span>
                 Medical Certificate
               </h3>
               <ul className="space-y-2 text-atlas-600">
@@ -326,7 +326,7 @@ export default function CarteDeSejourPage() {
 
             <div className="card">
               <h3 className="text-xl font-semibold text-atlas-900 mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-terracotta-100 text-terracotta-700 rounded-full flex items-center justify-center text-sm font-bold">6</span>
+                <span className="w-8 h-8 bg-atlas-100 text-atlas-700 rounded-full flex items-center justify-center text-sm font-bold">6</span>
                 Additional Documents
               </h3>
               <ul className="space-y-2 text-atlas-600">
@@ -384,7 +384,7 @@ export default function CarteDeSejourPage() {
 
               <div className="space-y-8">
                 <div className="flex gap-6">
-                  <div className="w-16 h-16 bg-terracotta-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                  <div className="w-16 h-16 bg-atlas-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
                     1
                   </div>
                   <div className="flex-1 pt-2">
@@ -398,7 +398,7 @@ export default function CarteDeSejourPage() {
                 </div>
 
                 <div className="flex gap-6">
-                  <div className="w-16 h-16 bg-terracotta-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                  <div className="w-16 h-16 bg-atlas-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
                     2
                   </div>
                   <div className="flex-1 pt-2">
@@ -412,7 +412,7 @@ export default function CarteDeSejourPage() {
                 </div>
 
                 <div className="flex gap-6">
-                  <div className="w-16 h-16 bg-terracotta-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                  <div className="w-16 h-16 bg-atlas-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
                     3
                   </div>
                   <div className="flex-1 pt-2">
@@ -426,7 +426,7 @@ export default function CarteDeSejourPage() {
                 </div>
 
                 <div className="flex gap-6">
-                  <div className="w-16 h-16 bg-terracotta-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                  <div className="w-16 h-16 bg-atlas-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
                     4
                   </div>
                   <div className="flex-1 pt-2">
@@ -440,7 +440,7 @@ export default function CarteDeSejourPage() {
                 </div>
 
                 <div className="flex gap-6">
-                  <div className="w-16 h-16 bg-terracotta-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                  <div className="w-16 h-16 bg-atlas-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
                     5
                   </div>
                   <div className="flex-1 pt-2">
@@ -485,32 +485,32 @@ export default function CarteDeSejourPage() {
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-terracotta-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-3 h-3 text-terracotta-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-6 h-6 bg-atlas-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-3 h-3 text-atlas-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <p className="text-atlas-600">Updated passport copies and photos</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-terracotta-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-3 h-3 text-terracotta-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-6 h-6 bg-atlas-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-3 h-3 text-atlas-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <p className="text-atlas-600">Current proof of address</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-terracotta-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-3 h-3 text-terracotta-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-6 h-6 bg-atlas-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-3 h-3 text-atlas-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <p className="text-atlas-600">Recent bank statements</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-terracotta-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-3 h-3 text-terracotta-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-6 h-6 bg-atlas-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-3 h-3 text-atlas-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
@@ -559,7 +559,7 @@ export default function CarteDeSejourPage() {
             <div className="bg-terracotta-50 rounded-2xl p-8 border border-terracotta-200">
               <div className="space-y-4">
                 <label className="flex items-start gap-4 cursor-pointer">
-                  <div className="w-6 h-6 border-2 border-terracotta-400 rounded mt-0.5 flex-shrink-0"></div>
+                  <div className="w-6 h-6 border-2 border-atlas-400 rounded mt-0.5 flex-shrink-0"></div>
                   <div>
                     <p className="font-medium text-atlas-900">Get FBI Identity History Summary</p>
                     <p className="text-atlas-600 text-sm">Request from FBI.gov—takes 3-5 days digitally or up to 8 weeks by mail</p>
@@ -567,7 +567,7 @@ export default function CarteDeSejourPage() {
                 </label>
 
                 <label className="flex items-start gap-4 cursor-pointer">
-                  <div className="w-6 h-6 border-2 border-terracotta-400 rounded mt-0.5 flex-shrink-0"></div>
+                  <div className="w-6 h-6 border-2 border-atlas-400 rounded mt-0.5 flex-shrink-0"></div>
                   <div>
                     <p className="font-medium text-atlas-900">Apostille the FBI check at US Department of State</p>
                     <p className="text-atlas-600 text-sm">Must be done in Washington, DC—not a local notary. Takes 4-8 weeks.</p>
@@ -575,7 +575,7 @@ export default function CarteDeSejourPage() {
                 </label>
 
                 <label className="flex items-start gap-4 cursor-pointer">
-                  <div className="w-6 h-6 border-2 border-terracotta-400 rounded mt-0.5 flex-shrink-0"></div>
+                  <div className="w-6 h-6 border-2 border-atlas-400 rounded mt-0.5 flex-shrink-0"></div>
                   <div>
                     <p className="font-medium text-atlas-900">Apostille birth certificate (and marriage certificate if applicable)</p>
                     <p className="text-atlas-600 text-sm">Done by your state&apos;s Secretary of State office</p>
@@ -583,7 +583,7 @@ export default function CarteDeSejourPage() {
                 </label>
 
                 <label className="flex items-start gap-4 cursor-pointer">
-                  <div className="w-6 h-6 border-2 border-terracotta-400 rounded mt-0.5 flex-shrink-0"></div>
+                  <div className="w-6 h-6 border-2 border-atlas-400 rounded mt-0.5 flex-shrink-0"></div>
                   <div>
                     <p className="font-medium text-atlas-900">Get certified French translations of all documents</p>
                     <p className="text-atlas-600 text-sm">Can be done in US or Morocco—often easier in Morocco</p>
@@ -591,7 +591,7 @@ export default function CarteDeSejourPage() {
                 </label>
 
                 <label className="flex items-start gap-4 cursor-pointer">
-                  <div className="w-6 h-6 border-2 border-terracotta-400 rounded mt-0.5 flex-shrink-0"></div>
+                  <div className="w-6 h-6 border-2 border-atlas-400 rounded mt-0.5 flex-shrink-0"></div>
                   <div>
                     <p className="font-medium text-atlas-900">Research neighborhoods and have housing leads ready</p>
                     <p className="text-atlas-600 text-sm">You&apos;ll need to secure housing within days of arrival</p>
@@ -599,7 +599,7 @@ export default function CarteDeSejourPage() {
                 </label>
 
                 <label className="flex items-start gap-4 cursor-pointer">
-                  <div className="w-6 h-6 border-2 border-terracotta-400 rounded mt-0.5 flex-shrink-0"></div>
+                  <div className="w-6 h-6 border-2 border-atlas-400 rounded mt-0.5 flex-shrink-0"></div>
                   <div>
                     <p className="font-medium text-atlas-900">Ensure passport has 6+ months validity and blank pages</p>
                     <p className="text-atlas-600 text-sm">Renew passport if needed before traveling</p>
@@ -615,19 +615,19 @@ export default function CarteDeSejourPage() {
       <section className="section-padding bg-atlas-800">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Need Help With Your Carte de Séjour?
+            Have Questions About the Process?
           </h2>
           <p className="mt-4 text-lg text-sand-200">
-            The process can seem overwhelming, but we&apos;ve helped hundreds of Americans successfully
-            obtain their residence permits. We can even help with the FBI apostille process while
-            you&apos;re already in Morocco.
+            The paperwork can feel overwhelming at first, but it&apos;s very doable. We&apos;ve helped
+            many American families through this process and we&apos;re happy to answer your questions—even
+            about things like the FBI apostille.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-terracotta-500 text-white font-semibold rounded-lg hover:bg-terracotta-600 transition-colors duration-200">
-              Get Expert Assistance
+              Start the Conversation
             </Link>
             <Link href="/services" className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors duration-200">
-              View Our Services
+              See How We Help
             </Link>
           </div>
         </div>

@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import NewsletterForm from '@/components/NewsletterForm';
 
 export const metadata: Metadata = {
-  title: 'The American\'s Roadmap to Morocco | Free Guide | New Life Morocco',
-  description: 'Download the free guide: Why the 2030 World Cup Host is the #1 High-Vibration Sanctuary for American Families and Professionals.',
+  title: 'Free Guide: Moving to Morocco | Morocco Advisors',
+  description: 'Download our free guide for American families considering Morocco. Practical information on residency, schools, healthcare, cost of living, and what to expect.',
 };
 
 export default function RoadmapPage() {
@@ -13,18 +13,15 @@ export default function RoadmapPage() {
       <section className="bg-atlas-900 py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="text-terracotta-400 font-medium uppercase tracking-wide text-sm">
-              Free Level 1 Guide
+            <span className="text-sand-400 font-medium uppercase tracking-wider text-sm">
+              Free Guide
             </span>
             <h1 className="mt-4 text-4xl font-bold text-white sm:text-5xl leading-tight">
-              The American&apos;s Roadmap to Morocco
+              The American&apos;s Guide to Morocco
             </h1>
-            <p className="mt-2 text-xl text-terracotta-400 font-medium">
-              From NYC to the Mediterranean Hub
-            </p>
             <p className="mt-6 text-lg text-sand-200">
-              Why the 2030 World Cup Host is the #1 &quot;High-Vibration&quot; Sanctuary
-              for American Families and Professionals.
+              Practical information for families considering the move.
+              What you need to know about residency, schools, healthcare, and daily life.
             </p>
           </div>
         </div>
@@ -34,9 +31,9 @@ export default function RoadmapPage() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <p className="text-xl text-atlas-700 leading-relaxed">
-            We created this guide for the <strong>visionaries</strong> who see where the world is going.
-            Morocco isn&apos;t just a destination; it&apos;s a <strong>rising global power</strong> with
-            world-class infrastructure, American schools, and a 200-year history of friendship with the US.
+            We created this guide for American families who are curious about Morocco but don&apos;t know
+            where to start. It covers the practical questions: How does residency work? What are the schools
+            like? How far does your money go? What&apos;s daily life actually like?
           </p>
         </div>
       </section>
@@ -50,15 +47,15 @@ export default function RoadmapPage() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white rounded-xl p-6 shadow-sm">
-              <div className="w-12 h-12 bg-terracotta-100 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-terracotta-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              <div className="w-12 h-12 bg-atlas-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-atlas-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-atlas-900 mb-2">The Modern Kingdom</h3>
+              <h3 className="text-lg font-bold text-atlas-900 mb-2">Residency Basics</h3>
               <p className="text-atlas-600">
-                A deep dive into the high-speed rail, 5G connectivity, and the American Hospital networks
-                that make Morocco a Tier-1 destination.
+                How the residency process works, what documents you need, and the realistic
+                timeline for getting your carte de séjour.
               </p>
             </div>
 
@@ -69,23 +66,23 @@ export default function RoadmapPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-atlas-900 mb-2">The Schooling Standard</h3>
+              <h3 className="text-lg font-bold text-atlas-900 mb-2">Schools for Your Kids</h3>
               <p className="text-atlas-600">
-                A directory of the elite US-accredited schools in Tangier, Casablanca, Rabat, and
-                Marrakech—your children stay on the American track.
+                An overview of American curriculum schools in Tangier, Casablanca, Rabat, and
+                Marrakech—so your children can continue their education seamlessly.
               </p>
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <div className="w-12 h-12 bg-atlas-100 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-atlas-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-atlas-900 mb-2">The 2030 Vision</h3>
+              <h3 className="text-lg font-bold text-atlas-900 mb-2">Cost of Living</h3>
               <p className="text-atlas-600">
-                Why the World Cup is transforming Morocco into the &quot;Gateway of the Future&quot;
-                and what that means for property values and opportunity.
+                Real numbers on housing, groceries, healthcare, and daily expenses.
+                See how far your money actually goes in Morocco.
               </p>
             </div>
 
@@ -95,10 +92,10 @@ export default function RoadmapPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-atlas-900 mb-2">The Proximity Advantage</h3>
+              <h3 className="text-lg font-bold text-atlas-900 mb-2">Location & Travel</h3>
               <p className="text-atlas-600">
-                How to live in a &quot;High-Vibe&quot; sanctuary while staying 1 hour from Spain
-                and 7 hours from NYC.
+                Morocco is closer than you think—7 hours from NYC, 1 hour from Spain.
+                Easy access to Europe and straightforward flights home.
               </p>
             </div>
           </div>
@@ -110,14 +107,14 @@ export default function RoadmapPage() {
         <div className="mx-auto max-w-xl px-6 lg:px-8">
           <div className="bg-gradient-to-br from-atlas-900 to-atlas-800 rounded-2xl p-8 shadow-xl">
             <h2 className="text-2xl font-bold text-white text-center mb-2">
-              Download the Roadmap to Your New Life
+              Get the Free Guide
             </h2>
             <p className="text-sand-300 text-center mb-8">
-              Join thousands of Americans exploring their options.
+              Practical information to help you decide if Morocco is right for your family.
             </p>
             <NewsletterForm
               showTimeline={true}
-              buttonText="Get the Guide & Fast-Track Your Future"
+              buttonText="Send Me the Guide"
               source="roadmap-landing"
             />
           </div>
@@ -129,33 +126,32 @@ export default function RoadmapPage() {
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-atlas-900">
-              Can You Do This Yourself? Yes. Should You?
+              Can You Do This Yourself?
             </h2>
           </div>
 
           <div className="prose prose-lg mx-auto text-atlas-700">
             <p>
-              Obtaining residency in any foreign country is a journey. You can absolutely attempt to
-              navigate the Moroccan administration on your own. You can spend your first 90 days in lines,
-              translating documents, and hoping you have the right federal stamps.
+              Absolutely. Many families navigate the Moroccan residency process on their own, and it&apos;s
+              completely doable. You&apos;ll spend time researching requirements, gathering documents,
+              and working through the administrative process.
             </p>
             <p className="font-semibold text-atlas-900">
-              But your time is your most valuable asset.
+              We&apos;re here if you want help.
             </p>
             <p>
-              We offer the <strong>&quot;Skip the Line&quot;</strong> experience for the Moroccan
-              relocation process. We are the Fast-Track. We handle the friction, the follow-ups,
-              and the &quot;administrative nuances&quot; so you can spend your first three months
-              enjoying your new home, not sitting in a government office.
+              We&apos;ve helped many families through this process. We know which documents you need,
+              how to prepare them correctly, and how to navigate the steps efficiently. If you&apos;d
+              rather focus on settling into your new home instead of paperwork, we can help with that.
             </p>
           </div>
 
-          <div className="mt-10 bg-white rounded-xl p-8 border-2 border-terracotta-200 text-center">
+          <div className="mt-10 bg-white rounded-xl p-8 border-2 border-atlas-200 text-center">
             <p className="text-2xl font-bold text-atlas-900 mb-4">
-              We don&apos;t just sell residency.
+              It&apos;s your choice.
             </p>
-            <p className="text-xl text-terracotta-600 font-medium">
-              We sell the 100 hours of your life you would have spent trying to figure it out alone.
+            <p className="text-xl text-atlas-700 font-medium">
+              The guide will help you understand what&apos;s involved, whether you do it yourself or work with us.
             </p>
           </div>
         </div>
@@ -165,11 +161,11 @@ export default function RoadmapPage() {
       <section className="py-20 bg-atlas-900">
         <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Fast-Track Your Future?
+            Start Learning About Morocco
           </h2>
           <p className="text-lg text-sand-200 mb-8">
-            Download the free guide now, or skip straight to a conversation
-            with our relocation team.
+            Download the free guide, or reach out if you have questions
+            we can help answer.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -182,7 +178,7 @@ export default function RoadmapPage() {
               href="/contact"
               className="px-8 py-4 bg-transparent border-2 border-sand-300 text-sand-100 font-semibold rounded-lg hover:bg-sand-300/10 transition-colors"
             >
-              Skip to Fast-Track Consultation
+              Start the Conversation
             </a>
           </div>
         </div>

@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | New Life Morocco',
-  description: 'Terms of Service for New Life Morocco consulting services. Read our terms and conditions.',
+  title: 'Terms of Service | Morocco Advisors',
+  description: 'Terms of Service for Morocco Advisors consulting services. Read our terms and conditions.',
 };
 
 export default function TermsPage() {
@@ -21,14 +21,14 @@ export default function TermsPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-atlas-900 mb-4">Agreement to Terms</h2>
             <p className="text-atlas-700 mb-4">
-              By accessing or using the New Life Morocco website and services, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our website or use our services.
+              By accessing or using the Morocco Advisors website and services, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our website or use our services.
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-atlas-900 mb-4">Our Services</h2>
             <p className="text-atlas-700 mb-4">
-              New Life Morocco provides consulting services to help Americans relocate to Morocco. Our services include, but are not limited to:
+              Morocco Advisors provides consulting services to help Americans relocate to Morocco. Our services include, but are not limited to:
             </p>
             <ul className="list-disc list-inside text-atlas-700 space-y-2 mb-4">
               <li>Visa and documentation assistance</li>
@@ -64,7 +64,7 @@ export default function TermsPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-atlas-900 mb-4">Intellectual Property</h2>
             <p className="text-atlas-700 mb-4">
-              All content on this website, including text, graphics, logos, and images, is the property of New Life Morocco and is protected by copyright laws. You may not reproduce, distribute, or use our content without written permission.
+              All content on this website, including text, graphics, logos, and images, is the property of Morocco Advisors and is protected by copyright laws. You may not reproduce, distribute, or use our content without written permission.
             </p>
           </section>
 
@@ -84,7 +84,7 @@ export default function TermsPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-atlas-900 mb-4">Limitation of Liability</h2>
             <p className="text-atlas-700 mb-4">
-              New Life Morocco and its team members shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our website or services.
+              Morocco Advisors and its team members shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our website or services.
             </p>
             <p className="text-atlas-700">
               Our total liability for any claims arising from your use of our services shall not exceed the amount you paid for those services.

@@ -72,14 +72,14 @@ export const emailSequence = {
         </p>
 
         <p style="font-size: 18px; line-height: 1.7; margin: 30px 0 0 0;">
-          — The New Life Morocco Team
+          — The Morocco Advisors Team
         </p>
 
       </td>
     </tr>
     <tr>
       <td style="text-align: center; padding: 32px 20px; color: #718096; font-size: 12px;">
-        <p style="margin: 0;">New Life Morocco | Helping Americans relocate with clarity</p>
+        <p style="margin: 0;">Morocco Advisors | Helping Americans relocate with clarity</p>
       </td>
     </tr>
   </table>
@@ -185,14 +185,14 @@ export const emailSequence = {
         </p>
 
         <p style="font-size: 18px; line-height: 1.7; margin: 30px 0 0 0;">
-          — The New Life Morocco Team
+          — The Morocco Advisors Team
         </p>
 
       </td>
     </tr>
     <tr>
       <td style="text-align: center; padding: 32px 20px; color: #718096; font-size: 12px;">
-        <p style="margin: 0;">New Life Morocco | Helping Americans relocate with clarity</p>
+        <p style="margin: 0;">Morocco Advisors | Helping Americans relocate with clarity</p>
       </td>
     </tr>
   </table>
@@ -288,7 +288,7 @@ export const emailSequence = {
         </p>
 
         <div style="text-align: center; margin: 32px 0;">
-          <a href="https://newlifemorocco.com/contact" style="display: inline-block; background-color: #c75f3a; color: #ffffff; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px;">
+          <a href="https://moroccoadvisors.com/contact" style="display: inline-block; background-color: #c75f3a; color: #ffffff; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px;">
             Let's Talk About Your Move
           </a>
         </div>
@@ -302,15 +302,15 @@ export const emailSequence = {
         </p>
 
         <p style="font-size: 18px; line-height: 1.7; margin: 30px 0 0 0;">
-          — The New Life Morocco Team
+          — The Morocco Advisors Team
         </p>
 
       </td>
     </tr>
     <tr>
       <td style="text-align: center; padding: 32px 20px; color: #718096; font-size: 12px;">
-        <p style="margin: 0;">New Life Morocco | Helping Americans relocate with clarity</p>
-        <p style="margin: 8px 0 0 0;"><a href="https://newlifemorocco.com" style="color: #c75f3a;">newlifemorocco.com</a></p>
+        <p style="margin: 0;">Morocco Advisors | Helping Americans relocate with clarity</p>
+        <p style="margin: 8px 0 0 0;"><a href="https://moroccoadvisors.com" style="color: #c75f3a;">moroccoadvisors.com</a></p>
       </td>
     </tr>
   </table>
@@ -347,7 +347,7 @@ I'm not going to romanticize it. Morocco has its own challenges. But for America
 
 Tomorrow, I'll tell you why Morocco isn't just a sanctuary—it's a strategic hub. (Hint: Thailand is a trap.)
 
-— The New Life Morocco Team
+— The Morocco Advisors Team
   `,
 
   email2_hub: `
@@ -382,7 +382,7 @@ Morocco isn't just a destination. It's a position. A base of operations for your
 
 Tomorrow, I'll show you why Morocco isn't a "downgrade"—and why 2030 changes everything.
 
-— The New Life Morocco Team
+— The Morocco Advisors Team
   `,
 
   email3_2030vision: `
@@ -423,10 +423,10 @@ The question is: Why are you still paying US prices for crumbling infrastructure
 
 If you're serious about exploring Morocco, we should talk. Not a sales pitch—just a conversation about what's possible and whether it's right for you.
 
-Schedule a free consultation: https://newlifemorocco.com/contact
+Schedule a free consultation: https://moroccoadvisors.com/contact
 
 The 2030 World Cup is coming. The early movers are already here. Where will you be?
 
-— The New Life Morocco Team
+— The Morocco Advisors Team
   `,
 };

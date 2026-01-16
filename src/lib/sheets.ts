@@ -23,7 +23,7 @@ const SITE_ID = process.env.SITE_ID || "new-life-morocco";
 
 // Brand name mapping
 const BRAND_NAMES: Record<string, string> = {
-  'new-life-morocco': 'New Life Morocco',
+  'new-life-morocco': 'Morocco Advisors',
   'slow-morocco': 'Slow Morocco',
 };
 

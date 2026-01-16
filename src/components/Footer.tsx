@@ -70,7 +70,7 @@ const defaultFooterData: FooterData = {
   ],
   copyright: {
     year: new Date().getFullYear(),
-    name: "New Life Morocco",
+    name: "Morocco Advisors",
   },
 };
 
@@ -137,7 +137,7 @@ export default function Footer() {
           - Free guide offering to capture emails
           ════════════════════════════════════════════════════════════════════ */}
       {footerData.newsletter.show && (
-        <section className="py-16 md:py-20 bg-gradient-to-br from-terracotta-600 to-terracotta-700">
+        <section className="py-16 md:py-20 bg-gradient-to-br from-atlas-800 to-atlas-900">
           <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
@@ -169,7 +169,7 @@ export default function Footer() {
                     <button
                       type="submit"
                       disabled={isSubscribing}
-                      className="px-8 py-3 bg-white text-terracotta-600 font-semibold rounded-lg hover:bg-sand-100 transition-colors disabled:opacity-50 whitespace-nowrap"
+                      className="px-8 py-3 bg-terracotta-500 text-white font-semibold rounded-lg hover:bg-terracotta-600 transition-colors disabled:opacity-50 whitespace-nowrap"
                     >
                       {isSubscribing ? 'Sending...' : footerData.newsletter.ctaText}
                     </button>
@@ -197,17 +197,18 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {/* Brand Column */}
             <div className="col-span-1 md:col-span-2">
-              <h3 className="text-xl font-semibold text-white mb-2">New Life Morocco</h3>
-              <p className="text-terracotta-400 font-medium mb-4">
-                Morocco is no longer a secret. It&apos;s a strategy.
+              <h3 className="text-xl font-semibold text-white mb-2">Morocco Advisors</h3>
+              <p className="text-sand-500 text-xs tracking-wide mb-3">American Relocation Consultancy</p>
+              <p className="text-sand-400 font-medium mb-4">
+                Helping American families start fresh in Morocco.
               </p>
               <p className="text-sand-300 max-w-md mb-6 text-sm">
-                The World Cup is coming. The high-speed rail is running. The elite are arriving.
-                You can navigate the transition alone, or you can join the front of the line.
+                We help American families navigate the transition to Morocco.
+                From document preparation to residency activation.
               </p>
               <div className="flex items-center gap-4">
                 <a
-                  href="mailto:hello@newlifemorocco.com"
+                  href="mailto:hello@moroccoadvisors.com"
                   className="text-sand-300 hover:text-white transition-colors"
                 >
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">

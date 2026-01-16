@@ -54,9 +54,14 @@ export default function Navigation() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="text-xl font-semibold text-atlas-800">
-              New Life Morocco
-            </span>
+            <div>
+              <span className="text-xl font-semibold text-atlas-800">
+                Morocco Advisors
+              </span>
+              <span className="hidden sm:block text-xs text-atlas-500 tracking-wide">
+                American Relocation Consultancy
+              </span>
+            </div>
           </Link>
         </div>
 
@@ -88,7 +93,7 @@ export default function Navigation() {
             >
               <Link
                 href={item.href}
-                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-atlas-700 hover:text-terracotta-600 transition-colors"
+                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-atlas-700 hover:text-atlas-900 transition-colors"
               >
                 {item.name}
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -122,7 +127,7 @@ export default function Navigation() {
             href="/contact"
             className="btn-primary text-sm"
           >
-            Skip the Line
+            Get Started
           </Link>
         </div>
       </nav>
@@ -133,7 +138,7 @@ export default function Navigation() {
           <div className="px-4 py-4 space-y-2">
             {navigation.map((item) => (
               <div key={item.name}>
-                <div className="text-xs font-semibold text-terracotta-600 uppercase tracking-wide px-3 py-2">
+                <div className="text-xs font-semibold text-atlas-500 uppercase tracking-wider px-3 py-2">
                   {item.name}
                 </div>
                 <div className="space-y-1">
@@ -155,7 +160,7 @@ export default function Navigation() {
               className="block btn-primary text-center mt-4"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Skip the Line
+              Get Started
             </Link>
           </div>
         </div>

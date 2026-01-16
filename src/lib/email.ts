@@ -14,7 +14,7 @@ function getResend(): Resend {
   return resendInstance;
 }
 
-const FROM_EMAIL = process.env.FROM_EMAIL || 'New Life Morocco <hello@newlifemorocco.com>';
+const FROM_EMAIL = process.env.FROM_EMAIL || 'Morocco Advisors <hello@moroccoadvisors.com>';
 
 interface WelcomeEmailProps {
   to: string;
@@ -29,7 +29,7 @@ export async function sendWelcomeEmail({ to, firstName }: WelcomeEmailProps) {
     const { data, error } = await resend.emails.send({
       from: FROM_EMAIL,
       to: [to],
-      subject: 'Welcome to New Life Morocco - Your Free Guide Inside',
+      subject: 'Welcome to Morocco Advisors - Your Free Guide Inside',
       html: `
         <!DOCTYPE html>
         <html>
@@ -41,7 +41,7 @@ export async function sendWelcomeEmail({ to, firstName }: WelcomeEmailProps) {
           <table width="100%" cellpadding="0" cellspacing="0" style="max-width: 600px; margin: 0 auto; padding: 40px 20px;">
             <tr>
               <td style="text-align: center; padding-bottom: 32px;">
-                <h1 style="color: #25364d; font-size: 24px; margin: 0;">New Life Morocco</h1>
+                <h1 style="color: #25364d; font-size: 24px; margin: 0;">Morocco Advisors</h1>
               </td>
             </tr>
             <tr>
@@ -49,7 +49,7 @@ export async function sendWelcomeEmail({ to, firstName }: WelcomeEmailProps) {
                 <h2 style="color: #25364d; font-size: 22px; margin: 0 0 16px 0;">Hey ${name}!</h2>
 
                 <p style="color: #4a5568; font-size: 16px; line-height: 1.6; margin: 0 0 16px 0;">
-                  Welcome to the New Life Morocco community. You've taken the first step toward discovering
+                  Welcome to the Morocco Advisors community. You've taken the first step toward discovering
                   what life in Morocco could look like for you.
                 </p>
 
@@ -60,7 +60,7 @@ export async function sendWelcomeEmail({ to, firstName }: WelcomeEmailProps) {
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td style="text-align: center; padding: 24px 0;">
-                      <a href="https://newlifemorocco.com/guide"
+                      <a href="https://moroccoadvisors.com/guide"
                          style="display: inline-block; background-color: #c75f3a; color: #ffffff; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px;">
                         Download Your Free Guide
                       </a>
@@ -90,17 +90,17 @@ export async function sendWelcomeEmail({ to, firstName }: WelcomeEmailProps) {
 
                 <p style="color: #25364d; font-size: 16px; line-height: 1.6; margin: 24px 0 0 0;">
                   <strong>Welcome aboard,</strong><br>
-                  The New Life Morocco Team
+                  The Morocco Advisors Team
                 </p>
               </td>
             </tr>
             <tr>
               <td style="text-align: center; padding: 32px 20px; color: #718096; font-size: 12px;">
                 <p style="margin: 0 0 8px 0;">
-                  New Life Morocco | Helping Americans relocate to Morocco
+                  Morocco Advisors | Helping Americans relocate to Morocco
                 </p>
                 <p style="margin: 0;">
-                  <a href="https://newlifemorocco.com" style="color: #c75f3a; text-decoration: none;">newlifemorocco.com</a>
+                  <a href="https://moroccoadvisors.com" style="color: #c75f3a; text-decoration: none;">moroccoadvisors.com</a>
                 </p>
               </td>
             </tr>
@@ -111,9 +111,9 @@ export async function sendWelcomeEmail({ to, firstName }: WelcomeEmailProps) {
       text: `
 Hey ${name}!
 
-Welcome to the New Life Morocco community. You've taken the first step toward discovering what life in Morocco could look like for you.
+Welcome to the Morocco Advisors community. You've taken the first step toward discovering what life in Morocco could look like for you.
 
-As promised, here's your free guide: https://newlifemorocco.com/guide
+As promised, here's your free guide: https://moroccoadvisors.com/guide
 
 What's inside:
 - The real cost of living in Morocco (with actual numbers)
@@ -127,11 +127,11 @@ We'll also send you occasional updates about life in Morocco, insider tips, and 
 Have questions? Just reply to this email - we read and respond to every one.
 
 Welcome aboard,
-The New Life Morocco Team
+The Morocco Advisors Team
 
 ---
-New Life Morocco | Helping Americans relocate to Morocco
-https://newlifemorocco.com
+Morocco Advisors | Helping Americans relocate to Morocco
+https://moroccoadvisors.com
       `,
     });
 

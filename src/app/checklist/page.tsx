@@ -6,63 +6,63 @@ import Link from 'next/link';
 const checklistItems = [
   {
     id: 1,
-    title: 'The Federal Status Audit',
-    question: 'Do you have the specific FBI-level clearances required for residency, and more importantly, are they Federally Apostilled (not just notarized)?',
-    note: 'A state-level check is a Day 1 rejection.',
+    title: 'FBI Background Check',
+    question: 'Do you have your FBI background check, and is it apostilled by the US Department of State (not just notarized)?',
+    note: 'This is required for residency and takes time to get—start early.',
   },
   {
     id: 2,
-    title: 'The "Convertible" Financial Strategy',
-    question: 'Have you identified the specific Moroccan banking institutions that allow for "Convertible Dirham" accounts?',
-    note: 'This is the only way to ensure your US capital remains fluid and repatriable.',
+    title: 'Banking Setup',
+    question: 'Do you know which Moroccan banks offer "convertible Dirham" accounts that let you move money back to the US if needed?',
+    note: 'Regular accounts can make it hard to transfer money out later.',
   },
   {
     id: 3,
-    title: 'The Schooling Window',
-    question: 'Top-tier American schools in Rabat and Casablanca often have waiting lists that close 6 months before the semester. Is your child\'s seat secured?',
-    note: 'Early movers get first choice.',
+    title: 'Schools',
+    question: 'If you have kids, have you looked into American schools? Good ones often have waiting lists that fill up months ahead.',
+    note: 'Worth researching early, even if you\'re not 100% sure yet.',
   },
   {
     id: 4,
-    title: 'The 90-Day Clock',
-    question: 'Your US passport allows you 90 days of "Tourist" status. Do you have a Phase II strategy to transition to residency before your visa-free clock expires?',
-    note: 'Running out the clock is a common and costly mistake.',
+    title: 'The 90-Day Timeline',
+    question: 'Do you have a plan for applying for residency within your 90-day visa-free period?',
+    note: 'It\'s best to submit your application in the first few weeks, not at the end.',
   },
   {
     id: 5,
-    title: 'The Real Estate "Legalization" Check',
-    question: 'Does your lease or property deed meet the specific "Legalization" standards required by the Prefecture?',
-    note: 'A standard contract is often not enough for residency.',
+    title: 'Housing Documents',
+    question: 'Do you know that your lease needs to be "legalized" at a local government office before you can use it for residency?',
+    note: 'A regular rental contract isn\'t enough—it needs an official stamp.',
   },
   {
     id: 6,
-    title: 'The Professional Alignment',
-    question: 'Are you moving as a Remote Worker, an Entrepreneur, or a Retiree? Each path has a completely different "Proof of Income" requirement.',
-    note: 'The framing matters as much as the facts.',
+    title: 'Income Documentation',
+    question: 'Do you know what income documentation you\'ll need? (It\'s different for remote workers, retirees, and business owners.)',
+    note: 'Having the right paperwork ready makes the process much smoother.',
   },
   {
     id: 7,
-    title: 'The Healthcare Integration',
-    question: 'Have you mapped your residence to the nearest Tier-1 Private Clinic (Akdital or American Hospital networks)?',
-    note: 'Your health infrastructure is the foundation of your relocation.',
+    title: 'Healthcare',
+    question: 'Have you looked into healthcare options? Do you know where the good hospitals and clinics are?',
+    note: 'There are excellent private hospitals—worth knowing where they are.',
   },
   {
     id: 8,
-    title: 'The "Legation" Connection',
-    question: 'Are you aware of the specific diplomatic and cultural resources available to Americans in Tangier and the capital?',
-    note: 'The American community is deeper than you think.',
+    title: 'Expat Community',
+    question: 'Have you connected with any American expats or expat communities in Morocco?',
+    note: 'There\'s a helpful community that can share firsthand experience.',
   },
   {
     id: 9,
-    title: 'The Mobility Hub',
-    question: 'Is your home base connected to the Al-Boraq (HSR) corridor?',
-    note: 'Your quality of life is directly tied to your proximity to high-speed rail.',
+    title: 'Location',
+    question: 'Have you thought about which city is right for you? (Each has different pros and cons.)',
+    note: 'Casablanca, Rabat, Marrakech, and Tangier all offer different lifestyles.',
   },
   {
     id: 10,
-    title: 'The Partner Network',
-    question: 'Do you have a "Boots on the Ground" advocate to navigate the language and administrative nuances of the Prefecture?',
-    note: 'Or are you planning to spend your first 100 hours in a waiting room?',
+    title: 'Local Help',
+    question: 'Do you have someone who can help navigate the paperwork and language barriers at government offices?',
+    note: 'Having local help can save a lot of time and frustration.',
   },
 ];
 
@@ -88,16 +88,16 @@ export default function ChecklistPage() {
       <section className="bg-atlas-900 py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="text-terracotta-400 font-medium uppercase tracking-wide text-sm">
-              The Sovereign Transition
+            <span className="text-sand-400 font-medium uppercase tracking-wider text-sm">
+              Are You Ready?
             </span>
             <h1 className="mt-4 text-4xl font-bold text-white sm:text-5xl">
-              Your 10-Point Readiness Audit
+              The Relocation Checklist
             </h1>
             <p className="mt-6 text-lg text-sand-200">
-              Success in the Kingdom is 90% preparation and 10% execution.
-              Most people fail because they treat their relocation like a vacation.
-              <span className="text-terracotta-400 font-medium"> We treat it like a sovereign transition.</span>
+              Moving to a new country takes some preparation. Here are the key things
+              to think about before you go.
+              <span className="text-sand-300 font-medium"> Don&apos;t worry if you can&apos;t check everything yet—that&apos;s what we help with.</span>
             </p>
           </div>
         </div>
@@ -123,18 +123,18 @@ export default function ChecklistPage() {
                   />
                 ))}
               </div>
-              <span className={`font-bold ${isReady ? 'text-olive-600' : 'text-terracotta-600'}`}>
+              <span className={`font-bold ${isReady ? 'text-olive-600' : 'text-atlas-700'}`}>
                 {checkedCount}/10
               </span>
             </div>
             {checkedCount > 0 && checkedCount < 8 && (
-              <span className="text-sm text-terracotta-600 font-medium hidden md:block">
-                {8 - checkedCount} more to be flight-ready
+              <span className="text-sm text-atlas-600 font-medium hidden md:block">
+                Some things to work on—we can help
               </span>
             )}
             {isReady && (
               <span className="text-sm text-olive-600 font-medium hidden md:block">
-                You&apos;re ahead of most — let&apos;s optimize your path
+                You&apos;re well prepared!
               </span>
             )}
           </div>
@@ -180,7 +180,7 @@ export default function ChecklistPage() {
                       <p className="mt-2 text-atlas-600">
                         {item.question}
                       </p>
-                      <p className="mt-2 text-sm text-terracotta-600 italic">
+                      <p className="mt-2 text-sm text-atlas-600 italic">
                         {item.note}
                       </p>
                     </div>
@@ -199,39 +199,39 @@ export default function ChecklistPage() {
             {checkedCount < 8 ? (
               <div className="bg-terracotta-50 border-2 border-terracotta-200 rounded-2xl p-8 text-center">
                 <p className="text-2xl font-bold text-atlas-900 mb-4">
-                  If you checked fewer than 8 of these boxes,
-                  <span className="text-terracotta-600"> you aren&apos;t ready to board the plane.</span>
+                  Still have some boxes to check?
+                  <span className="text-atlas-700"> That&apos;s completely normal.</span>
                 </p>
                 <p className="text-atlas-600 mb-6">
-                  You have a vision, but you lack a roadmap. You could spend the next 6 months
-                  researching these nuances on forums and blogs, or you can <strong>Skip the Line</strong>.
+                  Most families have questions about these things when they start exploring.
+                  That&apos;s exactly what we help with—walking you through each step so it
+                  doesn&apos;t feel overwhelming.
                 </p>
                 <p className="text-atlas-700 mb-8">
-                  We provide the blueprint, the contacts, and the advocacy to turn this 10-point audit
-                  into a seamless reality.
+                  We&apos;re happy to answer your questions and help you figure out what you need.
                 </p>
                 <Link
                   href="/contact"
                   className="inline-block px-8 py-4 bg-terracotta-500 text-white font-semibold rounded-lg hover:bg-terracotta-600 transition-colors"
                 >
-                  Request Your Strategic Roadmap Session
+                  Start the Conversation
                 </Link>
               </div>
             ) : (
               <div className="bg-olive-50 border-2 border-olive-200 rounded-2xl p-8 text-center">
                 <p className="text-2xl font-bold text-atlas-900 mb-4">
-                  You&apos;re ahead of 90% of prospective relocators.
-                  <span className="text-olive-600"> Let&apos;s optimize your path.</span>
+                  Looks like you&apos;ve done your research!
+                  <span className="text-olive-600"> You&apos;re well on your way.</span>
                 </p>
                 <p className="text-atlas-600 mb-6">
-                  You&apos;ve done your homework. Now let&apos;s make sure every piece falls into place
-                  with precision. Our role is to eliminate the friction and accelerate your timeline.
+                  You&apos;ve already thought through the big things. If you want help
+                  with the details or just want to talk through your plans, we&apos;re here.
                 </p>
                 <Link
                   href="/contact"
                   className="inline-block px-8 py-4 bg-olive-600 text-white font-semibold rounded-lg hover:bg-olive-700 transition-colors"
                 >
-                  Schedule Your Fast-Track Session
+                  Let&apos;s Talk
                 </Link>
               </div>
             )}
@@ -239,42 +239,42 @@ export default function ChecklistPage() {
         </section>
       )}
 
-      {/* The Straight Talk */}
+      {/* How We Help */}
       <section className="py-16 bg-atlas-900">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold text-white">
-              The &quot;Skip the Line&quot; Reality
+              How We Can Help
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-atlas-800/50 rounded-xl p-6 border border-atlas-700">
-              <h3 className="text-terracotta-400 font-semibold mb-3">The DIY Path</h3>
+              <h3 className="text-sand-400 font-semibold mb-3">Doing It Yourself</h3>
               <ul className="space-y-2 text-sand-300 text-sm">
-                <li>• 6+ months of forum research</li>
-                <li>• Trial-and-error with document requirements</li>
-                <li>• Language barriers at the Prefecture</li>
-                <li>• Potential 90-day clock expiration</li>
-                <li>• ~100+ hours in administrative limbo</li>
+                <li>• Researching everything on forums and blogs</li>
+                <li>• Figuring out document requirements as you go</li>
+                <li>• Navigating government offices without local help</li>
+                <li>• Learning from mistakes along the way</li>
+                <li>• Totally doable, but takes more time</li>
               </ul>
             </div>
             <div className="bg-olive-900/30 rounded-xl p-6 border border-olive-700">
-              <h3 className="text-olive-400 font-semibold mb-3">The Fast-Track Path</h3>
+              <h3 className="text-olive-400 font-semibold mb-3">Working With Us</h3>
               <ul className="space-y-2 text-sand-300 text-sm">
-                <li>• Pre-flight document audit</li>
-                <li>• Direct Prefecture advocacy</li>
-                <li>• English-speaking navigation</li>
-                <li>• Proactive timeline management</li>
-                <li>• First 90 days on your terrace, not in a waiting room</li>
+                <li>• We help you get documents right the first time</li>
+                <li>• Local team handles government paperwork</li>
+                <li>• Someone to answer questions as they come up</li>
+                <li>• Guidance based on what actually works</li>
+                <li>• Less stress, more time to settle in</li>
               </ul>
             </div>
           </div>
           <div className="mt-8 text-center">
             <Link
               href="/services"
-              className="text-terracotta-400 hover:text-terracotta-300 font-medium"
+              className="text-sand-300 hover:text-white underline underline-offset-4 font-medium"
             >
-              See Our Full Service Menu →
+              See How We Help →
             </Link>
           </div>
         </div>

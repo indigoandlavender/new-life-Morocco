@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'The Return on Life | Why Morocco | New Life Morocco',
-  description: 'Beyond cost arbitrage: biological integrity, sanctuary frequency, and sovereign lifestyle. Why high-achieving Americans are choosing Morocco for the ultimate life upgrade.',
+  title: 'A Better Quality of Life | Morocco Advisors',
+  description: 'Better food, real safety, healthcare that works, and a pace of life that lets you actually live. What American families discover when they make the move.',
 };
 
 export default function BenefitsPage() {
@@ -13,39 +13,39 @@ export default function BenefitsPage() {
       <section className="bg-gradient-to-b from-atlas-900 to-atlas-800 py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="text-terracotta-400 font-medium tracking-wide uppercase text-sm">
-              Beyond the Numbers
+            <span className="text-sand-400 font-medium tracking-wider uppercase text-sm">
+              What Families Discover
             </span>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-              The Return on Life
+              A Genuinely Better Quality of Life
             </h1>
             <p className="mt-6 text-xl text-sand-200 leading-relaxed">
-              This isn&apos;t about &quot;cheap living.&quot; It&apos;s about reclaiming the lifestyle
-              that used to be the American Dream—and finding it preserved in the Kingdom.
+              This isn&apos;t about &quot;cheap living.&quot; It&apos;s about getting back what matters:
+              time with family, peace of mind, fresh food, and a pace of life that lets you breathe.
             </p>
           </div>
         </div>
       </section>
 
-      {/* The Sovereign Lifestyle */}
+      {/* Your Money Goes Further */}
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-                The Purchasing Power Upgrade
+              <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
+                The Cost of Living
               </span>
               <h2 className="mt-2 text-3xl font-bold text-atlas-900 mb-6">
-                The Sovereign Lifestyle Standard
+                Your Money Goes 3-5x Further
               </h2>
               <p className="text-atlas-700 mb-4">
-                In the US, private household staff, organic farm-to-table meals, and concierge
-                healthcare are 1% luxuries. In Morocco, they&apos;re the standard for families
-                who&apos;ve made the move.
+                Things that feel like luxuries in the US—household help, fresh organic food,
+                healthcare without long waits—are just normal here. It&apos;s not about
+                &quot;cheap living.&quot; It&apos;s about getting more life for your money.
               </p>
               <p className="text-atlas-700 mb-6">
-                Your purchasing power doesn&apos;t just stretch here—it <strong>multiplies</strong>.
-                The lifestyle that costs $250K in Austin or Denver? Unlocked at a fraction.
+                Families tell us they&apos;re surprised how much better they live here on the
+                same income that had them stressed at home.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
@@ -84,10 +84,10 @@ export default function BenefitsPage() {
               </div>
             </div>
             <div className="bg-atlas-900 rounded-2xl p-8 text-white">
-              <h3 className="text-xl font-semibold mb-6">The 10x Lifestyle Multiplier</h3>
+              <h3 className="text-xl font-semibold mb-6">What Families Actually Experience</h3>
               <p className="text-sand-300 mb-6">
-                The same income that keeps you &quot;comfortable&quot; in the US unlocks a
-                fundamentally different quality of life in Morocco.
+                The same income that keeps you stretched thin at home gives you breathing
+                room here. Here&apos;s what that looks like in practice:
               </p>
               <div className="space-y-4">
                 <div className="flex items-center justify-between py-3 border-b border-atlas-700">
@@ -116,19 +116,19 @@ export default function BenefitsPage() {
         </div>
       </section>
 
-      {/* Biological Integrity */}
+      {/* Better Food, Better Health */}
       <section className="py-20 bg-sand-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-              The System Reset
+            <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
+              What Families Notice First
             </span>
             <h2 className="text-3xl font-bold text-atlas-900 mb-4">
-              Biological Integrity
+              Better Food, Better Health
             </h2>
             <p className="text-lg text-atlas-600 max-w-2xl mx-auto">
-              Most of our clients report a physical &quot;system reset&quot; within their first month.
-              The reason is simple: Morocco&apos;s food supply hasn&apos;t been industrialized.
+              Families often tell us they feel physically different within the first few weeks.
+              The reason is simple: the food here is just... food. Grown locally, sold fresh.
             </p>
           </div>
 
@@ -178,7 +178,7 @@ export default function BenefitsPage() {
             <h4 className="text-lg font-bold text-atlas-900 mb-4">What You&apos;re Leaving Behind</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h5 className="font-semibold text-terracotta-600 mb-3">The US Food Reality</h5>
+                <h5 className="font-semibold text-atlas-600 mb-3">The US Food Reality</h5>
                 <ul className="space-y-2 text-sm text-atlas-600">
                   <li className="flex items-start gap-2">
                     <span className="text-terracotta-400 mt-0.5">•</span>
@@ -227,154 +227,153 @@ export default function BenefitsPage() {
         </div>
       </section>
 
-      {/* Sanctuary Frequency */}
+      {/* Real Peace of Mind */}
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 bg-sand-50 rounded-2xl p-8">
-              <h3 className="text-lg font-semibold text-atlas-900 mb-6">The Sanctuary Contrast</h3>
+              <h3 className="text-lg font-semibold text-atlas-900 mb-6">What Changes</h3>
               <div className="space-y-6">
                 <div>
-                  <h4 className="text-terracotta-600 font-medium mb-2">US Systemic Friction</h4>
+                  <h4 className="text-atlas-600 font-medium mb-2">What You Leave Behind</h4>
                   <ul className="space-y-2 text-sm text-atlas-600">
                     <li className="flex items-start gap-2">
-                      <span className="text-terracotta-400 mt-1">•</span>
-                      <span>Zero-tolerance bureaucracy (the &quot;Flagged Room&quot; experience)</span>
+                      <span className="text-atlas-400 mt-1">•</span>
+                      <span>The constant low-level anxiety about safety</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-terracotta-400 mt-1">•</span>
-                      <span>Social polarization and ambient hostility</span>
+                      <span className="text-atlas-400 mt-1">•</span>
+                      <span>Feeling like everything is getting more tense</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-terracotta-400 mt-1">•</span>
-                      <span>Rising costs with declining quality of life</span>
+                      <span className="text-atlas-400 mt-1">•</span>
+                      <span>Working harder but feeling like you&apos;re falling behind</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-terracotta-400 mt-1">•</span>
-                      <span>Healthcare gatekeeping and 6-week wait times</span>
+                      <span className="text-atlas-400 mt-1">•</span>
+                      <span>Healthcare that&apos;s expensive and hard to access</span>
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-olive-600 font-medium mb-2">Morocco Sanctuary Frequency</h4>
+                  <h4 className="text-olive-600 font-medium mb-2">What You Find Here</h4>
                   <ul className="space-y-2 text-sm text-atlas-600">
                     <li className="flex items-start gap-2">
                       <span className="text-olive-400 mt-1">•</span>
-                      <span>Deep-rooted hospitality culture (Chabel)</span>
+                      <span>A culture built around hospitality and community</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-olive-400 mt-1">•</span>
-                      <span>Communal vigilance and &quot;background peace&quot;</span>
+                      <span>Kids playing outside without constant supervision</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-olive-400 mt-1">•</span>
-                      <span>200-year friendship with America honored</span>
+                      <span>America&apos;s oldest ally—friendly to US families</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-olive-400 mt-1">•</span>
-                      <span>Same-day healthcare, zero gatekeeping</span>
+                      <span>Same-day doctor appointments that don&apos;t break the bank</span>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
             <div className="order-1 lg:order-2">
-              <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-                The Ambient Reality
+              <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
+                The Feeling
               </span>
               <h2 className="mt-2 text-3xl font-bold text-atlas-900 mb-6">
-                Sanctuary Frequency
+                Real Peace of Mind
               </h2>
               <p className="text-atlas-700 mb-4">
-                Safety isn&apos;t just about crime statistics. It&apos;s about the ambient energy
-                of a place—the feeling of walking at night, the way strangers interact,
-                the baseline trust in public spaces.
+                Safety isn&apos;t just about statistics. It&apos;s about how a place feels—
+                the comfort of walking at night, the way strangers treat each other,
+                whether you can relax in public spaces.
               </p>
               <p className="text-atlas-700 mb-4">
-                Morocco&apos;s culture is built on communal vigilance and a deep-rooted law of
-                hospitality. You will find a level of &quot;background peace&quot; here—especially
-                at night and in public spaces—that has become a luxury in many American cities.
+                There&apos;s a level of calm here—especially at night and in public spaces—
+                that many American families say they&apos;d forgotten was possible.
               </p>
               <p className="text-lg font-medium text-atlas-900">
-                This isn&apos;t escapism. It&apos;s a strategic upgrade to a higher-frequency environment.
+                It&apos;s not about escaping. It&apos;s about finding a place that feels like home should feel.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* California Soul Upgrade */}
+      {/* Your Lifestyle, Upgraded */}
       <section className="py-20 bg-atlas-900 text-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-12">
-            <span className="text-terracotta-400 font-semibold uppercase text-sm tracking-wide">
-              The Lifestyle Continuity
+            <span className="text-sand-400 font-semibold uppercase text-sm tracking-wider">
+              What You Keep
             </span>
             <h2 className="mt-2 text-3xl font-bold sm:text-4xl">
-              California Soul, Preserved
+              Your Lifestyle, Upgraded
             </h2>
             <p className="mt-4 text-lg text-sand-200">
-              You&apos;re not sacrificing your wellness routine. You&apos;re upgrading the quality
-              of the inputs.
+              You don&apos;t have to give up the things you love. You just get them without
+              the premium price tag.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-atlas-800/50 rounded-xl p-8 border border-atlas-700">
-              <h3 className="text-terracotta-400 font-semibold text-lg mb-3">Surf & Yoga Culture</h3>
+              <h3 className="text-sand-400 font-semibold text-lg mb-3">Beach & Wellness</h3>
               <p className="text-sand-200">
-                Taghazout is world-class surf with zero Venice Beach crowds. Essaouira has the
-                yoga retreats without the $300/night price tag.
+                World-class surf beaches, yoga retreats, and coastal towns—without the
+                crowds or the California prices.
               </p>
             </div>
             <div className="bg-atlas-800/50 rounded-xl p-8 border border-atlas-700">
-              <h3 className="text-olive-400 font-semibold text-lg mb-3">Elite Wellness Studios</h3>
+              <h3 className="text-olive-400 font-semibold text-lg mb-3">Modern Fitness</h3>
               <p className="text-sand-200">
-                Pilates, CrossFit, and boutique fitness in Casablanca and Marrakech. The
-                same high-vibration wellness, without the LA markup.
+                Pilates, CrossFit, gyms, and boutique fitness studios in every major city.
+                Same quality, fraction of the cost.
               </p>
             </div>
             <div className="bg-atlas-800/50 rounded-xl p-8 border border-atlas-700">
-              <h3 className="text-terracotta-400 font-semibold text-lg mb-3">Farm-to-Table Standard</h3>
+              <h3 className="text-sand-400 font-semibold text-lg mb-3">Fresh, Local Food</h3>
               <p className="text-sand-200">
-                What costs $40/plate in Austin is the baseline here. Organic, seasonal,
-                locally sourced—because that&apos;s just how food works.
+                What&apos;s a $40 &quot;farm-to-table&quot; experience in Austin is just... how food
+                works here. Organic and seasonal by default.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Strategic Position */}
+      {/* Close Enough to Come Home */}
       <section className="py-20 bg-sand-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-              The Strategic Position
+            <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
+              Not As Far As You Think
             </span>
             <h2 className="text-3xl font-bold text-atlas-900 mb-4">
-              Your Global Base
+              Close Enough to Come Home
             </h2>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <div className="text-3xl font-bold text-terracotta-600 mb-2">6.5h</div>
+              <div className="text-3xl font-bold text-atlas-900 mb-2">6.5h</div>
               <div className="text-atlas-900 font-medium">To NYC</div>
               <div className="text-atlas-500 text-sm">Closer than Hawaii</div>
             </div>
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <div className="text-3xl font-bold text-terracotta-600 mb-2">2h</div>
+              <div className="text-3xl font-bold text-atlas-900 mb-2">2h</div>
               <div className="text-atlas-900 font-medium">To Paris</div>
               <div className="text-atlas-500 text-sm">Europe is your backyard</div>
             </div>
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <div className="text-3xl font-bold text-terracotta-600 mb-2">GMT+1</div>
+              <div className="text-3xl font-bold text-atlas-900 mb-2">GMT+1</div>
               <div className="text-atlas-900 font-medium">Time Zone</div>
               <div className="text-atlas-500 text-sm">Perfect for US remote work</div>
             </div>
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <div className="text-3xl font-bold text-terracotta-600 mb-2">90</div>
+              <div className="text-3xl font-bold text-atlas-900 mb-2">90</div>
               <div className="text-atlas-900 font-medium">Days Visa-Free</div>
               <div className="text-atlas-500 text-sm">Explore before committing</div>
             </div>
@@ -386,24 +385,24 @@ export default function BenefitsPage() {
       <section className="py-20 bg-gradient-to-br from-terracotta-600 to-terracotta-700">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Biological Integrity. Medical Sovereignty. Zero Compromise.
+            Ready to See What Life Could Look Like?
           </h2>
           <p className="mt-4 text-xl text-sand-100">
-            Access the Sanctuary Network: US-accredited hospitals, same-day specialists,
-            and organic Mediterranean food systems. Your body deserves better.
+            Better food, real safety, healthcare that works, and a pace of life that
+            lets you actually live. Let&apos;s talk about whether this is right for your family.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-terracotta-600 font-semibold rounded-lg hover:bg-sand-100 transition-colors duration-200 text-lg"
             >
-              Access the Sanctuary Network
+              Start the Conversation
             </Link>
             <Link
               href="/infrastructure"
               className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors duration-200 text-lg"
             >
-              View Healthcare Infrastructure
+              See What&apos;s There
             </Link>
           </div>
         </div>

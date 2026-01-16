@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | New Life Morocco',
-  description: 'Privacy policy for New Life Morocco. Learn how we collect, use, and protect your personal information.',
+  title: 'Privacy Policy | Morocco Advisors',
+  description: 'Privacy policy for Morocco Advisors. Learn how we collect, use, and protect your personal information.',
 };
 
 export default function PrivacyPage() {

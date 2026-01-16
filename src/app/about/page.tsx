@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Us | The Bridge Between Two Worlds | New Life Morocco',
-  description: 'We don\'t just know the Kingdom. We understand your expectations. American expats and local experts providing strategic advocacy for your Moroccan transition.',
+  title: 'About Us | Morocco Advisors',
+  description: 'Americans who\'ve made the move, helping families like yours do the same. We handle the logistics so you can focus on your family.',
 };
 
 export default function AboutPage() {
@@ -14,16 +14,16 @@ export default function AboutPage() {
       <section className="bg-atlas-900 py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="text-terracotta-400 font-medium uppercase tracking-wide text-sm">
-              The Bridge Between Two Worlds
+            <span className="text-sand-400 font-medium uppercase tracking-wider text-sm">
+              Who We Are
             </span>
             <h1 className="mt-4 text-4xl font-bold text-white sm:text-5xl leading-tight">
-              We Don&apos;t Just Know the Kingdom.
-              <span className="block text-terracotta-400">We Understand Your Expectations.</span>
+              We&apos;ve Made This Move.
+              <span className="block text-terracotta-400">Now We Help Families Like Yours.</span>
             </h1>
             <p className="mt-6 text-xl text-sand-200">
-              Most relocation services are built on paperwork.
-              We are built on <strong>Advocacy</strong>.
+              We&apos;re not a faceless agency. We&apos;re Americans who live here,
+              paired with local experts who know the system inside and out.
             </p>
           </div>
         </div>
@@ -33,40 +33,41 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <p className="text-xl text-atlas-700 leading-relaxed mb-6">
-            We founded this partnership because we saw a gap between the rising, modern reality
-            of Morocco and the American family&apos;s need for certainty, safety, and speed.
+            We started this because we saw how hard it was to get straight answers.
+            The expat forums are full of outdated info. The official processes are confusing.
+            And most &quot;relocation services&quot; just hand you a checklist.
           </p>
           <p className="text-xl text-atlas-700 leading-relaxed">
-            We know that for you, moving isn&apos;t just about a change of scenery—it&apos;s about
-            maintaining a <strong>high-vibration lifestyle</strong> without the friction of &quot;starting over.&quot;
+            We wanted something better: a team that actually understands what American families
+            need, and can make the transition feel manageable instead of overwhelming.
           </p>
         </div>
       </section>
 
-      {/* Straight Talk Philosophy */}
+      {/* How We Work */}
       <section className="py-20 bg-sand-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-atlas-900">
-              Our &quot;Straight Talk&quot; Philosophy
+              How We Work
             </h2>
             <p className="mt-4 text-lg text-atlas-600">
-              We are Americans and local experts who have navigated the &quot;Modern Kingdom&quot; at the highest levels.
+              We&apos;re Americans who&apos;ve been through this, working with local experts who know the system.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-sand-200">
-              <div className="w-14 h-14 bg-terracotta-100 rounded-xl flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-terracotta-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="w-14 h-14 bg-atlas-100 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-atlas-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-atlas-900 mb-3">Radical Transparency</h3>
+              <h3 className="text-xl font-bold text-atlas-900 mb-3">Honest Answers</h3>
               <p className="text-atlas-600">
                 We tell you what the forums won&apos;t. If a neighborhood isn&apos;t right for your kids or a
-                document isn&apos;t up to federal standards, you&apos;ll hear it from us first.
+                document needs work, you&apos;ll hear it from us first—not after you&apos;ve already committed.
               </p>
             </div>
 
@@ -76,10 +77,10 @@ export default function AboutPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-atlas-900 mb-3">The &quot;Skip the Line&quot; Mindset</h3>
+              <h3 className="text-xl font-bold text-atlas-900 mb-3">We Handle the Bureaucracy</h3>
               <p className="text-atlas-600">
-                Your time is your most valuable asset. We treat the Moroccan administration like a
-                high-speed rail—moving you through the &quot;red tape&quot; with Tier-1 consulting efficiency.
+                Paperwork, government offices, waiting in line—we do it so you don&apos;t have to.
+                You focus on your family; we focus on the logistics.
               </p>
             </div>
 
@@ -89,10 +90,10 @@ export default function AboutPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-atlas-900 mb-3">High-Vibration Integration</h3>
+              <h3 className="text-xl font-bold text-atlas-900 mb-3">Beyond Just Paperwork</h3>
               <p className="text-atlas-600">
-                We don&apos;t just get you a residency card. We connect you to the elite infrastructure—
-                the American Schools, the private clinics, and the professional hubs.
+                We don&apos;t just get you a residency card. We help you find the right schools,
+                doctors, neighborhoods—everything you need to actually feel settled.
               </p>
             </div>
           </div>
@@ -104,21 +105,21 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-                The Role We Play
+              <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
+                What We Do
               </span>
               <h2 className="mt-2 text-3xl font-bold text-atlas-900 mb-6">
-                Your Boots on the Ground
+                Your Team on the Ground
               </h2>
               <p className="text-lg text-atlas-700 mb-4">
-                While you focus on your career, your children&apos;s transition, and your vision for 2030,
-                we are at the Prefecture, the Bank, and the Ministry.
+                While you&apos;re focused on your family and your work, we&apos;re at the government offices,
+                the banks, dealing with the paperwork.
               </p>
               <p className="text-lg text-atlas-700 mb-4">
-                We speak the language of the administration so you don&apos;t have to.
+                We speak the language—literally and figuratively—so you don&apos;t have to figure it all out yourself.
               </p>
               <p className="text-lg text-atlas-700">
-                <strong>We are the bridge between the US mindset and the Moroccan reality.</strong>
+                <strong>Think of us as your local friends who&apos;ve already been through this.</strong>
               </p>
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
@@ -137,36 +138,36 @@ export default function AboutPage() {
       <section className="py-20 bg-atlas-900">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-terracotta-400 font-medium uppercase tracking-wide text-sm">
-              The Skip-the-Line Proof
+            <span className="text-sand-400 font-medium uppercase tracking-wider text-sm">
+              What Makes Us Different
             </span>
             <h2 className="mt-2 text-3xl font-bold text-white">
-              Why Us
+              Why Families Choose Us
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-atlas-800/50 rounded-xl p-8 border border-atlas-700">
-              <h3 className="text-terracotta-400 font-bold text-lg mb-3">200+ Year Heritage</h3>
+              <h3 className="text-sand-400 font-bold text-lg mb-3">We&apos;ve Done This Ourselves</h3>
               <p className="text-sand-200">
-                We leverage the deep-rooted friendship between the US and Morocco to ensure you are
-                seen as a &quot;Guest of the Kingdom,&quot; not just another file.
+                We&apos;re not just consultants reading from a guidebook. We&apos;re Americans who
+                actually made this move and know what you&apos;re going through.
               </p>
             </div>
 
             <div className="bg-atlas-800/50 rounded-xl p-8 border border-atlas-700">
-              <h3 className="text-olive-400 font-bold text-lg mb-3">Infrastructure Obsessed</h3>
+              <h3 className="text-olive-400 font-bold text-lg mb-3">We Know What Matters</h3>
               <p className="text-sand-200">
-                We only operate in the hubs connected by the Al-Boraq and anchored by
-                Akdital/American Hospital standards.
+                Good schools, reliable healthcare, safe neighborhoods. We focus on the cities
+                and areas where American families can actually thrive.
               </p>
             </div>
 
             <div className="bg-atlas-800/50 rounded-xl p-8 border border-atlas-700">
-              <h3 className="text-terracotta-400 font-bold text-lg mb-3">Total Sovereignty</h3>
+              <h3 className="text-sand-400 font-bold text-lg mb-3">We Sweat the Details</h3>
               <p className="text-sand-200">
-                We specialize in the &quot;Convertible&quot; financial strategies and &quot;Federal-Level&quot;
-                document vetting that most services overlook.
+                From making sure your documents are right the first time to helping you
+                set up banking—we handle the stuff that trips people up.
               </p>
             </div>
           </div>
@@ -217,21 +218,21 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <p className="text-xl text-atlas-700 leading-relaxed mb-8">
-            You are moving to a country that is hosting the world in 2030.
-            You are moving to a place that Madonna calls a sanctuary and where Brahim Diaz calls home.
+            Moving abroad is a big decision. It helps to have someone in your corner who&apos;s
+            been through it and can give you straight answers about what to expect.
           </p>
           <p className="text-2xl font-bold text-atlas-900">
-            You deserve a partner who can match that energy.
+            We&apos;re happy to talk—even if you&apos;re just exploring the idea.
           </p>
-          <p className="mt-2 text-xl text-terracotta-600 font-medium">
-            Let&apos;s get you to the front of the line.
+          <p className="mt-2 text-xl text-atlas-700 font-medium">
+            No pressure. Just honest conversation.
           </p>
           <div className="mt-10">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-terracotta-500 text-white font-semibold rounded-lg hover:bg-terracotta-600 transition-colors duration-200 text-lg"
             >
-              Request a Strategy Session
+              Start the Conversation
             </Link>
           </div>
         </div>

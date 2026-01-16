@@ -1,24 +1,26 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Playfair_Display, Noto_Sans } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const notoSans = Noto_Sans({
+  subsets: ["latin"],
+  variable: "--font-noto",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "New Life Morocco | Strategic Relocation Advocacy for Americans",
-  description: "Private advocacy firm for high-achieving Americans relocating to Morocco. Skip-the-line residency services, infrastructure intelligence, and sovereign transition strategy.",
-  keywords: "Morocco relocation, American expats Morocco, Morocco residency, Morocco consulting, expat advocacy, sovereign transition",
+  title: "Morocco Advisors | American Relocation Consultancy",
+  description: "Relocation consultants for American families and professionals moving to Morocco. Residency navigation, document preparation, and in-country advocacy.",
+  keywords: "Morocco relocation, American expats Morocco, Morocco residency, moving to Morocco, expat families Morocco, Morocco consultants",
   icons: {
     icon: '/images/favicon.svg',
     shortcut: '/images/favicon.svg',
@@ -34,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${playfair.variable} ${notoSans.variable} antialiased font-sans`}
       >
         <Navigation />
         <main className="min-h-screen">

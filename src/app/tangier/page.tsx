@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tangier: Your American Home Since 1821 | New Life Morocco',
+  title: 'Tangier: Your American Home Since 1821 | Morocco Advisors',
   description: 'The oldest US diplomatic property in the world. 200+ years of American-Moroccan friendship. Gateway to Europe. Your American home awaits.',
 };
 
@@ -13,22 +13,22 @@ export default function TangierPage() {
       <section className="bg-atlas-900 py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="text-terracotta-400 font-medium uppercase tracking-wide text-sm">
+            <span className="text-sand-400 font-medium uppercase tracking-wider text-sm">
               Your Gateway to a Global Heritage
             </span>
             <h1 className="mt-4 text-4xl font-bold text-white sm:text-5xl leading-tight">
-              Tangier: Live Where History Meets the Future
+              Tangier: America&apos;s Oldest Friend
             </h1>
             <p className="mt-6 text-xl text-sand-200">
-              Tangier isn&apos;t just a city—it&apos;s a legendary meeting point of civilizations.
-              The only U.S. National Historic Landmark on foreign soil.
-              Moving here isn&apos;t just relocation—it&apos;s a homecoming.
+              Home to the only U.S. National Historic Landmark on foreign soil.
+              Where Americans have been welcomed for over 200 years.
+              An hour from Europe, with modern infrastructure and established expat community.
             </p>
           </div>
         </div>
       </section>
 
-      {/* The High-Vibration Lifestyle */}
+      {/* Why Tangier */}
       <section className="py-16 bg-terracotta-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
@@ -38,10 +38,10 @@ export default function TangierPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-atlas-900 mb-2">The Energy of the Strait</h3>
+              <h3 className="text-lg font-bold text-atlas-900 mb-2">Gateway to Europe</h3>
               <p className="text-atlas-600 text-sm">
-                Wake up to two seas meeting. See Spain from your terrace—a constant reminder you&apos;re
-                1 hour from the heart of Europe.
+                See Spain from your terrace—it&apos;s just 14 km across the Strait.
+                An hour to Madrid or Barcelona. Weekend trips to Europe are easy.
               </p>
             </div>
             <div className="text-center">
@@ -50,10 +50,10 @@ export default function TangierPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-atlas-900 mb-2">A Legacy of Intellect</h3>
+              <h3 className="text-lg font-bold text-atlas-900 mb-2">Rich American History</h3>
               <p className="text-atlas-600 text-sm">
-                Join a community that inspired generations of American writers, artists, and diplomats.
-                A city of deep thinkers where creativity thrives.
+                Home to generations of American writers, artists, and diplomats.
+                A welcoming city with deep ties to the United States since 1777.
               </p>
             </div>
             <div className="text-center">
@@ -62,10 +62,10 @@ export default function TangierPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-atlas-900 mb-2">Modernity in the Mediterranean</h3>
+              <h3 className="text-lg font-bold text-atlas-900 mb-2">Modern Infrastructure</h3>
               <p className="text-atlas-600 text-sm">
-                Walk historic Kasbah streets, minutes from the Tanger-Med mega-port and Al-Boraq
-                High-Speed Rail—connected at 320 km/h.
+                Historic charm meets modern convenience. High-speed rail connects you
+                to Casablanca in 80 minutes. Major port and growing economy.
               </p>
             </div>
           </div>
@@ -77,7 +77,7 @@ export default function TangierPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+              <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
                 200+ Years of Friendship
               </span>
               <h2 className="mt-2 text-3xl font-bold text-atlas-900">
@@ -102,27 +102,27 @@ export default function TangierPage() {
               <h3 className="text-xl font-bold text-atlas-900 mb-6">The Morocco-US Timeline</h3>
               <div className="space-y-4">
                 <div className="flex gap-4">
-                  <div className="text-terracotta-600 font-bold text-lg w-16 shrink-0">1777</div>
+                  <div className="text-atlas-900 font-bold text-lg w-16 shrink-0">1777</div>
                   <div className="text-atlas-700">Morocco becomes the first nation to recognize American independence</div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="text-terracotta-600 font-bold text-lg w-16 shrink-0">1786</div>
+                  <div className="text-atlas-900 font-bold text-lg w-16 shrink-0">1786</div>
                   <div className="text-atlas-700">Treaty of Friendship signed—the longest unbroken treaty in U.S. history</div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="text-terracotta-600 font-bold text-lg w-16 shrink-0">1821</div>
+                  <div className="text-atlas-900 font-bold text-lg w-16 shrink-0">1821</div>
                   <div className="text-atlas-700">Sultan gifts the Legation building to the United States</div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="text-terracotta-600 font-bold text-lg w-16 shrink-0">1950</div>
+                  <div className="text-atlas-900 font-bold text-lg w-16 shrink-0">1950</div>
                   <div className="text-atlas-700">American School of Tangier founded</div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="text-terracotta-600 font-bold text-lg w-16 shrink-0">1982</div>
+                  <div className="text-atlas-900 font-bold text-lg w-16 shrink-0">1982</div>
                   <div className="text-atlas-700">Tangier American Legation designated a National Historic Landmark</div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="text-terracotta-600 font-bold text-lg w-16 shrink-0">2004</div>
+                  <div className="text-atlas-900 font-bold text-lg w-16 shrink-0">2004</div>
                   <div className="text-atlas-700">Morocco designated a Major Non-NATO Ally</div>
                 </div>
               </div>
@@ -135,7 +135,7 @@ export default function TangierPage() {
       <section className="py-20 bg-sand-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+            <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
               The Gateway
             </span>
             <h2 className="mt-2 text-3xl font-bold text-atlas-900">
@@ -149,8 +149,8 @@ export default function TangierPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="w-12 h-12 bg-terracotta-100 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-terracotta-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="w-12 h-12 bg-atlas-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-atlas-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                 </svg>
               </div>
@@ -199,45 +199,44 @@ export default function TangierPage() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center border-b border-atlas-700 pb-3">
                   <span className="text-sand-200">Global Port Ranking</span>
-                  <span className="text-terracotta-400 font-bold text-lg">#1 in Africa</span>
+                  <span className="text-white font-bold text-lg">#1 in Africa</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-atlas-700 pb-3">
                   <span className="text-sand-200">Container Capacity</span>
-                  <span className="text-terracotta-400 font-bold text-lg">9M+ TEU</span>
+                  <span className="text-white font-bold text-lg">9M+ TEU</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-atlas-700 pb-3">
                   <span className="text-sand-200">Industrial Free Zone</span>
-                  <span className="text-terracotta-400 font-bold text-lg">1,000+ Companies</span>
+                  <span className="text-white font-bold text-lg">1,000+ Companies</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-atlas-700 pb-3">
                   <span className="text-sand-200">Major Tenants</span>
-                  <span className="text-terracotta-400 font-bold">Renault, Boeing</span>
+                  <span className="text-white font-bold">Renault, Boeing</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-sand-200">To Spain</span>
-                  <span className="text-terracotta-400 font-bold text-lg">35 min ferry</span>
+                  <span className="text-white font-bold text-lg">35 min ferry</span>
                 </div>
               </div>
             </div>
             <div className="order-1 lg:order-2">
-              <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-                Global Logistics Beast
+              <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
+                A Growing Economy
               </span>
               <h2 className="mt-2 text-3xl font-bold text-atlas-900">
-                Tanger-Med: Not Just History—Pure Power
+                Tanger-Med: More Than History
               </h2>
               <p className="mt-6 text-lg text-atlas-700">
-                Americans need to know: Tangier isn&apos;t just &quot;old history.&quot; It&apos;s one of
-                the most modern logistics hubs on the planet.
+                Tangier isn&apos;t just about its rich past. It&apos;s home to one of
+                the busiest ports in the world—a sign of Morocco&apos;s economic growth.
               </p>
               <p className="mt-4 text-lg text-atlas-700">
                 <strong>Tanger-Med Port</strong> is the largest port in Africa and the Mediterranean.
-                It&apos;s why global giants like Renault and Boeing have massive manufacturing and
-                assembly hubs here.
+                Major companies like Renault and Boeing have manufacturing operations here.
               </p>
               <p className="mt-4 text-lg text-atlas-700">
-                The <strong>Tanger-Med Industrial Free Zone</strong> hosts over 1,000 companies
-                and creates direct supply chain connections to Europe in hours, not days.
+                The <strong>Tanger-Med Industrial Free Zone</strong> hosts over 1,000 companies.
+                This means jobs, services, and a modern infrastructure that benefits residents.
               </p>
             </div>
           </div>
@@ -248,7 +247,7 @@ export default function TangierPage() {
       <section className="py-20 bg-terracotta-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+            <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
               Modern Healthcare
             </span>
             <h2 className="mt-2 text-3xl font-bold text-atlas-900">
@@ -262,15 +261,15 @@ export default function TangierPage() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="w-12 h-12 bg-terracotta-100 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-terracotta-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="w-12 h-12 bg-atlas-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-atlas-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-atlas-900 mb-2">
                 International Hospital of Tangier
               </h3>
-              <p className="text-sm text-terracotta-600 font-medium mb-3">Akdital Network</p>
+              <p className="text-sm text-atlas-600 font-semibold mb-3">Akdital Network</p>
               <p className="text-atlas-600 mb-4">
                 Ultra-modern facility with 24/7 emergency services, advanced oncology,
                 cardiology, and English-speaking staff. Part of Morocco&apos;s premier
@@ -305,7 +304,7 @@ export default function TangierPage() {
               <h3 className="text-xl font-bold text-atlas-900 mb-2">
                 American School of Tangier
               </h3>
-              <p className="text-sm text-terracotta-600 font-medium mb-3">Founded 1950</p>
+              <p className="text-sm text-atlas-600 font-semibold mb-3">Founded 1950</p>
               <p className="text-atlas-600 mb-4">
                 The oldest American school in the Arab world. A legendary reputation for
                 preparing students for U.S. universities. It&apos;s not just a school—it&apos;s
@@ -338,7 +337,7 @@ export default function TangierPage() {
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+            <span className="text-atlas-500 font-semibold uppercase text-sm tracking-wider">
               The Straight Talk
             </span>
             <h2 className="mt-2 text-3xl font-bold text-atlas-900">
@@ -393,28 +392,28 @@ export default function TangierPage() {
       <section className="py-20 bg-atlas-900">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Old World Soul. New World Efficiency.
+            Interested in Tangier?
           </h2>
-          <p className="text-xl text-terracotta-400 font-medium mb-6">
-            In Tangier, you don&apos;t have to choose.
+          <p className="text-xl text-sand-300 font-medium mb-6">
+            History, convenience, and a welcoming community.
           </p>
           <p className="text-lg text-sand-200 mb-8 max-w-2xl mx-auto">
-            From the American Legation in the Medina to the modern villas of the Mountain,
-            Tangier is a city that has welcomed the American spirit since 1821.
-            Come see why the oldest friend of the United States is the best place for your next chapter.
+            From the American Legation in the Medina to the modern neighborhoods on the hills,
+            Tangier has welcomed Americans since 1821. We&apos;d be happy to tell you more
+            about what life here is actually like.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
               className="btn-primary"
             >
-              Plan Your Transition
+              Start the Conversation
             </Link>
             <Link
               href="/guide"
               className="px-6 py-3 bg-transparent border-2 border-sand-300 text-sand-100 rounded-lg font-medium hover:bg-sand-300/10 transition-colors"
             >
-              Read: The Upgrade Guide
+              Learn About Morocco
             </Link>
           </div>
         </div>

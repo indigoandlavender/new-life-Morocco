@@ -35,11 +35,11 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-atlas-900 sm:text-5xl">
-              Begin Your Sovereign Transition
+              Let&apos;s Talk
             </h1>
             <p className="mt-6 text-lg leading-8 text-atlas-700">
-              Request your private strategy session and take the first step toward
-              your new life in Morocco. We provide advocacy, not just advice.
+              Whether you have questions, want to learn more, or are ready to start planning—we&apos;re
+              happy to chat. No pressure, just honest conversation.
             </p>
           </div>
         </div>
@@ -52,7 +52,7 @@ export default function ContactPage() {
             {/* Form */}
             <div>
               <h2 className="text-2xl font-bold text-atlas-900 mb-6">
-                Request Your Strategic Roadmap
+                Get in Touch
               </h2>
 
               {submitted ? (
@@ -63,11 +63,11 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-semibold text-atlas-900 mb-2">
-                    Thank You!
+                    Thanks for reaching out!
                   </h3>
                   <p className="text-atlas-600">
-                    We&apos;ve received your request and will be in touch within 24 hours
-                    to schedule your private strategy session.
+                    We&apos;ve received your message and will get back to you within 24 hours.
+                    Looking forward to chatting with you.
                   </p>
                 </div>
               ) : (
@@ -159,7 +159,7 @@ export default function ContactPage() {
                     type="submit"
                     className="w-full btn-primary py-4 text-lg"
                   >
-                    Request Your Strategic Roadmap
+                    Send Message
                   </button>
 
                   <p className="text-sm text-atlas-500 text-center">
@@ -174,39 +174,39 @@ export default function ContactPage() {
             <div>
               <div className="bg-sand-50 rounded-2xl p-8 mb-8">
                 <h3 className="text-xl font-semibold text-atlas-900 mb-6">
-                  What to Expect
+                  What Happens Next
                 </h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-terracotta-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-terracotta-600 font-semibold">1</span>
+                    <div className="w-10 h-10 bg-atlas-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-atlas-600 font-semibold">1</span>
                     </div>
                     <div>
-                      <h4 className="font-medium text-atlas-800">Quick Response</h4>
+                      <h4 className="font-medium text-atlas-800">We&apos;ll Reply Quickly</h4>
                       <p className="text-atlas-600 text-sm">
-                        We&apos;ll respond within 24 hours to schedule your consultation.
+                        Expect a response within 24 hours—usually sooner.
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-terracotta-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-terracotta-600 font-semibold">2</span>
+                    <div className="w-10 h-10 bg-atlas-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-atlas-600 font-semibold">2</span>
                     </div>
                     <div>
-                      <h4 className="font-medium text-atlas-800">30-Minute Call</h4>
+                      <h4 className="font-medium text-atlas-800">A Quick Chat</h4>
                       <p className="text-atlas-600 text-sm">
-                        Discuss your goals, ask questions, and learn about your options.
+                        We can hop on a call to answer your questions and learn about your situation.
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-terracotta-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-terracotta-600 font-semibold">3</span>
+                    <div className="w-10 h-10 bg-atlas-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-atlas-600 font-semibold">3</span>
                     </div>
                     <div>
-                      <h4 className="font-medium text-atlas-800">Personalized Guidance</h4>
+                      <h4 className="font-medium text-atlas-800">Helpful Answers</h4>
                       <p className="text-atlas-600 text-sm">
-                        Receive tailored recommendations based on your unique situation.
+                        We&apos;ll give you honest, practical guidance—whether or not you end up working with us.
                       </p>
                     </div>
                   </div>
@@ -217,19 +217,19 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
-                    <svg className="w-6 h-6 text-terracotta-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                    <svg className="w-6 h-6 text-atlas-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                     </svg>
-                    <span className="text-sand-200">hello@newlifemorocco.com</span>
+                    <span className="text-sand-200">hello@moroccoadvisors.com</span>
                   </div>
                   <div className="flex items-center gap-4">
-                    <svg className="w-6 h-6 text-terracotta-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                    <svg className="w-6 h-6 text-atlas-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-sand-200">Response within 24 hours</span>
                   </div>
                   <div className="flex items-center gap-4">
-                    <svg className="w-6 h-6 text-terracotta-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                    <svg className="w-6 h-6 text-atlas-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
                     </svg>
                     <span className="text-sand-200">Serving clients worldwide</span>
@@ -296,11 +296,11 @@ export default function ContactPage() {
 
           <div className="text-center mt-12">
             <p className="text-atlas-600 mb-4">Have more questions?</p>
-            <Link href="/benefits" className="text-terracotta-600 font-medium hover:text-terracotta-700">
+            <Link href="/benefits" className="text-atlas-700 font-medium hover:text-atlas-900 underline underline-offset-4">
               Explore our guides
             </Link>
             <span className="text-atlas-400 mx-3">or</span>
-            <a href="#" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className="text-terracotta-600 font-medium hover:text-terracotta-700">
+            <a href="#" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className="text-atlas-700 font-medium hover:text-atlas-900 underline underline-offset-4">
               schedule a consultation
             </a>
           </div>
