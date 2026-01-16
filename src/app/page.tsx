@@ -177,8 +177,124 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Vision for Your New Life - Three Pillars */}
+      <section className="py-20 bg-sand-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+              The Vision for Your New Life
+            </span>
+            <h2 className="mt-2 text-3xl font-bold text-atlas-900 sm:text-4xl">
+              More Than a Destination. A Foundation for Your Future.
+            </h2>
+            <p className="mt-6 text-lg text-atlas-600 max-w-3xl mx-auto">
+              We could show you the golden sands of Taghazout, the peaks of the Atlas,
+              or the soul-stirring history of our Medinas. But this is not a tourism site.
+            </p>
+            <p className="mt-4 text-lg text-atlas-700 max-w-3xl mx-auto font-medium">
+              We are here to help you envision—and build—a better future for you and your children.
+              Morocco isn&apos;t just a place to visit; it&apos;s a modern Kingdom where tradition
+              meets world-class infrastructure.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8 mb-12">
+            {/* Pillar 1: Education */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-sand-200">
+              <div className="w-12 h-12 bg-terracotta-100 rounded-lg flex items-center justify-center mb-6">
+                <svg className="w-6 h-6 text-terracotta-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-atlas-900 mb-2">World-Class Education</h3>
+              <p className="text-sm text-terracotta-600 font-medium mb-4">
+                Your children deserve a global perspective without sacrificing American standards.
+              </p>
+              <p className="text-atlas-600">
+                From the American School of Tangier (the oldest in the Arab world) to the high-tech
+                campuses of Casablanca and Rabat, your children stay on the US track while gaining
+                the gift of multilingualism and a global network.
+              </p>
+              <Link href="/families" className="inline-block mt-4 text-terracotta-600 hover:text-terracotta-700 font-medium text-sm">
+                Explore American Schools →
+              </Link>
+            </div>
+
+            {/* Pillar 2: Healthcare */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-sand-200">
+              <div className="w-12 h-12 bg-olive-100 rounded-lg flex items-center justify-center mb-6">
+                <svg className="w-6 h-6 text-olive-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-atlas-900 mb-2">Medical Excellence & Peace of Mind</h3>
+              <p className="text-sm text-terracotta-600 font-medium mb-4">
+                Healthcare should be a pillar of your security, not a source of stress.
+              </p>
+              <p className="text-atlas-600">
+                Access the American Hospital of Casablanca and the elite International Clinics of
+                Marrakech, where US and European standards are the baseline. You are treated with
+                dignity, seen immediately, and cared for by specialists who prioritize your well-being.
+              </p>
+              <Link href="/infrastructure" className="inline-block mt-4 text-terracotta-600 hover:text-terracotta-700 font-medium text-sm">
+                See Healthcare Options →
+              </Link>
+            </div>
+
+            {/* Pillar 3: Future-Proof Economy */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-sand-200">
+              <div className="w-12 h-12 bg-atlas-100 rounded-lg flex items-center justify-center mb-6">
+                <svg className="w-6 h-6 text-atlas-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-atlas-900 mb-2">A Future-Proof Economy</h3>
+              <p className="text-sm text-terracotta-600 font-medium mb-4">
+                Join a country that is moving upward. The 2030 Vision.
+              </p>
+              <p className="text-atlas-600">
+                As the co-host of the 2030 World Cup, Morocco is undergoing a national metamorphosis.
+                With the Al-Boraq High-Speed Rail connecting our cities and a 5G/Fiber-optic backbone
+                powering your career, you are moving to a hub of innovation and connectivity.
+              </p>
+              <Link href="/guide" className="inline-block mt-4 text-terracotta-600 hover:text-terracotta-700 font-medium text-sm">
+                Read The 2030 Vision →
+              </Link>
+            </div>
+          </div>
+
+          {/* Direct & Straight Sidebar as Cards */}
+          <div className="bg-atlas-900 rounded-2xl p-8">
+            <h3 className="text-lg font-bold text-white mb-6 text-center">The Straight Talk</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-terracotta-400">7 Hours</div>
+                <div className="text-sand-300 text-sm mt-1">from JFK to Casablanca</div>
+                <div className="text-sand-400 text-xs mt-1">Shorter than Hawaii</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-terracotta-400">1777</div>
+                <div className="text-sand-300 text-sm mt-1">A Strategic Ally</div>
+                <div className="text-sand-400 text-xs mt-1">Oldest friend of the US</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-terracotta-400">1-2 hrs</div>
+                <div className="text-sand-300 text-sm mt-1">To Europe</div>
+                <div className="text-sand-400 text-xs mt-1">Spain, Portugal, Paris</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-terracotta-400">320 km/h</div>
+                <div className="text-sand-300 text-sm mt-1">Al-Boraq TGV</div>
+                <div className="text-sand-400 text-xs mt-1">Faster trains than Amtrak</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonial/Story Section */}
-      <section className="section-padding bg-sand-50">
+      <section className="section-padding bg-white">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg">
@@ -320,7 +436,88 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Infrastructure Map - Line of Modernity */}
+      <section className="py-20 bg-atlas-900">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-terracotta-400 font-medium uppercase tracking-wide text-sm">
+              The Line of Modernity
+            </span>
+            <h2 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
+              Four Cities. One Modern Kingdom.
+            </h2>
+            <p className="mt-4 text-lg text-sand-300 max-w-3xl mx-auto">
+              When you see this infrastructure corridor, the &quot;third world&quot; fear disappears.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {/* Tangier */}
+            <Link href="/tangier" className="group bg-atlas-800/50 rounded-xl p-6 hover:bg-atlas-800 transition-colors">
+              <div className="w-10 h-10 bg-terracotta-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-white font-bold">T</span>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Tangier</h3>
+              <p className="text-sand-300 text-sm mb-3">Gateway to Europe</p>
+              <ul className="space-y-1 text-xs text-sand-400">
+                <li>• Oldest US Legation (1821)</li>
+                <li>• #1 Port in Africa</li>
+                <li>• TGV Northern Hub</li>
+              </ul>
+            </Link>
+
+            {/* Rabat */}
+            <div className="group bg-atlas-800/50 rounded-xl p-6 hover:bg-atlas-800 transition-colors">
+              <div className="w-10 h-10 bg-olive-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-white font-bold">R</span>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Rabat</h3>
+              <p className="text-sand-300 text-sm mb-3">The Capital</p>
+              <ul className="space-y-1 text-xs text-sand-400">
+                <li>• Diplomatic Schools</li>
+                <li>• Government Hub</li>
+                <li>• Cultural Center</li>
+              </ul>
+            </div>
+
+            {/* Casablanca */}
+            <div className="group bg-atlas-800/50 rounded-xl p-6 hover:bg-atlas-800 transition-colors">
+              <div className="w-10 h-10 bg-atlas-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-white font-bold">C</span>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Casablanca</h3>
+              <p className="text-sand-300 text-sm mb-3">Financial Hub</p>
+              <ul className="space-y-1 text-xs text-sand-400">
+                <li>• American Hospital</li>
+                <li>• TGV Central Hub</li>
+                <li>• Economic Capital</li>
+              </ul>
+            </div>
+
+            {/* Marrakech */}
+            <div className="group bg-atlas-800/50 rounded-xl p-6 hover:bg-atlas-800 transition-colors">
+              <div className="w-10 h-10 bg-terracotta-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-white font-bold">M</span>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Marrakech</h3>
+              <p className="text-sand-300 text-sm mb-3">World Cup 2030</p>
+              <ul className="space-y-1 text-xs text-sand-400">
+                <li>• Concierge Healthcare</li>
+                <li>• Tourism Capital</li>
+                <li>• TGV Extension Coming</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <Link href="/infrastructure" className="text-terracotta-400 hover:text-terracotta-300 font-medium">
+              Explore the full infrastructure network →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section - The Closing Statement */}
       <section className="relative section-padding overflow-hidden">
         <div className="absolute inset-0">
           <Image
@@ -329,22 +526,34 @@ export default function Home() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-atlas-900/80" />
+          <div className="absolute inset-0 bg-atlas-900/85" />
         </div>
         <div className="relative mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Ready to Explore Your Options?
+            You Aren&apos;t Moving to a Foreign Land.
+            <span className="block mt-2 text-terracotta-400">You&apos;re Moving to an Old Friend.</span>
           </h2>
-          <p className="mt-4 text-lg text-sand-200">
-            Take the first step toward your Moroccan adventure. Our team is here to answer
-            your questions and help you understand what&apos;s possible.
+          <p className="mt-6 text-lg text-sand-200 max-w-3xl mx-auto">
+            From the American Hospital of Casablanca to the American School of Tangier
+            and the concierge clinics of Marrakech, Morocco has built the infrastructure
+            for your success.
           </p>
-          <div className="mt-10">
+          <p className="mt-4 text-lg text-sand-300 max-w-3xl mx-auto">
+            Whether you&apos;re looking for the 320 km/h speed of the TGV or the 200-year
+            history of the Tangier Legation, you&apos;re not just moving abroad—you&apos;re moving up.
+          </p>
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-terracotta-500 text-white font-semibold rounded-lg hover:bg-terracotta-600 transition-colors duration-200 text-lg"
             >
               Book Your Free Consultation
+            </Link>
+            <Link
+              href="/tangier"
+              className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-sand-300 text-sand-100 font-semibold rounded-lg hover:bg-sand-300/10 transition-colors duration-200 text-lg"
+            >
+              Discover Tangier
             </Link>
           </div>
         </div>
