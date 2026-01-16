@@ -10,16 +10,67 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-sand-50 to-white py-20">
+      <section className="bg-atlas-900 py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-atlas-900 sm:text-5xl">
-              Our Services
+            <span className="text-terracotta-400 font-medium uppercase tracking-wide text-sm">
+              Securing Your Status
+            </span>
+            <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+              Your Key to the Kingdom
             </h1>
-            <p className="mt-6 text-lg leading-8 text-atlas-700">
-              From your first consultation to settling into your new home, we provide
-              comprehensive support for every stage of your Morocco relocation journey.
+            <p className="mt-6 text-xl text-sand-200">
+              Moving to Morocco is a choice to live with more freedom, more luxury, and more peace.
+              We curate your transition so you can focus on what matters: your family, your career,
+              and your new community.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* What Your Residency Unlocks */}
+      <section className="py-16 bg-white border-b border-sand-200">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-atlas-900">What Your Residency Unlocks</h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center p-4">
+              <div className="w-12 h-12 bg-terracotta-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <svg className="w-6 h-6 text-terracotta-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-atlas-900 text-sm mb-1">Financial Sovereignty</h3>
+              <p className="text-atlas-600 text-xs">Open &quot;Convertible Dirham&quot; bank accounts</p>
+            </div>
+            <div className="text-center p-4">
+              <div className="w-12 h-12 bg-olive-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <svg className="w-6 h-6 text-olive-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-atlas-900 text-sm mb-1">Property Ownership</h3>
+              <p className="text-atlas-600 text-xs">Sign leases or purchase your dream Riad</p>
+            </div>
+            <div className="text-center p-4">
+              <div className="w-12 h-12 bg-atlas-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <svg className="w-6 h-6 text-atlas-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-atlas-900 text-sm mb-1">Seamless Mobility</h3>
+              <p className="text-atlas-600 text-xs">Bypass the 90-day tourist clock</p>
+            </div>
+            <div className="text-center p-4">
+              <div className="w-12 h-12 bg-sand-200 rounded-full flex items-center justify-center mx-auto mb-3">
+                <svg className="w-6 h-6 text-sand-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-atlas-900 text-sm mb-1">Foundation for the Future</h3>
+              <p className="text-atlas-600 text-xs">Position yourself in the 2030 growth hub</p>
+            </div>
           </div>
         </div>
       </section>
@@ -446,22 +497,37 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* The Straight Talk Commitment */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="bg-sand-50 border-l-4 border-terracotta-500 rounded-r-2xl p-8">
+            <h3 className="text-xl font-bold text-atlas-900 mb-4">The &quot;Straight Talk&quot; Commitment</h3>
+            <p className="text-atlas-700 text-lg">
+              &quot;Most people try to navigate the Moroccan administration alone and get caught in
+              the &apos;waiting game.&apos; We believe your time is too valuable for that. We provide
+              the insider expertise to ensure your residency is handled with the same modern
+              efficiency as the Al-Boraq high-speed train.&quot;
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="section-padding bg-atlas-800">
+      <section className="section-padding bg-atlas-900">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Ready to Start Your Journey?
+            Ready to Secure Your Status?
           </h2>
           <p className="mt-4 text-lg text-sand-200">
-            Book your free consultation today and take the first step toward
-            your new life in Morocco.
+            Your time is valuable. Let us handle the friction so you can focus on
+            building your new life in the Kingdom.
           </p>
           <div className="mt-10">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-terracotta-500 text-white font-semibold rounded-lg hover:bg-terracotta-600 transition-colors duration-200 text-lg"
             >
-              Schedule Free Consultation
+              Speak With a Relocation Partner
             </Link>
           </div>
         </div>
