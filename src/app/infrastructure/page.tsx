@@ -40,8 +40,8 @@ export default function InfrastructurePage() {
               <div className="text-atlas-600 text-sm">Coverage in Major Cities</div>
             </div>
             <div className="p-4">
-              <div className="text-4xl font-bold text-terracotta-600">15%</div>
-              <div className="text-atlas-600 text-sm">Healthcare Cost vs. US</div>
+              <div className="text-4xl font-bold text-terracotta-600">4</div>
+              <div className="text-atlas-600 text-sm">Modern Tramway Lines</div>
             </div>
             <div className="p-4">
               <div className="text-4xl font-bold text-terracotta-600">2030</div>
@@ -51,74 +51,183 @@ export default function InfrastructurePage() {
         </div>
       </section>
 
-      {/* Transportation & Connectivity */}
+      {/* The Mobility Stack */}
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mb-12">
             <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
-              Transportation & Connectivity
+              The Mobility Stack
             </span>
             <h2 className="mt-2 text-3xl font-bold text-atlas-900">
-              Moving Faster Than North America
+              Integrated Transit That US Cities Can Only Dream Of
             </h2>
+            <p className="mt-4 text-lg text-atlas-600 max-w-3xl">
+              While American cities struggle with crumbling subways and decades-delayed rail projects,
+              Morocco has built an integrated mobility network that rivals Western Europe.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Al-Boraq */}
-            <div className="bg-sand-50 rounded-2xl p-8">
-              <div className="w-14 h-14 bg-atlas-900 rounded-xl flex items-center justify-center mb-6">
+          {/* Three-tier mobility */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* High-Speed Rail */}
+            <div className="bg-atlas-900 rounded-2xl p-8 text-white">
+              <div className="w-14 h-14 bg-terracotta-500 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div className="text-sm text-terracotta-400 font-medium mb-2">TIER 1: INTERCITY</div>
+              <h3 className="text-2xl font-bold mb-3">Al-Boraq TGV</h3>
+              <p className="text-sand-300 mb-4">
+                Africa&apos;s only high-speed rail. Tangier to Casablanca in 80 minutes.
+              </p>
+              <div className="bg-atlas-800 rounded-lg p-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-sand-400">Top Speed</span>
+                  <span className="text-2xl font-bold text-white">320 km/h</span>
+                </div>
+              </div>
+              <p className="text-sand-400 text-sm mt-4">
+                Amtrak Acela: 109 km/h average. California HSR: 0 passengers since 2008.
+              </p>
+            </div>
+
+            {/* Tramway */}
+            <div className="bg-olive-900 rounded-2xl p-8 text-white">
+              <div className="w-14 h-14 bg-olive-500 rounded-xl flex items-center justify-center mb-6">
                 <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-atlas-900 mb-4">
-                Al-Boraq High-Speed Rail
-              </h3>
-              <p className="text-atlas-700 mb-4">
-                Africa&apos;s first and only high-speed train. Connect from the financial hub of
-                Casablanca to the Mediterranean port of Tangier in just over an hour.
+              <div className="text-sm text-olive-400 font-medium mb-2">TIER 2: URBAN RAIL</div>
+              <h3 className="text-2xl font-bold mb-3">Modern Tramways</h3>
+              <p className="text-sand-300 mb-4">
+                Sleek, air-conditioned light rail networks in Rabat and Casablanca.
               </p>
-              <div className="bg-white rounded-xl p-4 mb-4">
+              <div className="bg-olive-800 rounded-lg p-4">
+                <div className="flex justify-between items-center mb-2">
+                  <span className="text-sand-400">Casablanca</span>
+                  <span className="font-bold text-white">2 Lines, 48 Stations</span>
+                </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-atlas-600">Top Speed</span>
-                  <span className="text-2xl font-bold text-terracotta-600">320 km/h</span>
+                  <span className="text-sand-400">Rabat-Salé</span>
+                  <span className="font-bold text-white">2 Lines, 31 Stations</span>
                 </div>
               </div>
-              <p className="text-atlas-600 text-sm">
-                <strong>For comparison:</strong> Amtrak&apos;s Acela averages 109 km/h between NYC and DC.
-                California&apos;s high-speed rail project (started 2008) has carried zero passengers.
+              <p className="text-sand-400 text-sm mt-4">
+                Clean. Reliable. Under $1 per ride. Most US cities have nothing comparable.
               </p>
             </div>
 
-            {/* Digital Backbone */}
-            <div className="bg-sand-50 rounded-2xl p-8">
+            {/* Electric Buses */}
+            <div className="bg-sand-50 rounded-2xl p-8 border border-sand-200">
               <div className="w-14 h-14 bg-atlas-900 rounded-xl flex items-center justify-center mb-6">
                 <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-atlas-900 mb-4">
-                The Digital Backbone
-              </h3>
-              <p className="text-atlas-700 mb-4">
-                5G and Fiber-to-the-Home. Morocco is a digital-first economy. Whether you&apos;re
-                trading on Wall Street or hosting Zoom calls, the fiber-optic network offers
-                99.9% uptime at a fraction of US prices.
+              <div className="text-sm text-terracotta-600 font-medium mb-2">TIER 3: LAST MILE</div>
+              <h3 className="text-2xl font-bold text-atlas-900 mb-3">Electric Bus Networks</h3>
+              <p className="text-atlas-600 mb-4">
+                Growing fleet of zero-emission buses connecting neighborhoods to transit hubs.
               </p>
-              <div className="bg-white rounded-xl p-4 mb-4">
+              <div className="bg-white rounded-lg p-4 border border-sand-200">
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-atlas-600">Morocco Fiber Internet</span>
-                  <span className="text-xl font-bold text-olive-600">$30-50/mo</span>
+                  <span className="text-atlas-500">Marrakech Fleet</span>
+                  <span className="font-bold text-olive-600">100% Electric</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-atlas-600">US Fiber (Comcast/Cox)</span>
-                  <span className="text-xl font-bold text-atlas-400">$80-120/mo</span>
+                  <span className="text-atlas-500">Casablanca Expansion</span>
+                  <span className="font-bold text-olive-600">In Progress</span>
                 </div>
               </div>
-              <p className="text-atlas-600 text-sm">
+              <p className="text-atlas-500 text-sm mt-4">
+                No diesel fumes. No aging, unreliable buses. The fleet is new.
+              </p>
+            </div>
+          </div>
+
+          {/* The US Transit Reality */}
+          <div className="bg-terracotta-50 border border-terracotta-200 rounded-2xl p-8">
+            <h4 className="text-lg font-bold text-atlas-900 mb-4">Meanwhile, in America...</h4>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-atlas-700">
+              <div>
+                <p className="font-semibold text-terracotta-600">Los Angeles</p>
+                <p className="text-sm">No rail from LAX to downtown. 90-minute bus ride. $28B subway delayed again.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-terracotta-600">Houston</p>
+                <p className="text-sm">4th largest US city. One light rail line. 7 miles. Opens in segments over 20 years.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-terracotta-600">California HSR</p>
+                <p className="text-sm">Started 2008. Zero passengers. Budget: $100B+. Completion: &quot;Sometime.&quot;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Digital Backbone */}
+      <section className="py-20 bg-sand-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+                The Digital Backbone
+              </span>
+              <h2 className="mt-2 text-3xl font-bold text-atlas-900 mb-6">
+                5G and Fiber-to-the-Home
+              </h2>
+              <p className="text-atlas-700 mb-4">
+                Morocco is a digital-first economy. Whether you&apos;re trading on Wall Street
+                or hosting Zoom calls with London, the fiber-optic network offers 99.9%
+                uptime at a fraction of US prices.
+              </p>
+              <p className="text-atlas-700 mb-6">
                 21 million Americans still lack broadband access. In Morocco, fiber reaches
                 cities most Americans have never heard of.
               </p>
+              <div className="bg-white rounded-xl p-6 border border-sand-200">
+                <h4 className="font-semibold text-atlas-900 mb-4">Monthly Internet Comparison</h4>
+                <div className="flex justify-between items-center mb-3 pb-3 border-b border-sand-200">
+                  <span className="text-atlas-600">Morocco Fiber (100Mbps)</span>
+                  <span className="text-xl font-bold text-olive-600">$30-50</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-atlas-600">US Fiber (Comcast/Cox)</span>
+                  <span className="text-xl font-bold text-atlas-400">$80-120</span>
+                </div>
+              </div>
+            </div>
+            <div className="bg-atlas-900 rounded-2xl p-8 text-white">
+              <h4 className="text-lg font-semibold mb-6">Why Remote Workers Choose Morocco</h4>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-olive-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-sand-200"><strong className="text-white">5G Coverage</strong> — Nationwide in major cities</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-olive-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-sand-200"><strong className="text-white">GMT+1 Time Zone</strong> — Perfect overlap with NYC (work 2-10pm local)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-olive-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-sand-200"><strong className="text-white">Co-Working Spaces</strong> — Modern hubs in Casablanca, Rabat, Marrakech</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-olive-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-sand-200"><strong className="text-white">Tech Hub Growth</strong> — Oracle, Google Cloud, and African startups HQ&apos;d here</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -230,9 +230,130 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          THE READINESS AUDIT: Creates the Need
+          THE 7/2 PROXIMITY: Strategic Location
+          ═══════════════════════════════════════════════════════════════════ */}
+      <section className="py-16 bg-white border-y border-sand-200">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+              The 7/2 Proximity
+            </span>
+            <h2 className="mt-2 text-3xl font-bold text-atlas-900">
+              The Only Sanctuary That Keeps You Globally Connected
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-5xl font-bold text-terracotta-600 mb-2">7h</div>
+              <div className="text-lg font-medium text-atlas-900 mb-1">To New York</div>
+              <p className="text-atlas-600 text-sm">Direct flights daily. Your board meeting is never more than an overnight flight away.</p>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl font-bold text-olive-600 mb-2">2h</div>
+              <div className="text-lg font-medium text-atlas-900 mb-1">To London / Paris</div>
+              <p className="text-atlas-600 text-sm">Europe is your backyard. Weekend in Paris? $50 flight, 2 hours door to door.</p>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl font-bold text-atlas-700 mb-2">GMT+1</div>
+              <div className="text-lg font-medium text-atlas-900 mb-1">Perfect Time Zone</div>
+              <p className="text-atlas-600 text-sm">Overlap with NYC (work 2-10pm local). No 3am calls. No jet-lag lifestyle.</p>
+            </div>
+          </div>
+          <p className="mt-10 text-center text-atlas-700 max-w-2xl mx-auto">
+            Thailand is 20+ hours away. Bali destroys your sleep schedule. Portugal is crowded and expensive.
+            <strong className="text-atlas-900"> Morocco is the only biological sanctuary that keeps you connected to your global network.</strong>
+          </p>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════
+          THE CLEAN BREAK: Morocco vs Mexico
           ═══════════════════════════════════════════════════════════════════ */}
       <section className="py-20 bg-sand-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">
+                The Clean Break
+              </span>
+              <h2 className="mt-2 text-3xl font-bold text-atlas-900 sm:text-4xl">
+                Communal Safety, Not Gated Bubbles
+              </h2>
+              <p className="mt-6 text-lg text-atlas-700">
+                Mexico is the default &quot;escape&quot; for Americans. But most expats there live in
+                gated compounds, avoiding certain roads at night, checking cartel activity reports.
+              </p>
+              <p className="mt-4 text-lg text-atlas-700">
+                Morocco offers something different: <strong>Communal Safety</strong>. A deep-rooted culture
+                of hospitality (Chabel) and neighborhood vigilance. You don&apos;t need a gate. You have
+                a community.
+              </p>
+              <ul className="mt-6 space-y-3">
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-olive-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-atlas-700">Walk anywhere, anytime—no &quot;no-go&quot; zones</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-olive-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-atlas-700">No cartel presence. No kidnapping risk.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-olive-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-atlas-700">Strict gun control. Virtually zero gun violence.</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <div className="bg-atlas-900 text-white px-6 py-4">
+                <h3 className="font-bold">Safety Reality Check</h3>
+              </div>
+              <div className="divide-y divide-sand-200">
+                <div className="grid grid-cols-3 px-6 py-4 bg-sand-50 font-semibold text-sm">
+                  <div className="text-atlas-700">Factor</div>
+                  <div className="text-center text-atlas-700">Mexico</div>
+                  <div className="text-center text-atlas-700">Morocco</div>
+                </div>
+                <div className="grid grid-cols-3 px-6 py-4 text-sm">
+                  <div className="text-atlas-700">Cartel Activity</div>
+                  <div className="text-center text-terracotta-600">High</div>
+                  <div className="text-center text-olive-600 font-semibold">None</div>
+                </div>
+                <div className="grid grid-cols-3 px-6 py-4 text-sm bg-sand-50">
+                  <div className="text-atlas-700">Kidnapping Risk</div>
+                  <div className="text-center text-terracotta-600">Elevated</div>
+                  <div className="text-center text-olive-600 font-semibold">Negligible</div>
+                </div>
+                <div className="grid grid-cols-3 px-6 py-4 text-sm">
+                  <div className="text-atlas-700">Gun Violence</div>
+                  <div className="text-center text-terracotta-600">High</div>
+                  <div className="text-center text-olive-600 font-semibold">Near Zero</div>
+                </div>
+                <div className="grid grid-cols-3 px-6 py-4 text-sm bg-sand-50">
+                  <div className="text-atlas-700">Walking at Night</div>
+                  <div className="text-center text-terracotta-600">Area-Dependent</div>
+                  <div className="text-center text-olive-600 font-semibold">Everywhere</div>
+                </div>
+                <div className="grid grid-cols-3 px-6 py-4 text-sm">
+                  <div className="text-atlas-700">Security Model</div>
+                  <div className="text-center text-atlas-500">Gated Bubble</div>
+                  <div className="text-center text-olive-600 font-semibold">Communal Safety</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════
+          THE READINESS AUDIT: Creates the Need
+          ═══════════════════════════════════════════════════════════════════ */}
+      <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-terracotta-600 font-semibold uppercase text-sm tracking-wide">

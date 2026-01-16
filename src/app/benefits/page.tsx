@@ -132,7 +132,7 @@ export default function BenefitsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-sand-200">
               <div className="w-14 h-14 bg-olive-100 rounded-xl flex items-center justify-center mb-6">
                 <svg className="w-7 h-7 text-olive-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -171,6 +171,58 @@ export default function BenefitsPage() {
                 energy—simply from eating real food grown in real soil.
               </p>
             </div>
+          </div>
+
+          {/* US Food Supply Reality */}
+          <div className="bg-white rounded-2xl p-8 border border-sand-200">
+            <h4 className="text-lg font-bold text-atlas-900 mb-4">What You&apos;re Leaving Behind</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h5 className="font-semibold text-terracotta-600 mb-3">The US Food Reality</h5>
+                <ul className="space-y-2 text-sm text-atlas-600">
+                  <li className="flex items-start gap-2">
+                    <span className="text-terracotta-400 mt-0.5">•</span>
+                    <span>85% of US honey is imported, much adulterated with corn syrup</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-terracotta-400 mt-0.5">•</span>
+                    <span>PFAS &quot;forever chemicals&quot; found in 45% of US tap water</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-terracotta-400 mt-0.5">•</span>
+                    <span>Average supermarket tomato traveled 1,500 miles, picked green</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-terracotta-400 mt-0.5">•</span>
+                    <span>70% of US antibiotics go to livestock, not humans</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-semibold text-olive-600 mb-3">The Morocco Default</h5>
+                <ul className="space-y-2 text-sm text-atlas-600">
+                  <li className="flex items-start gap-2">
+                    <span className="text-olive-400 mt-0.5">•</span>
+                    <span>Local souks sell produce harvested that morning</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-olive-400 mt-0.5">•</span>
+                    <span>Traditional farming methods, minimal industrial inputs</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-olive-400 mt-0.5">•</span>
+                    <span>Meat from local butchers, not factory farms</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-olive-400 mt-0.5">•</span>
+                    <span>Olive oil pressed from family groves, not blended commodities</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p className="mt-6 text-atlas-700 text-center font-medium">
+              This isn&apos;t &quot;organic premium pricing.&quot; This is just how food works when the system hasn&apos;t been corrupted.
+            </p>
           </div>
         </div>
       </section>
