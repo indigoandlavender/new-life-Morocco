@@ -39,22 +39,28 @@ const defaultFooterData: FooterData = {
   columns: [
     {
       number: 1,
-      title: "Explore",
+      title: "The Momentum",
       links: [
         { label: "Global Pulse", href: "/pulse" },
         { label: "Why Morocco", href: "/why-morocco" },
-        { label: "Tangier", href: "/tangier" },
-        { label: "Infrastructure", href: "/infrastructure" },
       ],
     },
     {
       number: 2,
-      title: "Get Started",
+      title: "The Infrastructure",
       links: [
-        { label: "Readiness Checklist", href: "/checklist" },
-        { label: "Free Roadmap", href: "/roadmap" },
-        { label: "Our Services", href: "/services" },
-        { label: "Contact", href: "/contact" },
+        { label: "Overview", href: "/infrastructure" },
+        { label: "For Families", href: "/families" },
+        { label: "Tangier", href: "/tangier" },
+      ],
+    },
+    {
+      number: 3,
+      title: "The Roadmap",
+      links: [
+        { label: "Services", href: "/services" },
+        { label: "Readiness Audit", href: "/checklist" },
+        { label: "Free Guide", href: "/roadmap" },
       ],
     },
   ],
@@ -188,7 +194,7 @@ export default function Footer() {
           ════════════════════════════════════════════════════════════════════ */}
       <section className="py-12 bg-atlas-950 text-sand-100">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {/* Brand Column */}
             <div className="col-span-1 md:col-span-2">
               <h3 className="text-xl font-semibold text-white mb-2">New Life Morocco</h3>
