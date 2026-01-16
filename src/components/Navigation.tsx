@@ -5,22 +5,22 @@ import { useState } from 'react';
 
 const navigation = [
   {
+    name: 'Why Morocco',
+    href: '/why-morocco',
+    description: 'The case for Morocco over Portugal and Mexico',
+    children: [
+      { name: 'Why Morocco', href: '/why-morocco', description: 'The comparison' },
+      { name: 'Safety & Stability', href: '/safety', description: 'Security without gates' },
+    ],
+  },
+  {
     name: 'The Infrastructure',
     href: '/infrastructure',
     description: 'Schools, healthcare, mobility',
     children: [
-      { name: 'Infrastructure Overview', href: '/infrastructure', description: 'TGV, hospitals, connectivity' },
+      { name: 'Infrastructure Overview', href: '/infrastructure', description: 'Rail, hospitals, connectivity' },
       { name: 'For Families', href: '/families', description: 'Schools & lifestyle' },
       { name: 'Tangier', href: '/tangier', description: 'The gateway city' },
-    ],
-  },
-  {
-    name: 'The Firm',
-    href: '/about',
-    description: 'Who we are',
-    children: [
-      { name: 'About Us', href: '/about', description: 'The bridge between two worlds' },
-      { name: 'Contact', href: '/contact', description: 'Start the conversation' },
     ],
   },
   {
@@ -28,9 +28,17 @@ const navigation = [
     href: '/services',
     description: 'Your path forward',
     children: [
-      { name: 'Services', href: '/services', description: 'Skip-the-line packages' },
-      { name: 'Readiness Audit', href: '/checklist', description: '10-point assessment' },
-      { name: 'Free Guide', href: '/roadmap', description: 'Download the roadmap' },
+      { name: 'Services', href: '/services', description: 'How we help' },
+      { name: 'Readiness Checklist', href: '/checklist', description: 'Are you ready?' },
+    ],
+  },
+  {
+    name: 'The Firm',
+    href: '/about',
+    description: 'Who we are',
+    children: [
+      { name: 'About Us', href: '/about', description: 'Our story' },
+      { name: 'Contact', href: '/contact', description: 'Get in touch' },
     ],
   },
 ];
