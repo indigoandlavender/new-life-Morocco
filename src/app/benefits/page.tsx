@@ -386,24 +386,24 @@ export default function BenefitsPage() {
       <section className="py-20 bg-gradient-to-br from-terracotta-600 to-terracotta-700">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Ready to Calculate Your Return on Life?
+            Biological Integrity. Medical Sovereignty. Zero Compromise.
           </h2>
           <p className="mt-4 text-xl text-sand-100">
-            Every family&apos;s transition is unique. Let&apos;s discuss your specific situation
-            and map out what&apos;s possible.
+            Access the Sanctuary Network: US-accredited hospitals, same-day specialists,
+            and organic Mediterranean food systems. Your body deserves better.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-terracotta-600 font-semibold rounded-lg hover:bg-sand-100 transition-colors duration-200 text-lg"
             >
-              Request Your Strategic Roadmap
+              Access the Sanctuary Network
             </Link>
             <Link
-              href="/checklist"
+              href="/infrastructure"
               className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors duration-200 text-lg"
             >
-              Take the Readiness Audit
+              View Healthcare Infrastructure
             </Link>
           </div>
         </div>

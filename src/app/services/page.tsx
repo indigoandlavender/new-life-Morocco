@@ -279,7 +279,7 @@ export default function ServicesPage() {
                   href="/contact"
                   className="block w-full btn-primary text-center"
                 >
-                  Secure Your Transition
+                  Skip the Paperwork Line
                 </Link>
               </div>
             </div>
@@ -434,7 +434,7 @@ export default function ServicesPage() {
                   href="/contact"
                   className="block w-full btn-primary text-center"
                 >
-                  Secure Your Transition
+                  Activate Your Advocate
                 </Link>
                 <p className="text-xs text-atlas-500 mt-4 text-center">
                   Payment plans available
@@ -516,18 +516,18 @@ export default function ServicesPage() {
       <section className="section-padding bg-atlas-900">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Ready to Secure Your Status?
+            Your First 90 Days on the Terrace, Not in a Waiting Room
           </h2>
           <p className="mt-4 text-lg text-sand-200">
-            Your time is valuable. Let us handle the friction so you can focus on
-            building your new life in the Kingdom.
+            We handle the Prefecture. The Bank. The Ministry.
+            You handle your family, your career, and your new community.
           </p>
           <div className="mt-10">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-terracotta-500 text-white font-semibold rounded-lg hover:bg-terracotta-600 transition-colors duration-200 text-lg"
             >
-              Speak With a Relocation Partner
+              Engage Your Human Advocate
             </Link>
           </div>
         </div>

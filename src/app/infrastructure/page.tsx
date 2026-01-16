@@ -509,14 +509,15 @@ export default function InfrastructurePage() {
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-atlas-900">
-            Ready to See the Reality?
+            7 Hours from New York. 2 Hours from London.
           </h2>
           <p className="mt-4 text-lg text-atlas-600">
-            Schedule a free consultation. We&apos;ll show you exactly what life in modern Morocco looks like.
+            Position yourself in the geographic sweet spot. Direct flights, zero jet-lag lifestyle,
+            and a time zone that keeps you connected to both continents.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="btn-primary">
-              Request Your Strategic Roadmap
+              Claim Your Geographic Leverage
             </Link>
             <Link href="/families" className="btn-secondary">
               Education & Schools

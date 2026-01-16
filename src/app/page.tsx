@@ -21,11 +21,11 @@ export default function Home() {
               The high-vibration sanctuary for American families and global professionals.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/checklist" className="btn-primary text-center">
-                Take the Readiness Audit
+              <Link href="/contact" className="btn-primary text-center">
+                Begin Your Exit Strategy
               </Link>
-              <Link href="/pulse" className="btn-secondary text-center">
-                See the Momentum
+              <Link href="/checklist" className="btn-secondary text-center">
+                Take the Readiness Audit
               </Link>
             </div>
           </div>
@@ -162,7 +162,7 @@ export default function Home() {
 
           <div className="mt-10 text-center">
             <Link href="/infrastructure" className="text-terracotta-600 hover:text-terracotta-700 font-medium">
-              Explore the Full Infrastructure →
+              Unlock the 7-Hour Reset →
             </Link>
           </div>
         </div>
@@ -507,13 +507,13 @@ export default function Home() {
               href="/contact"
               className="px-8 py-4 bg-terracotta-500 text-white font-semibold rounded-lg hover:bg-terracotta-600 transition-colors"
             >
-              Request a Strategy Session
+              Activate Human Advocacy
             </Link>
             <Link
-              href="/about"
+              href="/services"
               className="px-8 py-4 bg-transparent border-2 border-sand-300 text-sand-100 font-semibold rounded-lg hover:bg-sand-300/10 transition-colors"
             >
-              Our Philosophy
+              Skip the Line →
             </Link>
           </div>
         </div>
