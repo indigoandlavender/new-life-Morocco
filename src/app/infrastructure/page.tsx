@@ -145,10 +145,20 @@ export default function InfrastructurePage() {
                 Access state-of-the-art private clinics in every major city. Specialized oncology,
                 cardiology, and maternity care with US/European-trained specialists.
               </p>
-              <p className="text-atlas-700 mb-6">
+              <p className="text-atlas-700 mb-4">
                 The <strong>AKDITAL Group</strong> operates 20+ clinics and hospitals across Morocco,
                 offering MRI, CT scans, advanced surgery, and 24/7 emergency care at standards that
                 rival any European facility.
+              </p>
+              <p className="text-atlas-700 mb-4">
+                <strong>Hôpital Américain de Casablanca (HAC)</strong> — The gold standard. A multidisciplinary
+                facility built to North American technical and medical specifications, replicating the
+                American patient experience.
+              </p>
+              <p className="text-atlas-700 mb-6">
+                <strong>Mayo Clinic Care Network:</strong> Several elite Moroccan medical groups are members
+                of the Mayo Clinic Care Network, allowing local doctors to consult directly with Mayo Clinic
+                experts on complex cases.
               </p>
               <div className="bg-terracotta-50 border-l-4 border-terracotta-500 p-6 rounded-r-lg">
                 <p className="text-atlas-900 font-medium">

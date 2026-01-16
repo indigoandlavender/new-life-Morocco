@@ -14,15 +14,60 @@ export default function TangierPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <span className="text-terracotta-400 font-medium uppercase tracking-wide text-sm">
-              The Diplomatic Sanctuary
+              Your Gateway to a Global Heritage
             </span>
             <h1 className="mt-4 text-4xl font-bold text-white sm:text-5xl leading-tight">
-              Tangier: Your American Home Since 1821
+              Tangier: Live Where History Meets the Future
             </h1>
             <p className="mt-6 text-xl text-sand-200">
-              The only U.S. National Historic Landmark outside American soil.
-              You aren&apos;t moving to a foreign land. You&apos;re moving to an old friend.
+              Tangier isn&apos;t just a city—it&apos;s a legendary meeting point of civilizations.
+              The only U.S. National Historic Landmark on foreign soil.
+              Moving here isn&apos;t just relocation—it&apos;s a homecoming.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* The High-Vibration Lifestyle */}
+      <section className="py-16 bg-terracotta-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-14 h-14 bg-terracotta-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-atlas-900 mb-2">The Energy of the Strait</h3>
+              <p className="text-atlas-600 text-sm">
+                Wake up to two seas meeting. See Spain from your terrace—a constant reminder you&apos;re
+                1 hour from the heart of Europe.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-14 h-14 bg-olive-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-atlas-900 mb-2">A Legacy of Intellect</h3>
+              <p className="text-atlas-600 text-sm">
+                Join a community that inspired generations of American writers, artists, and diplomats.
+                A city of deep thinkers where creativity thrives.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-14 h-14 bg-atlas-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-atlas-900 mb-2">Modernity in the Mediterranean</h3>
+              <p className="text-atlas-600 text-sm">
+                Walk historic Kasbah streets, minutes from the Tanger-Med mega-port and Al-Boraq
+                High-Speed Rail—connected at 320 km/h.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -347,20 +392,23 @@ export default function TangierPage() {
       {/* CTA */}
       <section className="py-20 bg-atlas-900">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            You Aren&apos;t Moving to a Foreign Land
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Old World Soul. New World Efficiency.
           </h2>
-          <p className="text-xl text-sand-200 mb-8">
+          <p className="text-xl text-terracotta-400 font-medium mb-6">
+            In Tangier, you don&apos;t have to choose.
+          </p>
+          <p className="text-lg text-sand-200 mb-8 max-w-2xl mx-auto">
             From the American Legation in the Medina to the modern villas of the Mountain,
-            Tangier is a city that understands and welcomes the American spirit.
-            You&apos;re moving to an old friend.
+            Tangier is a city that has welcomed the American spirit since 1821.
+            Come see why the oldest friend of the United States is the best place for your next chapter.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
               className="btn-primary"
             >
-              Start Your Tangier Journey
+              Plan Your Transition
             </Link>
             <Link
               href="/guide"
